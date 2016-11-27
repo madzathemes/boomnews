@@ -1,0 +1,1183 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:88
+msgid " Edit"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:70
+msgid "%1$s %2$s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:70
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:1
+msgid "%1$s."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:26
+msgid ", "
+msgstr ""
+
+#. Text in echo
+#: boomnews/404.php:5
+msgid "404"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:26
+msgid "<div class=\"mt-meta\"><i class=\"fa fa-folder-open-o\"></i> %1$s <span class=\"mt_space\"></span> <i class=\"fa fa-calendar\"></i> %3$s </div>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:26
+msgid "<div class=\"mt-meta\"><i class=\"fa fa-folder-open-o\"></i> %1$s <span class=\"mt_space\"></span> <i class=\"fa fa-tag\"></i> %2$s <span class=\"mt_space\"></span> <i class=\"fa fa-calendar\"></i> %3$s </div>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:26
+msgid "<div class=\"mt-meta\">Posted on <i class=\"fa fa-calendar\"></i> %3$s </div>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:1
+msgid "<span class=\"date_links\">%2$s</span>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:17
+msgid "<span class=\"meta-nav\">&larr; Older posts</span> "
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:30
+#: boomnews/comments.php:49
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:90
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:21
+msgid "<span class=\"meta-nav\">Newer posts  &rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-content.php:30
+msgid "About %s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-footer.php:16
+msgid "About Us"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Ads"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. Text in echo
+#: boomnews/tag.php:25
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Article bottom ad"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Background Color"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Background Image"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Background color"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "Blog/Category Sidebar"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:1
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Bottom Footer Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Bottom Footer Link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Bottom Footer Link Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Bottom Footer Text"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Button: Hot Posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Button: Latest Posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Button: Popular Posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Button: Trending Posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Cancel reply"
+msgstr ""
+
+#. Text in function
+#: boomnews/category.php:51
+#: boomnews/category.php:58
+msgid "Category"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-footer.php:18
+msgid "Contact us:"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Copyright 2016. Powered by WordPress Theme. By Madars Bitenieks"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Copyright Text"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 1"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 2"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 3"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 4"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 5"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 6"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 7"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 8"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Custom ad 9"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "Default Sidebar"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Default: 40"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+#: boomnews/inc/customizer/customizer-posts.php:1
+msgid "Disable"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Dismiss this notice"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Display Copyright/Footer Menu Area"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Display Logo/About Us/Follow Us Area"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Dribble icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:61
+msgid "Edit"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Email"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+#: boomnews/inc/customizer/customizer-posts.php:1
+msgid "Enable"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-plugins.php:1
+msgid "Envato WordPress Toolkit"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Facebook icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-sidebar.php:11
+msgid "Featured Post"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-footer.php:21
+msgid "Follow Us"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Fonts Size"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Footer"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Footer Border"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Footer Colors"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Footer Page"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Footer Settings"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Footer top ad"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Form Button"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "General"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Google plus link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "H1 size (px)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "H2 size (px)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "H3 size (px)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "H4 size (px)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "H5 size (px)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "H6 size (px)"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-footer.php:95
+#: boomnews/inc/functions/functions-header.php:121
+msgid "HOT"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Header"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Header Ad"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Header Button Name"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Header Button Open In New Tap"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Header Button URL"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Header Top"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Height"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:95
+msgid "Home"
+msgstr ""
+
+#. Text in function
+#: boomnews/footer.php:3
+msgid "Hot Posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Instagram icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Install Plugins"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Install Required Plugins"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-footer.php:93
+#: boomnews/inc/functions/functions-header.php:119
+msgid "LATEST"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Layouts"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Leave a Comment"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Link Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Link Hover Border"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "LinkedIn icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\" class=\"mt-theme-text\">Log out?</a>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Logo Image"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Logo Settings"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Logo height (px)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-plugins.php:1
+msgid "Magazine Plug"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Menu Colors"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Menu Icon"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Logo"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu BG Image"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu BG Image Position"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu BG Image Style"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu Link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu Link Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu Social Icon"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu Social Icon Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu Text"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Mobile Menu Title"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Name"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:50
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:91
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-content.php:50
+msgid "Next article"
+msgstr ""
+
+#. Text in echo
+#: boomnews/404.php:6
+msgid "No Page Found"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-hooks.php:1
+msgid "No older posts found"
+msgstr ""
+
+#. Text in echo
+#: boomnews/search.php:20
+#: boomnews/tag.php:21
+msgid "Nothing Found"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "On/Off"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-plugins.php:1
+msgid "One Click Demo Import"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Open in new page"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-footer.php:94
+#: boomnews/inc/functions/functions-header.php:120
+msgid "POPULAR"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:95
+msgid "Page"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-general.php:95
+msgid "Page %s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-plugins.php:1
+msgid "Page Builder by SiteOrigin"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Page Layouts"
+msgstr ""
+
+#. Text in function
+#: boomnews/content.php:64
+msgid "Pages:"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Parallax"
+msgstr ""
+
+#. Text in function
+#: boomnews/content.php:39
+msgid "Permalink to %s"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-comment.php:61
+msgid "Pingback:"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Pinterest icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Plugin activated successfully."
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "Post Bottom (After Comments)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "Post Bottom (Before Comments)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-posts.php:1
+msgid "Post Carousel"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "Post Sidebar"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-posts.php:1
+msgid "Post Style"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-footer.php:93
+#: boomnews/inc/functions/functions-footer.php:94
+#: boomnews/inc/functions/functions-footer.php:95
+#: boomnews/inc/functions/functions-footer.php:96
+#: boomnews/inc/customizer/customizer-posts.php:1
+#: boomnews/inc/functions/functions-header.php:119
+#: boomnews/inc/functions/functions-header.php:120
+#: boomnews/inc/functions/functions-header.php:121
+#: boomnews/inc/functions/functions-header.php:122
+msgid "Posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-content.php:49
+msgid "Previous article"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:101
+msgid "Reply"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Return to the Dashboard"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Rss icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Sample: 15"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Sample: 18"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Sample: 24"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Sample: 31"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Sample: 48"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Sample: 56"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "Sample: 72"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Search Button"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "Search Page Sidebar"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-title.php:11
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Settings"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-heads.php:56
+#: boomnews/inc/single/single-content.php:12
+#: boomnews/inc/functions/functions-header.php:227
+msgid "Share on Facebook"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-heads.php:49
+msgid "Shares"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-posts.php:1
+msgid "Sidebar Position"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Sidebar bottom ad"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Sidebar middle ad"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "Sidebar top ad"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Site Color"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Skype icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Small Menu Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Small Menu Button Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Small Menu Button Hover Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Small Menu For Desktop"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Small Menu Link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Small Menu Link Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Small Menu Text"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Social Icon"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Social Icon Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Social Icon Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Social Icon Hover Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Social Icons"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. Text in echo
+#: boomnews/search.php:22
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Style"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Sub Link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Sub Link Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Sub Link Background Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Sub Link Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Submit Comment"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-footer.php:96
+#: boomnews/inc/functions/functions-header.php:122
+msgid "TRENDING"
+msgstr ""
+
+#. Text in function
+#: boomnews/tag.php:15
+msgid "Tag"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "The blog sidebar widget area"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "The page sidebar widget area 1"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "The post bottom widget area"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "The search page sidebar widget area"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-widget.php:1
+msgid "The single page sidebar widget area"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/functions/functions-comment.php:1
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#. Text in echo
+#: boomnews/comments.php:9
+msgid "This post is password protected. Enter the password to view and post comments."
+msgstr ""
+
+#. Text in echo
+#: boomnews/searchform.php:2
+msgid "To search type and hit enter"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Top Footer Background"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Top Footer Link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-colors.php:1
+msgid "Top Footer Link Hover"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Top Space"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/single/single-sidebar.php:26
+msgid "Trending Posts"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-heads.php:57
+#: boomnews/inc/single/single-content.php:13
+#: boomnews/inc/functions/functions-header.php:228
+msgid "Tweet on Twitter"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Twitter icon link"
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-header.php:42
+#: boomnews/inc/functions/functions-header.php:102
+msgid "Type and hit enter to search ..."
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Update Required"
+msgstr ""
+
+#. Text in function
+#: boomnews/all_plugins/class-tgm-plugin-activation.php:1
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Upload Footer Logo"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Upload Footer Logo Retina(x2)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Upload Logo"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Upload Responsive Logo (x2)"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-content.php:34
+#: boomnews/inc/functions/functions-general.php:26
+#: boomnews/inc/functions/functions-comment.php:1
+msgid "View all posts by %s"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-heads.php:50
+msgid "Views"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Vimeo icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "Website"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-header.php:1
+msgid "Width"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-ads.php:1
+msgid "YOUR AD CODE"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/single/single-content.php:55
+msgid "You may be interested"
+msgstr ""
+
+#. Text in function
+#: boomnews/comments.php:125
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#. Text in echo
+#: boomnews/inc/functions/functions-comment.php:93
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-footer.php:15
+msgid "Youtube icon link"
+msgstr ""
+
+#. Text in function
+#: boomnews/inc/customizer/customizer-fonts.php:1
+msgid "p size (px)"
+msgstr ""

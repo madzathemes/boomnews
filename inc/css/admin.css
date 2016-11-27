@@ -1,0 +1,65 @@
+.siteorigin-panels-builder .so-builder-toolbar > .so-tool-button.so-live-editor { display: none!important; }
+.switch-on { float: left !important; font-size: 11px;}
+.switch-off { color: white!important; padding-left: 8px!important; padding-right: 0px!important;  font-size: 11px; }
+
+.wp-full-overlay-main {
+    background-color: #fff;
+}
+
+.customize-control-kirki-switch .switch {
+    margin-bottom: 0px!important;
+}
+.switch-label {
+  margin-bottom: 10px!important;
+}
+.customize-control-kirki-switch .switch input:checked + label {
+  background: #bac748!important;
+}
+#customize-controls img {
+  border: 1px solid white !important;
+}
+
+.cmb2-id-magazin-post-gallery-images {
+  padding: 0px !important;
+}
+
+.cmb2-id-magazin-video-url {
+  padding: 0px !important;
+}
+.cmb2-id-magazin-video-url span {
+  padding-bottom: 0px !important;
+}
+.cmb2-id-magazin-post-gallery-images .button {
+  width: 100%;
+  background: #8bc34a;
+  border-color: #55772d;
+  -webkit-box-shadow: 0 1px 0 9dce64;
+  box-shadow: 0 1px 0 #9dce64;
+  color: white;
+}
+.cmb2-id-magazin-post-gallery-images li {
+  margin-bottom: 0px !important;
+  margin-right: 20px !important;
+}
+
+
+.updated.woocommerce-message,
+.rs-update-notice-wrap,
+.eg-update-notice-wrap,
+.post-type-page #mm_general,
+.layerslider_notice,
+#vc_logo,
+.updated.fade,
+.vc_teaser,
+.ult_activate,
+.update-nag{ display: none!important; }
+.mt-patterns { width: 50px!important; height: 50px!important; }
+
+
+/* CUSTOMIZER */
+
+.customize-red { color:red; }
+
+.media-sidebar .setting {
+	display: none;
+}
