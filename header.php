@@ -13,12 +13,6 @@ $option = get_option("boomnews_theme_options");
 ?>
 <body <?php body_class(); ?>>
 
-	<script type="text/javascript">
-
-
-
-</script>
-
 <?php
 $bg_post = get_post_meta(get_the_ID(), "magazin_background_image", true);
 $style = get_post_meta(get_the_ID(), "magazin_post_style", true);
@@ -42,6 +36,7 @@ if(!empty($style)){
 <?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); if ( is_plugin_active( 'magazine-themes-bar/magazine-themes-bar.php' ) ) { magazine_themes_bar(); } ?>
 
 <div class="mt-outer-wrap mt-fixed-wrap">
+	<?php	if(!empty( $option['menu_share'])){	boomnews_header_share();	} ?>
 	<?php boomnews_header_fixed(); ?>
 </div>
 
@@ -50,7 +45,6 @@ if(!empty($style)){
 	<?php boomnews_socials(); ?>
 	<?php boomnews_nav_mobile(); ?>
 </div>
-
 
 <div class="mt-outer-wrap">
 

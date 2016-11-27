@@ -66,6 +66,17 @@ function boomnews_class($classes) {
 		$body_class .= ' mt-fixed-no ';
 	}
 
+
+	if(!empty( $options['menu_fixed'])){
+		if($options['menu_fixed']=="mt-fixed-up") {
+			$body_class .= ' mt-fixed-up ';
+		}  else if($options['menu_fixed']=="mt-fixed-always") {
+			$body_class .= ' mt-fixed-always ';
+		} 
+	} else {
+		$body_class .= ' mt-fixed-up ';
+	}
+
 	$style = get_post_meta(get_the_ID(), "magazin_post_style", true);
 	if(!empty($style)){
 		$body_class .= ' post-style-'.$style;

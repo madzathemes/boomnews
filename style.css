@@ -1431,7 +1431,8 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   height: 35px !important;
   width: auto !important;
 }
-.nav-down.fixed-on .fixed-top-menu {
+.mt-fixed-up.nav-down.fixed-on .fixed-top-menu,
+.mt-fixed-always.fixed-on .fixed-top-menu {
   transform: translate(0,0);
    -webkit-transform: translate(0,0); /** Safari & Chrome **/
    -o-transform: translate(0,0); /** Opera **/
@@ -1471,13 +1472,14 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   z-index: 99999;
   background: white;
 }
-.fixed-on .fixed-top {
+.fixed-on .fixed-top{
   transform: translate(0,0);
   -webkit-transform: translate(0,0); /** Safari & Chrome **/
   -o-transform: translate(0,0); /** Opera **/
   -moz-transform: translate(0,0); /** Firefox **/
 }
-.nav-down.fixed-on .fixed-top {
+.mt-fixed-up.nav-down.fixed-on .fixed-top,
+.mt-fixed-always.fixed-on .fixed-top {
   transform: translate(0,45px);
   -webkit-transform: translate(0,45px); /** Safari & Chrome **/
   -o-transform: translate(0,45px); /** Opera **/

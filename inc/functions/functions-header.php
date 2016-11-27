@@ -200,23 +200,23 @@ function boomnews_socials() { ?>
 	</ul><?php
 } add_filter('boomnews_socials','boomnews_socials');
 
-function boomnews_header_fixed() {
+function boomnews_header_fixed() { ?>
+	<div class="fixed-top-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<?php boomnews_logo(); ?>
+					<?php boomnews_nav_fixed(); ?>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php } add_filter('boomnews_header_fixed','boomnews_header_fixed');
+
+function boomnews_header_share() {
 	if (is_single()) {
-		/* Share Meta from Magazin framework */
-		$share = get_post_meta(get_the_ID(), "magazin_share_count", true);
-		$share_real = get_post_meta(get_the_ID(), "magazin_share_count_real", true);
-		$shares = $share_real;
-		if (!empty($share)){
-			$shares = $share+$share_real;
-		}
-		/* View Meta from Magazin framework */
-		$view = get_post_meta(get_the_ID(), "magazin_view_count", true);
-		$viewes = "0";
-		if (!empty($view)){
-			$viewes = $view;
-		}
-		$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
-		?>
+		$url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));	?>
 		<?php $option = get_option("boomnews_theme_options"); ?>
 				<div class="fixed-top">
 					<div class="container">
@@ -237,16 +237,4 @@ function boomnews_header_fixed() {
 					</div>
 				</div>
 	<?php } ?>
-	<div class="fixed-top-menu">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-
-					<?php boomnews_logo(); ?>
-					<?php boomnews_nav_fixed(); ?>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-<?php } add_filter('boomnews_header_fixed','boomnews_header_fixed'); ?>
+<?php } add_filter('boomnews_header_share','boomnews_header_share'); ?>

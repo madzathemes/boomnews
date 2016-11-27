@@ -529,6 +529,36 @@ function boomnews_customize_header($wp_customize){
        ),
    ) );
 
+   Kirki::add_field( 'boomnews_theme_options[menu_share]', array(
+       'type'        => 'switch',
+       'settings'    => 'boomnews_theme_options[menu_share]',
+       'label'       => esc_attr__( 'Fixed Share Buttons', 'boomnews' ),
+       'section'     => 'boomnews_header_top',
+       'default'     => '1',
+       'option_type' => 'option',
+       'priority'    => 10,
+       'choices'     => array(
+         '1'  => esc_attr__( 'Enable', 'boomnews' ),
+         '2' => esc_attr__( 'Disable', 'boomnews' ),
+       ),
+   ) );
+
+   Kirki::add_field( 'boomnews_theme_options[menu_fixed]', array(
+  	'type'        => 'select',
+  	'settings'    => 'boomnews_theme_options[menu_fixed]',
+  	'label'       => esc_attr__( 'Fixed Header', 'boomnews' ),
+  	'section'     => 'boomnews_header_top',
+  	'default'     => 'mt-fixed-up',
+    'option_type' => 'option',
+  	'priority'    => 10,
+  	'multiple'    => 1,
+  	'choices'     => array(
+  		'mt-fixed-up' => esc_attr__( 'Show When Scroll Up', 'boomnews' ),
+  		'mt-fixed-always' => esc_attr__( 'Show Always', 'boomnews' ),
+  		'mt-fixed-disabled' => esc_attr__( 'Disable', 'boomnews' ),
+  	),
+    ));
+
 		// Latest Posts
 		$wp_customize->add_setting('boomnews_theme_options[url_latest]', array(
 			'capability' => 'edit_theme_options',
