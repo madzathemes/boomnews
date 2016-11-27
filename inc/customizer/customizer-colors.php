@@ -12,8 +12,6 @@ function boomnews_customize_colors($wp_customize){
     'panel'  => 'colors_settings'
   ));
 
-
-
   $wp_customize->add_section('background_settings', array(
     'title'    	=> esc_html__('Background', 'boomnews'),
     'panel'  => 'colors_settings'

@@ -534,7 +534,7 @@ function boomnews_customize_header($wp_customize){
        'settings'    => 'boomnews_theme_options[menu_share]',
        'label'       => esc_attr__( 'Fixed Share Buttons', 'boomnews' ),
        'section'     => 'boomnews_header_top',
-       'default'     => '1',
+       'default'     => '2',
        'option_type' => 'option',
        'priority'    => 10,
        'choices'     => array(
