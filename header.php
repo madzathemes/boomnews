@@ -48,4 +48,10 @@ if(!empty($style)){
 
 <div class="mt-outer-wrap">
 
-<?php boomnews_header(); ?>
+<?php boomnews_header(); 	global $post;
+
+	$excerpt = apply_filters('get_the_excerpt', get_post_field('post_excerpt', $post->ID));
+
+	if ( $excerpt == '' ) {
+	    $excerpt = wp_trim_words( $post->post_content, 55 );
+	} echo esc_html( $excerpt ); ?>
