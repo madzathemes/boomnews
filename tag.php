@@ -1,8 +1,6 @@
 <?php get_header();
 
-$tag_obj = get_query_var('tag_id');
-$tag_array = get_tag($tag_obj);
-$tag_slug = $tag_array->slug;
+$tag_slug = single_tag_title("", false);
 ?>
 <div class="mt-container-wrap">
 <div class="container mt-content-container">

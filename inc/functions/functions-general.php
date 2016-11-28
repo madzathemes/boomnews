@@ -27,7 +27,7 @@ function boomnews_paging_nav() {
 }
 endif;
 
-$navigation_speed = "4.6.2";
+$navigation_speed = "4.8";
 
 
 if ( ! function_exists( 'boomnews_entry_meta' ) ) {

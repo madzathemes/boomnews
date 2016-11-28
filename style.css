@@ -4909,6 +4909,22 @@ li.mtc-buy {
   content: "\e90d";
   font-family: "madza";
 }
+.mt-tabc-popular:after{
+  content: "\e9d9";
+  font-family: "madza";
+  left: -19px;
+}
+.mt-tabc-hot:after{
+  content: "\e9a9";
+  font-family: "madza";
+  left: -20px;
+}
+.mt-tabc-trending:after{
+  content: "\67";
+  font-family: "madza";
+  top: 1px;
+  left: -20px;
+}
 .mt-load-more,
 .mt-load-more.nomore:hover {
   width: 100%;
