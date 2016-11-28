@@ -48,4 +48,4 @@ if(!empty($style)){
 
 <div class="mt-outer-wrap">
 
-<?php boomnews_header(); the_excerpt();?>
+<?php boomnews_header(); ?>
