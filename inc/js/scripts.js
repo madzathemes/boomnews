@@ -4,6 +4,7 @@ jQuery(document).ready(function() {
 
   var ppp = jQuery( ".mt-load-more" ).data( "ppp" );
   var category = jQuery( ".mt-load-more" ).data( "category" );
+  var tag = jQuery( ".mt-load-more" ).data( "tag" );
   var offset_1 = jQuery('#ajax-posts_1').find('.poster').length;
   var offset_2 = jQuery('#ajax-posts_2').find('.poster').length;
   var offset_3 = jQuery('#ajax-posts_3').find('.poster').length;
@@ -17,7 +18,7 @@ jQuery(document).ready(function() {
   var orderbyt = jQuery( ".mt-load-more" ).data( "orderbyt" );
 
   function load_posts_1(){
-      var str = '&offset=' + offset_1 + '&ppp=' + ppp + '&action=more_post_ajax&category=' + category + '&orderby=' + orderby + '';
+      var str = '&offset=' + offset_1 + '&ppp=' + ppp + '&action=more_post_ajax&category=' + category + '&tag=' + tag + '&orderby=' + orderby + '';
       jQuery.ajax({
           type: "POST",
           dataType: "html",
@@ -44,7 +45,7 @@ jQuery(document).ready(function() {
 
   function load_posts_2(){
 
-      var str = '&offset=' + offset_2 + '&ppp=' + ppp + '&action=more_post_ajax&format=posts&category=' + category + '&orderby=' + orderby + '';
+      var str = '&offset=' + offset_2 + '&ppp=' + ppp + '&action=more_post_ajax&format=posts&category=' + category + '&tag=' + tag + '&orderby=' + orderby + '';
       jQuery.ajax({
           type: "POST",
           dataType: "html",
@@ -70,7 +71,7 @@ jQuery(document).ready(function() {
   }
 
   function load_posts_3(){
-      var str = '&offset=' + offset_3 + '&ppp=' + ppp + '&action=more_post_ajax&format=video&category=' + category + '&orderby=' + orderby + '';
+      var str = '&offset=' + offset_3 + '&ppp=' + ppp + '&action=more_post_ajax&format=video&category=' + category + '&tag=' + tag + '&orderby=' + orderby + '';
       jQuery.ajax({
           type: "POST",
           dataType: "html",
@@ -97,7 +98,7 @@ jQuery(document).ready(function() {
 
   function load_posts_4(){
 
-      var str = '&offset=' + offset_4 + '&ppp=' + ppp + '&action=more_post_ajax&format=gallery&category=' + category + '&orderby=' + orderby + '';
+      var str = '&offset=' + offset_4 + '&ppp=' + ppp + '&action=more_post_ajax&format=gallery&category=' + category + '&tag=' + tag + '&orderby=' + orderby + '';
       jQuery.ajax({
           type: "POST",
           dataType: "html",
