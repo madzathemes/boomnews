@@ -12,6 +12,7 @@
         <?php boomnews_single_title(); ?>
         <?php boomnews_single_social(); ?>
         <?php boomnews_single_media(); ?>
+        <?php boomnews_single_top(); ?>
         <div class="entry-content"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
@@ -36,6 +37,7 @@
         <?php boomnews_single_media(); ?>
         <?php boomnews_single_title(); ?>
         <?php boomnews_single_social(); ?>
+        <?php boomnews_single_top(); ?>
         <div class="entry-content"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
@@ -59,6 +61,7 @@
 
         <?php boomnews_single_title(); ?>
         <?php boomnews_single_social(); ?>
+        <?php boomnews_single_top(); ?>
         <div class="entry-content"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
@@ -87,6 +90,7 @@
 
         <?php boomnews_single_title(); ?>
         <?php boomnews_single_social(); ?>
+        <?php boomnews_single_top(); ?>
         <div class="entry-content"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
@@ -118,6 +122,7 @@
       <div class="single-content col-col-2 col-md-7 <?php echo sanitize_html_class($fl); ?>">
 
         <?php boomnews_single_social(); ?>
+        <?php boomnews_single_top(); ?>
         <div class="entry-content"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
@@ -156,7 +161,7 @@
         <?php boomnews_single_cat_posts(); ?>
       </div>
       <div class="single-content col-col-2 col-md-7 <?php echo sanitize_html_class($fl); ?>">
-
+        <?php boomnews_single_top(); ?>
         <div class="entry-content"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
@@ -200,6 +205,7 @@
           <?php boomnews_single_cat_posts(); ?>
         </div>
         <div class="single-content col-col-2 col-md-7 <?php echo sanitize_html_class($fl); ?>">
+          <?php boomnews_single_top(); ?>
           <div class="entry-content"><?php the_content(); ?></div>
           <?php boomnews_single_bottom(); ?>
         </div>
@@ -235,7 +241,7 @@
         <?php boomnews_single_cat_posts(); ?>
       </div>
       <div class="single-content col-col-2 col-md-7 <?php echo sanitize_html_class($fl); ?>">
-
+        <?php boomnews_single_top(); ?>
         <div class="entry-content"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
