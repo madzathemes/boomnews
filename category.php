@@ -48,7 +48,7 @@ if(!empty($option['category_post_style'])) {
 	<div class="row">
 		<div class="col-md-12">
 
-			<?php if($grid!=0) { echo do_shortcode('[grid type="'.esc_attr($grid).'" title="'. esc_html__( 'Category','boomnews' ) .': '.esc_attr($cat_name).'" title_type="left" category="'.esc_attr($cat_name).'"  ]'); ?>
+			<?php if($grid!=0) { echo do_shortcode('[grid type="'.esc_attr($grid).'" title="'. esc_html__( 'Category','boomnews' ) .': '.esc_attr($cat_name).'" position="left" title_type="left" category="'.esc_attr($cat_name).'"  ]'); ?>
 			<?php echo do_shortcode('[space size='.esc_attr($space).' ]'); }?>
 
 		</div>
