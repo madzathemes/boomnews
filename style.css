@@ -1263,6 +1263,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   list-style: none;
   float: right;
   margin:0px;
+  padding-left: 0px;
   margin-right: 10px;
 }
 .top-nav .social li {
