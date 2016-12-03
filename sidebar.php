@@ -45,6 +45,12 @@ else if (is_category() or is_tag()) {
 
 		dynamic_sidebar( 'sidebar-blog-widget-area' );
 	}
+} else if (is_author()) {
+
+	if ( is_active_sidebar( 'sidebar-author-widget-area' ) ) {
+
+		dynamic_sidebar( 'sidebar-author-widget-area' );
+	}
 }
 
 

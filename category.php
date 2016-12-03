@@ -8,7 +8,9 @@ get_header();
 
 $cat = get_query_var('cat');
 $get_cat = get_category ($cat);
-$cat_name = $get_cat->slug;
+$cat_slug = $get_cat->slug;
+
+$cat_title = single_cat_title("", false);
 
 
 $option = get_option("magazin_theme_options");
@@ -48,7 +50,7 @@ if(!empty($option['category_post_style'])) {
 	<div class="row">
 		<div class="col-md-12">
 
-			<?php if($grid!=0) { echo do_shortcode('[grid type="'.esc_attr($grid).'" title="'. esc_html__( 'Category','boomnews' ) .': '.esc_attr($cat_name).'" position="left" title_type="left" category="'.esc_attr($cat_name).'"  ]'); ?>
+			<?php if($grid!=0) { echo do_shortcode('[grid type="'.esc_attr($grid).'" title="'. esc_html__( 'Category','boomnews' ) .': '.esc_attr($cat_title).'" position="left" title_type="left" category="'.esc_attr($cat_slug).'"  ]'); ?>
 			<?php echo do_shortcode('[space size='.esc_attr($space).' ]'); }?>
 
 		</div>
@@ -58,9 +60,9 @@ if(!empty($option['category_post_style'])) {
 		<?php if ( have_posts() ) {
 
 			 	if($grid==0) {
-					echo do_shortcode('[posts pagination=on item_nr='.esc_attr($default_posts_per_page).' offset='.esc_attr($offset).'  category="'.esc_attr($cat_name).'" type='.esc_attr($post_style).' title="'. esc_html__( 'Category','boomnews' ) .': '.esc_attr($cat_name).'" title_type=left ]');
+					echo do_shortcode('[posts pagination=on item_nr='.esc_attr($default_posts_per_page).' offset='.esc_attr($offset).'  category="'.esc_attr($cat_slug).'" type='.esc_attr($post_style).' title="'. esc_html__( 'Category','boomnews' ) .': '.esc_attr($cat_title).'" title_type=left ]');
 				} else {
-					echo do_shortcode('[posts pagination=on item_nr='.esc_attr($default_posts_per_page).' offset='.esc_attr($offset).'  category="'.esc_attr($cat_name).'" type='.esc_attr($post_style).' ]');
+					echo do_shortcode('[posts pagination=on item_nr='.esc_attr($default_posts_per_page).' offset='.esc_attr($offset).'  category="'.esc_attr($cat_slug).'" type='.esc_attr($post_style).' ]');
 				}
  		} ?>
 	</div>

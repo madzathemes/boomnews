@@ -41,7 +41,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
         <?php global $post; echo get_avatar( $post->post_author, 30 ); ?>
       </div>
       <div class="author-info">
-        <strong><?php the_author_meta( 'display_name' ); ?></strong>
+        <strong><?php the_author_posts_link(); ?></strong>
         <small class="color-silver-light"><?php the_date('M d, Y'); ?></small>
       </div>
     </div>
