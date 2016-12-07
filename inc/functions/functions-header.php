@@ -95,6 +95,7 @@ else if(!empty($option['menu_background_width'])) {
 						</div>
 
 						<?php if(!empty($option['menu_search'])) { if($option['menu_search']=="1") { ?>
+							<div class="search-close"></div><div class="search-close"></div>
 							<div class="nav-search-wrap pull-right menu-background-right mt-radius">
 								<div class="nav-search pointer"></div>
 								<div class="nav-search-input mt-radius">
@@ -106,7 +107,6 @@ else if(!empty($option['menu_background_width'])) {
 						<?php } } ?>
 					</div>
 				</div>
-				<div class="search-close"></div>
 			</div>
 		</div>
 	</div>

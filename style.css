@@ -1518,7 +1518,7 @@ ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
   position: absolute;
   top: 4px;
   padding: 10px;
-  right: -15px;
+  right: 0px;
   visibility: hidden;
   opacity: 0;
   z-index: 9999;
