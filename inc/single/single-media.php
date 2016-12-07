@@ -6,7 +6,7 @@
 
   $video = "";
   if($videos!=""){
-  	$video = apply_filters('the_content', "[embed]".$videos."[/embed]");
+  	$video = do_shortcode("[embed]".$videos."[/embed]");
   }
 
   if(has_post_format("gallery")) { if(!empty($images)) { ?>
