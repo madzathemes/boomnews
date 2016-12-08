@@ -24,7 +24,7 @@
     <?php } ?>
     <?php if ( shortcode_exists( 'posts_trending' ) ) { ?>
     <h2 class="heading"><span><?php esc_html_e('Trending Posts', 'boomnews'); ?></span></h2>
-    <?php echo do_shortcode('[posts_trending type=trending-normal orderby=share item_nr=5]'); } ?>
+    <?php echo do_shortcode('[posts_trending type=trending-normal orderby=shares item_nr=5]'); } ?>
     <div class="space-20"></div>
     <?php if  (!empty($optionz['sidebar_ad_bottom'])) {  ?>
       <div class="advertise text-center">
