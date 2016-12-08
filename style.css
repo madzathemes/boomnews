@@ -460,6 +460,7 @@ input[type="button"] {
   border: 0px solid silver;
   cursor: pointer;
 }
+.full { width: 100%; }
 .form-submit {
   padding: 5px 0px 40px;
 }
