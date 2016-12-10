@@ -14,7 +14,17 @@ function boomnews_single_bottom() {
  $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
  $share_bottom = "";
  $share_bottom = get_post_meta(get_the_ID(), "magazin_post_share_bottom", true);
- ?><?php wp_link_pages(); ?>
+ ?><?php $defaults = array(
+		'before'           => '<p>' . esc_html__( 'Read More:', 'boomnews'),
+		'after'            => '</p>',
+		'link_before'      => '<span>',
+		'link_after'       => '</span>',
+		'next_or_number'   => 'number',
+		'separator'        => ' ',
+		'pagelink'         => '%',
+		'echo'             => 1
+	);
+  wp_link_pages( $defaults ); ?>
    <div class="tags"><?php echo get_the_tag_list(); ?></div>
    <?php if($share_bottom=="" or $share_bottom == "yes"){ ?>
    <ul class="share down">
