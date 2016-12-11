@@ -2,7 +2,6 @@
 function boomnews_header_script() {
 
 		wp_enqueue_style('boomnews-', get_stylesheet_uri());
-		wp_enqueue_script('boomnews-effects', get_template_directory_uri() . '/inc/js/effects.js', array('jquery'), '1.0', true);
 
 		$option = get_option("boomnews_theme_options");
 
