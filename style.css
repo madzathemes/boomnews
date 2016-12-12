@@ -2656,6 +2656,9 @@ opacity: 0.7
 .post-style-8 .single-media-top {
   height: 600px;
 }
+.post-style-5 .single-media-top .mt-video-frame {
+  padding-right: 55px;
+}
 .post-style-6 .single-media-top {
   height: 800px;
 }
@@ -3592,6 +3595,8 @@ opacity: 0.7
     width: 303px;
   }
 
+
+
   .post-style-8 .single-media-top,
   .post-style-7 .single-media,
   .post-style-7 .single-media-wrap,
@@ -3611,6 +3616,8 @@ opacity: 0.7
   .single-image-gradient:before {
     height: 100%;
   }
+
+
 
 
   /* Header */
@@ -3894,7 +3901,8 @@ opacity: 0.7
     padding-right: 0px;
   }
   .single .post-img,
-  .mt-video-frame {
+  .mt-video-frame,
+  .post-style-5 .single-media-top .mt-video-frame {
     padding-right: 0px;
   }
   .head-nav,
