@@ -3592,6 +3592,26 @@ opacity: 0.7
     width: 303px;
   }
 
+  .post-style-8 .single-media-top,
+  .post-style-7 .single-media,
+  .post-style-7 .single-media-wrap,
+  .post-style-6 .single-media-top {
+    height: auto;
+  }
+  .single-media-title {
+    position: relative;
+    padding: 40px 0px 0px;
+  }
+  .single-media-wrap {
+    position: relative;
+  }
+  .post-style-8 .single-image-gradient:before {
+    content: none;
+  }
+  .single-image-gradient:before {
+    height: 100%;
+  }
+
 
   /* Header */
   .head-bookmark,
@@ -3628,13 +3648,6 @@ opacity: 0.7
   .socials a span {
     font-size: 14px;
   }
-  .post-style-7 .single-media,
-  .post-style-7 .single-media-wrap {
-    height: 500px;
-  }
-  .post-style-8 .single-media-top {
-    height: 500px;
-  }
   .top-ad {
     width: 600px;
   }
@@ -3648,9 +3661,6 @@ opacity: 0.7
   .size-350.poster .poster-content {
     padding: 20px 20px 20px 20px !important;
   }
-  .post-style-6 .single-media-top {
-    height: 500px;
-  }
   .poster.trending-carousel {
     width: 660px;
   }
@@ -3659,7 +3669,7 @@ opacity: 0.7
     -webkit-transform: translate(0,54px);
     -o-transform: translate(0,54px);
     -moz-transform: translate(0,54px);
-}
+  }
   .top-ad {
     display: none!important;
   }
@@ -3698,9 +3708,6 @@ opacity: 0.7
 
   .socials a span{
     font-size: 15px;
-  }
-  .post-style-8 .single-media-top {
-    height: 400px;
   }
   .hide-mobile,
   .fixed-top-menu,
@@ -3850,10 +3857,6 @@ opacity: 0.7
 
 @media all and (max-width: 715px) {
 
-  .post-style-6 .single-media-top {
-    height: 400px;
-  }
-
   .stat-shares, .stat-views{
     font-size: 16px;
     margin-top: 5px;
@@ -3864,15 +3867,6 @@ opacity: 0.7
   }
   .single-subtitle {
     font-size: 21px;
-  }
-
-  .post-style-7 .single-media,
-  .post-style-7 .single-media-wrap {
-    height: 350px;
-  }
-
-  .post-style-8 .single-media-top {
-    height: 300px;
   }
 
   .head-nav a spans,
@@ -3965,10 +3959,6 @@ opacity: 0.7
   }
   .grid-post .layouts {
     padding: 0px 20px 0px 20px!important;
-  }
-
-  .post-style-8 .single-media-top {
-    height: 250px;
   }
 
   .poster-large-content h2 {
