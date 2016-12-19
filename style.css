@@ -3017,7 +3017,7 @@ opacity: 0.7
   display: block;
 }
 .stat-shares {
-  padding: 8px 20px 10px 50px;
+  padding: 8px 20px 10px 20px;
   font-size: 24px;
   display: inline-block;
   color: #c5c7cf;
@@ -3032,7 +3032,7 @@ opacity: 0.7
     color: #a5ce27;
 }
 .stat-views {
-  padding: 8px 10px 10px 15px;
+  padding: 8px 10px 10px 20px;
   font-size: 24px;
   display: inline-block;
   color: #c5c7cf

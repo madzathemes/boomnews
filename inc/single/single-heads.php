@@ -18,7 +18,7 @@ $share_top = get_post_meta(get_the_ID(), "magazin_post_share_top", true);
 
 /* Share Meta from Magazin framework */
 $share = get_post_meta(get_the_ID(), "magazin_share_count", true);
-$shares = "";
+$shares = "1";
 if (class_exists('Kirki')) {
   $shares = magazin_get_shares(get_the_ID());
 }
