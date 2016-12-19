@@ -1,7 +1,7 @@
 <?php
 function boomnews_header_script() {
 
-		wp_enqueue_style('boomnews-', get_stylesheet_uri());
+		wp_enqueue_style('boomnews-style', get_stylesheet_uri());
 
 		$option = get_option("boomnews_theme_options");
 
@@ -9,10 +9,13 @@ function boomnews_header_script() {
 		wp_enqueue_script( 'boomnews_script', get_template_directory_uri(). '/inc/js/scripts.js', array( 'jquery'), '', true );
 		wp_localize_script( 'boomnews_script', 'ajax_posts', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'noposts' => esc_html__('No older posts found', 'boomnews'), ));
 
-		wp_enqueue_script('boomnews_html5shiv', get_template_directory_uri() . '/inc/js/html5shiv.js', array('jquery'), '1.0', true);
-		wp_script_add_data( 'boomnews_html5shiv', 'conditional', 'lt IE 9' );
-		wp_enqueue_script('boomnews_respondmin', get_template_directory_uri() . '/inc/js/respond.js', array('jquery'), '1.0', true);
-		wp_script_add_data( 'boomnews_respondmin', 'conditional', 'lt IE 9' );
+
+		// Third party scripts/ styles don't need to be prefixed to avoid double loading
+		wp_enqueue_script('jquery-html5shiv', get_template_directory_uri() . '/inc/js/html5shiv.js', array('jquery'), '1.0', true);
+		wp_script_add_data( 'jquery-_html5shiv', 'conditional', 'lt IE 9' );
+		wp_enqueue_script('jquery-respondmin', get_template_directory_uri() . '/inc/js/respond.js', array('jquery'), '1.0', true);
+		wp_script_add_data( 'jquery-respondmin', 'conditional', 'lt IE 9' );
+
     function boomnews_fonts_url() {
 
       $theme_font = "Lato:400,900,700";
