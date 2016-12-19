@@ -2991,7 +2991,8 @@ opacity: 0.7
   float: left;
 }
 .author-info {
-  margin-left: 40px
+  margin-left: 40px;
+  padding-right: 40px;
 }
 .author-description h2 {
   font-size: 24px!important;
