@@ -27,7 +27,7 @@ if (!empty($share)){
 }
 /* View Meta from Magazin framework */
 $view = get_post_meta(get_the_ID(), "magazin_view_count", true);
-$viewes = "0";
+$viewes = 1;
 if (!empty($view)){
 	$viewes = $view;
 }
