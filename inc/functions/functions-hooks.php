@@ -76,7 +76,6 @@ function boomnews_css() {
 	 }
 	 if(!empty($options['colors_menu'])){
 		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['colors_menu']) .'!important; }';
-		 $custom_styles .='.mt-m-cool-button-line, .mt-m-cool-button-line:after, .mt-m-cool-button-line:before { background:'. esc_attr($options['colors_menu']) .'!important; }';
 	 }
 
 	 if(!empty($options['colors_menu_hover_text'])){
@@ -92,9 +91,7 @@ function boomnews_css() {
 		 $custom_styles .='}';
 		}
 		if(!empty($options['colors_menu_hover']) or !empty($options['colors_menu_hover_text'])){
- 		 	$custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before {';
-		 		if(!empty($options['colors_menu_hover'])){ $custom_styles .='background: '. esc_attr($options['colors_menu']); }
-		 $custom_styles .='}';
+ 		 	$custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['colors_menu']) .='}';
 		}
 
 
