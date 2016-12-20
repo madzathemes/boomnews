@@ -96,7 +96,7 @@ function boomnews_css() {
 
 	 if ( $custom_styles != '' ) {
 	  $css = preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $custom_styles);
-		wp_add_inline_style( 'boomnews', $css );
+		wp_add_inline_style( 'boomnews-style', $css );
 	}
 
 }
