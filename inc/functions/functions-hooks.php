@@ -90,7 +90,7 @@ function boomnews_css() {
 		 		if(!empty($options['colors_menu_hover_text'])){ $custom_styles .='color: '. esc_attr($options['colors_menu']); }
 		 $custom_styles .='}';
 		}
-		if(!empty($options['colors_menu_hover']) or !empty($options['colors_menu_hover_text'])){
+		if(!empty($options['colors_menu_hover'])){
  		 	$custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['colors_menu']) .='}';
 		}
 
