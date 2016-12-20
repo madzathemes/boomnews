@@ -97,6 +97,17 @@ function boomnews_css() {
  		 	$custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['colors_menu_hover']) .'!important}';
 		}
 
+		if(!empty($options['colors_menu_sub_hover']) or !empty($options['colors_menu_sub_hover_background'])){
+			$custom_styles .='ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
+			ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
+			ul.sf-menu ul li.current_page_item > a, div.sf-menu ul ul ul li.current_page_item > a,
+			ul.sf-menu ul li.current-menu-ancestor > a, div.sf-menu ul ul ul li.current-menu-ancestor > a,
+			ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {';
+				 if(!empty($options['colors_menu_sub_hover_background'])){ $custom_styles .='background:'. esc_attr($options['colors_menu_sub_hover_background']) .'!important;'; }
+				 if(!empty($options['colors_menu_sub_hover'])){ $custom_styles .='color:'. esc_attr($options['colors_menu_sub_hover']) .'!important;'; }
+			$custom_styles .='}';
+		}
+
 
 	 if ( $custom_styles != '' ) {
 	  $css = preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $custom_styles);

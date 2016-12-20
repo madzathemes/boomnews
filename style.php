@@ -50,16 +50,6 @@ $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
 }
 <?php } ?>
 
-<?php if(!empty($options['colors_menu_sub_hover']) or !empty($options['colors_menu_sub_hover_background'])){ ?>
-	ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
-	ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
-	ul.sf-menu ul li.current_page_item > a, div.sf-menu ul ul ul li.current_page_item > a,
-	ul.sf-menu ul li.current-menu-ancestor > a, div.sf-menu ul ul ul li.current-menu-ancestor > a,
-	ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover {
-		<?php if(!empty($options['colors_menu_sub_hover_background'])){ ?> background: <?php echo esc_attr($options['colors_menu_sub_hover_background']); ?>;<?php } ?>
-		<?php if(!empty($options['colors_menu_sub_hover'])){ ?> color: <?php echo esc_attr($options['colors_menu_sub_hover']); ?>;<?php } ?>
-}
-<?php } ?>
 
 <?php if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){ ?>
 .sf-menu ul li a {
