@@ -97,6 +97,15 @@ function boomnews_css() {
  		 	$custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['colors_menu_hover']) .'!important}';
 		}
 
+		if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){
+			$custom_styles .='.sf-menu ul li a {';
+					if(!empty($options['colors_menu_sub'])){ $custom_styles .=' color: '. esc_attr($options['colors_menu_sub']).'!important}'; }
+					if(!empty($options['colors_menu_sub_background'])){ $custom_styles .=' background: '. esc_attr($options['colors_menu_sub_background']).'!important}'; }
+			$custom_styles .='}';
+				if(!empty($options['colors_menu_sub_background'])){ $custom_styles .=' .sf-menu ul li, .df-is-megamenu ul { background:'. esc_attr($options['colors_menu_sub_background']).'!important}'; }
+			$custom_styles .='}';
+		}
+
 		if(!empty($options['colors_menu_sub_hover']) or !empty($options['colors_menu_sub_hover_background'])){
 			$custom_styles .='ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
 			ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
