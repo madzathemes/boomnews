@@ -1,57 +1,7 @@
 <style type="text/css"><?php
 $options = get_option("boomnews_theme_options");
 $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
-if(!empty($style)){ ?>
-	.boxed-layout-on { background-color: <?php echo esc_attr($style); ?> }
-<?php } else if (!empty($options['background_color'])) { ?>
-	.boxed-layout-on { background-color: <?php echo esc_attr($options['background_color']); ?>; }
-<?php } ?>
-
-<?php if(!empty($options['logo_top'])){ ?>
-	.head-logo { padding-top: <?php echo esc_attr($options['logo_top']); ?>px }
-<?php } ?>
-<?php if(!empty($options['logo_bottom'])){ ?>
-	.head-logo { padding-bottom: <?php echo esc_attr($options['logo_bottom']); ?>px }
-<?php } ?>
-<?php if(!empty($options['colors_default'])){ ?>
-	.mt-theme-text,
-	.fixed-top-menu ul li a:hover,
-	a:hover,
-	.nav-single .next div:after,
-	.nav-single .previous div:before { color:<?php echo esc_attr($options['colors_default']); ?>; }
-	.mt-theme-background,
-	button:hover,
-	input[type="submit"]:hover,
-	input[type="button"]:hover,
-	.sf-menu > li.current_page_item > a::before,
-	.sf-menu > li > a::before,
-	ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
-	ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
-	ul.sf-menu ul li.current_page_item > a, div.sf-menu ul ul ul li.current_page_item > a,
-	ul.sf-menu ul li.current-menu-ancestor > a, div.sf-menu ul ul ul li.current-menu-ancestor > a,
-	ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover,
-	.head-bookmark a:hover,
-	.hover-menu a:hover,
-	.nav-links a:hover,
-	.poster-next:hover,
-	.poster-prev:hover,
-	.post-gallery-nav .slick-arrow.slick-prev:hover:before,
-	.post-gallery-nav .slick-arrow.slick-next:hover:before,
-	.single-cat-wrap .post-categories li a,
-	.mt-load-more:hover,
-	.mt-tabc:before,
-	.mt-subscribe-footer input.mt-s-b:hover { background: <?php echo esc_attr($options['colors_default']); ?>; }
-<?php } ?>
-
-<?php if(!empty($options['colors_button'])){ ?>
-	button,
-	input[type="submit"],
-	input[type="button"],
-	.head-bookmark a,
-	.mt-subscribe-footer input.mt-s-b { background:<?php echo esc_attr($options['colors_button']); ?>; }
-<?php } ?>
-
-<?php if(!empty($options['colors_social_hover'])){ ?>.socials a:after { background:<?php echo esc_attr($options['colors_social_hover']); ?>!important; }<?php } ?>
+?>
 
 <?php if(!empty($options['colors_menu_bg_right']) and !empty($options['colors_menu_bg_left'])){ ?>
 	.menu-background {

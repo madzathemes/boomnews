@@ -1,7 +1,112 @@
 <?php
+function infowazz_css() {
+
+	wp_enqueue_style('boomnews-style', get_stylesheet_uri());
+
+	$custom_styles = '';
+	$options = get_option("boomnews_theme_options");
+
+	// Default Color
+	if(!empty($options['colors_default'])){
+			$custom_styles .='
+			.mt-theme-text,
+			.fixed-top-menu ul li a:hover,
+			a:hover,
+			.nav-single .next div:after,
+			.nav-single .previous div:before { color:'. esc_attr($options['colors_default']) .'; }
+			.mt-theme-background,
+			button:hover,
+			input[type="submit"]:hover,
+			input[type="button"]:hover,
+			.sf-menu > li.current_page_item > a::before,
+			.sf-menu > li > a::before,
+			ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
+			ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
+			ul.sf-menu ul li.current_page_item > a, div.sf-menu ul ul ul li.current_page_item > a,
+			ul.sf-menu ul li.current-menu-ancestor > a, div.sf-menu ul ul ul li.current-menu-ancestor > a,
+			ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover,
+			.head-bookmark a:hover,
+			.hover-menu a:hover,
+			.nav-links a:hover,
+			.poster-next:hover,
+			.poster-prev:hover,
+			.post-gallery-nav .slick-arrow.slick-prev:hover:before,
+			.post-gallery-nav .slick-arrow.slick-next:hover:before,
+			.single-cat-wrap .post-categories li a,
+			.mt-load-more:hover,
+			.mt-tabc:before,
+			.mt-subscribe-footer input.mt-s-b:hover { background: '. esc_attr($options['colors_default']) .'; }';
+	 }
+
+	 // Button Color
+	 if(!empty($options['colors_button'])){
+ 			$custom_styles .='
+			button,
+			input[type="submit"],
+			input[type="button"],
+			.head-bookmark a,
+			.mt-subscribe-footer input.mt-s-b { background:'. esc_attr($options['colors_button']) .'; }';
+ 	 }
+
+	 // Background Color
+	 $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
+	 if(!empty($style)){
+	 		$custom_styles .='.boxed-layout-on { background-color: '. esc_attr($default_color) .' }';
+	 }
+	 else if (!empty($options['background_color'])) {
+	 		$custom_styles .='.boxed-layout-on { background-color: '. esc_attr($options['background_color']) .'; }';
+	 }
+
+	 // Logo Margin
+	 if(!empty($options['logo_top'])){
+	 		$custom_styles .='.head-logo { padding-top: '. esc_attr($options['logo_top']) .'px }';
+	 }
+	 if(!empty($options['logo_bottom'])){
+	 		$custom_styles .='.head-logo { padding-bottom: '. esc_attr($options['logo_bottom']) .'px } ';
+	 }
+
+	 // Social Icon
+	 if(!empty($options['colors_social_hover'])){
+		 $custom_styles .='.socials a:after { background:'. esc_attr($options['colors_social_hover']) .'!important; }';
+	 }
+
+	 // Menu
+	 if(!empty($options['colors_menu'])){
+		 $custom_styles .='.menu-background { background:'. esc_attr($options['colors_menu_bg']) .'!important; }';
+	 }
+	 if(!empty($options['colors_menu_bg'])){
+		 $custom_styles .='.header-menu { background:'. esc_attr($options['colors_menu_bg']) .'!important; }';
+	 }
+	 if(!empty($options['colors_menu'])){
+		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['colors_menu']) .'!important; }';
+		 $custom_styles .='.mt-m-cool-button-line, .mt-m-cool-button-line:after, .mt-m-cool-button-line:before { background:'. esc_attr($options['colors_menu']) .'!important; }';
+	 }
+
+	 if(!empty($options['colors_menu_hover']) or !empty($options['colors_menu_hover_text'])){
+		 	$custom_styles .='.sf-menu li a:hover,
+		 	.sf-menu > li:hover > a,
+		 	.sf-menu li.sfHover,
+		 	ul.sf-menu li.current-cat > a, div.sf-menu ul ul li.current-cat > a,
+		 	ul.sf-menu li.current_page_item > a, div.sf-menu ul ul li.current_page_item > a,
+		 	ul.sf-menu li.current-menu-item > a, div.sf-menu ul ul li.current-menu-item > a,
+		 	ul.sf-menu li.current-menu-ancestor > a, div.sf-menu ul ul li.current-menu-ancestor > a,
+		 	.sf-menu li.current_page_item::before, .sf-menu li:hover::before {';
+		 		if(!empty($options['colors_menu_hover'])){ $custom_styles .='background: '. esc_attr($options['colors_menu']); }
+		 		if(!empty($options['colors_menu_hover_text'])){ $custom_styles .='color: '. esc_attr($options['colors_menu']); }
+		 $custom_styles .='}';
+		}
+
+
+	 if ( $custom_styles != '' ) {
+	  $css = preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $custom_styles);
+		wp_add_inline_style( 'boomnews', $css );
+	}
+
+}
+add_action( 'wp_enqueue_scripts', 'boomnews_css');
+
 function boomnews_header_script() {
 
-		wp_enqueue_style('boomnews-style', get_stylesheet_uri());
 
 		$option = get_option("boomnews_theme_options");
 
