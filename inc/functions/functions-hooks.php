@@ -76,10 +76,10 @@ function boomnews_css() {
 	 }
 	 if(!empty($options['colors_menu'])){
 		 $custom_styles .='.top-nav a,
-		 .top-nav, .nav-search-input input,
-		 .nav-search-input input::-webkit-input-placeholder,
-		 .nav-search-input input:-moz-placeholder,
-		 .nav-search-input input::-moz-placeholder,
+		 .top-nav, .nav-search-input input { color:'. esc_attr($options['colors_menu']) .'!important; }
+		 .nav-search-input input::-webkit-input-placeholder { color:'. esc_attr($options['colors_menu']) .'!important; }
+		 .nav-search-input input:-moz-placeholder { color:'. esc_attr($options['colors_menu']) .'!important; }
+		 .nav-search-input input::-moz-placeholder { color:'. esc_attr($options['colors_menu']) .'!important; }
 		 .nav-search-input input:-ms-input-placeholder { color:'. esc_attr($options['colors_menu']) .'!important; }';
 	 }
 
