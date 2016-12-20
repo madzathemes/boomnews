@@ -49,19 +49,7 @@ $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
 	background: <?php echo esc_attr($options['colors_menu_small_button']); ?>;
 }
 <?php } ?>
-<?php if(!empty($options['colors_menu_hover']) or !empty($options['colors_menu_hover_text'])){ ?>
-	.sf-menu li a:hover,
-	.sf-menu > li:hover > a,
-	.sf-menu li.sfHover,
-	ul.sf-menu li.current-cat > a, div.sf-menu ul ul li.current-cat > a,
-	ul.sf-menu li.current_page_item > a, div.sf-menu ul ul li.current_page_item > a,
-	ul.sf-menu li.current-menu-item > a, div.sf-menu ul ul li.current-menu-item > a,
-	ul.sf-menu li.current-menu-ancestor > a, div.sf-menu ul ul li.current-menu-ancestor > a,
-	.sf-menu li.current_page_item::before, .sf-menu li:hover::before {
-		<?php if(!empty($options['colors_menu_hover'])){ ?> background: <?php echo esc_attr($options['colors_menu_hover']); ?>;<?php } ?>
-		<?php if(!empty($options['colors_menu_hover_text'])){ ?> color: <?php echo esc_attr($options['colors_menu_hover_text']); ?>;<?php } ?>
-}
-<?php } ?>
+
 <?php if(!empty($options['colors_menu_sub_hover']) or !empty($options['colors_menu_sub_hover_background'])){ ?>
 	ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
 	ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
