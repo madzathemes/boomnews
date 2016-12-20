@@ -51,16 +51,7 @@ $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
 <?php } ?>
 
 
-<?php if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){ ?>
-.sf-menu ul li a {
-		<?php if(!empty($options['colors_menu_sub'])){ ?> color: <?php echo esc_attr($options['colors_menu_sub']); ?>;<?php } ?>
-		<?php if(!empty($options['colors_menu_sub_background'])){ ?> background: <?php echo esc_attr($options['colors_menu_sub_background']); ?>;<?php } ?>
-}
-.sf-menu ul li,
-.df-is-megamenu ul {
-	<?php if(!empty($options['colors_menu_sub_background'])){ ?> background: <?php echo esc_attr($options['colors_menu_sub_background']); ?>;<?php } ?>
-}
-<?php } ?>
+
 <?php if(!empty($options['colors_menu_sub_cat']) or !empty($options['colors_menu_sub_cat_bg'])){ ?>
 	<?php if(!empty($options['colors_menu_sub_cat'])){ ?>.megamenu-span h4 { color: <?php echo esc_attr($options['colors_menu_sub_cat']); ?> }<?php } ?>
 	<?php if(!empty($options['colors_menu_sub_cat_bg'])){ ?>.megamenu-span h4 { background: <?php echo esc_attr($options['colors_menu_sub_cat_bg']); ?> }<?php } ?>
