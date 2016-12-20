@@ -2,9 +2,9 @@
 $options = get_option("boomnews_theme_options");
 $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
 if(!empty($style)){ ?>
-	body { background-color: <?php echo esc_attr($style); ?> }
+	.boxed-layout-on { background-color: <?php echo esc_attr($style); ?> }
 <?php } else if (!empty($options['background_color'])) { ?>
-	body { background-color: <?php echo esc_attr($options['background_color']); ?>; }
+	.boxed-layout-on { background-color: <?php echo esc_attr($options['background_color']); ?>; }
 <?php } ?>
 
 <?php if(!empty($options['logo_top'])){ ?>
