@@ -1,5 +1,5 @@
 <?php
-function infowazz_css() {
+function boomnews_css() {
 
 	wp_enqueue_style('boomnews-style', get_stylesheet_uri());
 
