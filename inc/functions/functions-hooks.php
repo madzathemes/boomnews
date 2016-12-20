@@ -99,8 +99,8 @@ function boomnews_css() {
 
 		if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){
 			$custom_styles .='.sf-menu ul li a {';
-					if(!empty($options['colors_menu_sub'])){ $custom_styles .=' color: '. esc_attr($options['colors_menu_sub']).'!important'; }
-					if(!empty($options['colors_menu_sub_background'])){ $custom_styles .=' background: '. esc_attr($options['colors_menu_sub_background']).'!important'; }
+					if(!empty($options['colors_menu_sub'])){ $custom_styles .=' color: '. esc_attr($options['colors_menu_sub']).'!important;'; }
+					if(!empty($options['colors_menu_sub_background'])){ $custom_styles .=' background: '. esc_attr($options['colors_menu_sub_background']).'!important;'; }
 			$custom_styles .='}';
 				if(!empty($options['colors_menu_sub_background'])){ $custom_styles .=' .sf-menu ul li, .df-is-megamenu ul { background:'. esc_attr($options['colors_menu_sub_background']).'!important}'; }
 
