@@ -72,7 +72,7 @@ function boomnews_css() {
 
 	 // Menu
 	 if(!empty($options['colors_menu_bg'])){
-		 $custom_styles .='.menu-background, .menu-background-left, .menu-background-right { background-color:'. esc_attr($options['colors_menu_bg']) .'!important; }';
+		 $custom_styles .='.menu-background, .menu-background-left, .menu-background-right, .menu-background-mobile { background-color:'. esc_attr($options['colors_menu_bg']) .'!important; }';
 	 }
 	 if(!empty($options['colors_menu'])){
 		 $custom_styles .='.top-nav a,
