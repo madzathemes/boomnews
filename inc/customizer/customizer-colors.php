@@ -75,11 +75,28 @@ function boomnews_customize_colors($wp_customize){
     'panel'  => 'colors_settings'
   ));
 
+  Kirki::add_field( 'boomnews_theme_options[colors_header_bg]', array(
+    'type'        => 'color',
+    'settings'    => 'boomnews_theme_options[colors_header_bg]',
+    'label'       => esc_html__( 'Header Background', 'boomnews' ),
+    'section'     => 'colors_menu',
+    'option_type' => 'option',
+    'priority'    => 1,
+  ));
+
+  Kirki::add_field( 'boomnews_theme_options[colors_header_links]', array(
+    'type'        => 'color',
+    'settings'    => 'boomnews_theme_options[colors_header_links]',
+    'label'       => esc_html__( 'Header Links', 'boomnews' ),
+    'section'     => 'colors_menu',
+    'option_type' => 'option',
+    'priority'    => 1,
+  ));
 
   Kirki::add_field( 'boomnews_theme_options[colors_menu_bg]', array(
     'type'        => 'color',
     'settings'    => 'boomnews_theme_options[colors_menu_bg]',
-    'label'       => esc_html__( 'Background', 'boomnews' ),
+    'label'       => esc_html__( 'Menu Background', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 1,
