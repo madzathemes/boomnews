@@ -87,7 +87,7 @@ function boomnews_css() {
 		 	ul.sf-menu li.current-menu-item > a, div.sf-menu ul ul li.current-menu-item > a,
 		 	ul.sf-menu li.current-menu-ancestor > a, div.sf-menu ul ul li.current-menu-ancestor > a,
 		 	.sf-menu li.current_page_item::before, .sf-menu li:hover::before {';
-		 		if(!empty($options['colors_menu_hover_text'])){ $custom_styles .='color: '. esc_attr($options['colors_menu']); }
+		 		if(!empty($options['colors_menu_hover_text'])){ $custom_styles .='color: '. esc_attr($options['colors_menu_hover_text']); }
 		 $custom_styles .='}';
 		}
 		if(!empty($options['colors_menu_hover'])){
