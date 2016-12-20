@@ -72,11 +72,10 @@ function boomnews_css() {
 
 	 // Menu
 	 if(!empty($options['colors_menu_bg'])){
-		 $custom_styles .='.menu-background, .menu-background-left, .menu-background-right, .menu-background-mobile,.mt-header-mobile .nav-search-input input,.mt-header-mobile.search-on .nav-search-wrap:hover,.nav-search-input:before { background-color:'. esc_attr($options['colors_menu_bg']) .'!important; }';
+		 $custom_styles .='.menu-background, .menu-background-left, .menu-background-right, .menu-background-mobile,.mt-header-mobile .nav-search-input input,.mt-header-mobile.search-on .nav-search-wrap:hover { background-color:'. esc_attr($options['colors_menu_bg']) .'!important; }';
 	 }
 	 if(!empty($options['colors_menu'])){
-		 $custom_styles .='.top-nav a,
-		 .top-nav, .nav-search-input input { color:'. esc_attr($options['colors_menu']) .'!important; }
+		 $custom_styles .='.top-nav a, .top-nav, .nav-search-input input,.nav-search-input:before { color:'. esc_attr($options['colors_menu']) .'!important; }
 		 .nav-search-input input::-webkit-input-placeholder { color:'. esc_attr($options['colors_menu']) .'!important; }
 		 .nav-search-input input:-moz-placeholder { color:'. esc_attr($options['colors_menu']) .'!important; }
 		 .nav-search-input input::-moz-placeholder { color:'. esc_attr($options['colors_menu']) .'!important; }
