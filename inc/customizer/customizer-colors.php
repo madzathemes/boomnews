@@ -152,7 +152,7 @@ function boomnews_customize_colors($wp_customize){
   Kirki::add_field( 'boomnews_theme_options[colors_menu_small_button]', array(
     'type'        => 'color',
     'settings'    => 'boomnews_theme_options[colors_menu_small_button]',
-    'label'       => esc_html__( 'Small Menu Button Hover', 'boomnews' ),
+    'label'       => esc_html__( 'Mobile Menu Button Hover', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 20,
@@ -161,7 +161,7 @@ function boomnews_customize_colors($wp_customize){
   Kirki::add_field( 'boomnews_theme_options[colors_menu_small_button_background]', array(
     'type'        => 'color',
     'settings'    => 'boomnews_theme_options[colors_menu_small_button_background]',
-    'label'       => esc_html__( 'Small Menu Button Hover Background', 'boomnews' ),
+    'label'       => esc_html__( 'Mobile Menu Button Hover Background', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 20,
@@ -170,7 +170,7 @@ function boomnews_customize_colors($wp_customize){
   Kirki::add_field( 'boomnews_theme_options[colors_menu_small_background]', array(
     'type'        => 'color',
     'settings'    => 'boomnews_theme_options[colors_menu_small_background]',
-    'label'       => esc_html__( 'Small Menu Background', 'boomnews' ),
+    'label'       => esc_html__( 'Mobile Menu Background', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 21,
@@ -179,7 +179,7 @@ function boomnews_customize_colors($wp_customize){
   Kirki::add_field( 'boomnews_theme_options[colors_menu_small_link]', array(
     'type'        => 'color',
     'settings'    => 'boomnews_theme_options[colors_menu_small_link]',
-    'label'       => esc_html__( 'Small Menu Link', 'boomnews' ),
+    'label'       => esc_html__( 'Mobile Menu Link', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 22,
@@ -188,7 +188,7 @@ function boomnews_customize_colors($wp_customize){
   Kirki::add_field( 'boomnews_theme_options[colors_menu_small_link_hover]', array(
     'type'        => 'color',
     'settings'    => 'boomnews_theme_options[colors_menu_small_link_hover]',
-    'label'       => esc_html__( 'Small Menu Link Hover', 'boomnews' ),
+    'label'       => esc_html__( 'Mobile Menu Link Hover', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 23,
@@ -197,7 +197,7 @@ function boomnews_customize_colors($wp_customize){
   Kirki::add_field( 'boomnews_theme_options[colors_menu_small_text]', array(
     'type'        => 'color',
     'settings'    => 'boomnews_theme_options[colors_menu_small_text]',
-    'label'       => esc_html__( 'Small Menu Text', 'boomnews' ),
+    'label'       => esc_html__( 'Mobile Menu Text', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 24,
