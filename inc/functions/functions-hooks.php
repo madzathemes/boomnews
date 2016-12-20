@@ -75,7 +75,7 @@ function boomnews_css() {
 		 $custom_styles .='.menu-background, .menu-background-left, .menu-background-right { background-color:'. esc_attr($options['colors_menu_bg']) .'!important; }';
 	 }
 	 if(!empty($options['colors_menu'])){
-		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['colors_menu']) .'!important; }';
+		 $custom_styles .='.top-nav a, .top-nav, .nav-search-input input { color:'. esc_attr($options['colors_menu']) .'!important; }';
 	 }
 
 	 if(!empty($options['colors_menu_hover_text'])){

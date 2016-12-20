@@ -13,7 +13,15 @@
 	<div class="col-md-8">
 		<?php if ( have_posts() ) : ?>
 
-			<?php echo do_shortcode('[posts pagination=on type=normal-right ]');?>
+			<?php if ( shortcode_exists( 'posts' ) ) {
+
+				echo do_shortcode('[posts pagination=on type=normal-right ]');
+
+			} else {
+
+ 				get_template_part( 'content', get_post_format() );
+
+			}?>
 
 		<?php else : ?>
 						<div id="post-0" class="post no-results not-found">

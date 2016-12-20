@@ -45,10 +45,12 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
         <small class="color-silver-light"><?php the_date('M d, Y'); ?></small>
       </div>
     </div>
+    <?php if(class_exists('md_walker')) { ?>
     <div class="post-statistic pull-left">
       <?php if(!empty($shares)){ ?><span class="stat-shares color-silver-light"><strong><?php echo esc_attr($shares); ?></strong> <?php echo esc_html__('Shares', 'boomnews'); ?></span><?php } ?>
       <?php if(!empty($viewes)){ ?><span class="stat-views"><strong><?php if(function_exists('magazin_PostViews')){   echo esc_attr($viewes) + magazin_PostViews(get_the_ID()); } ?></strong> <?php echo esc_html__('Views', 'boomnews'); ?></span><?php } ?>
     </div>
+    <?php } ?>
 
     <div class="clearfix"></div>
     <?php if($share_top=="" or $share_top == "yes"){ ?>
