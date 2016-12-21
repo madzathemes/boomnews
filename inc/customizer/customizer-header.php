@@ -559,6 +559,7 @@ function boomnews_customize_header($wp_customize){
   	),
     ));
 
+
 		// Latest Posts
 		$wp_customize->add_setting('boomnews_theme_options[url_latest]', array(
 			'capability' => 'edit_theme_options',
