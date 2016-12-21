@@ -384,6 +384,15 @@ function boomnews_customize_colors($wp_customize){
     'priority'    => 1,
   ));
 
+  Kirki::add_field( 'boomnews_theme_options[colors_post_cat_bg]', array(
+    'type'        => 'color',
+    'settings'    => 'boomnews_theme_options[colors_post_cat_bg',
+    'label'       => esc_html__( 'Post Category Background', 'boomnews' ),
+    'section'     => 'colors_other',
+    'option_type' => 'option',
+    'priority'    => 1,
+  ));
+
 
 
 

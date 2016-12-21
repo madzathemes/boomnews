@@ -138,6 +138,9 @@ function boomnews_css() {
 		if(!empty($options['colors_post_share_icons'])){
 			$custom_styles .='.post-statistic .stat-views:before, .post-statistic .stat-shares:before { color:'. esc_attr($options['colors_post_share_icons']) .'!important; }';
 		}
+		if(!empty($options['colors_post_cat_bg'])){
+			$custom_styles .='.poster-large-cat span, .size-350 .poster-info { background:'. esc_attr($options['colors_post_cat_bg']) .'!important; }';
+		}
 
 
 
