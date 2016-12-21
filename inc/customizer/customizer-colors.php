@@ -68,7 +68,6 @@ function boomnews_customize_colors($wp_customize){
 
 
 
-
   // MENU COLORS //
   $wp_customize->add_section('colors_menu', array(
     'title'    	=> esc_html__('Menu Colors', 'boomnews'),
@@ -361,6 +360,29 @@ function boomnews_customize_colors($wp_customize){
       'settings' => 'boomnews_theme_options[colors_footer_social_background_hover]',
   )));
 
+  // MENU COLORS //
+  $wp_customize->add_section('colors_other', array(
+    'title'    	=> esc_html__('Other Colors', 'boomnews'),
+    'panel'  => 'colors_settings'
+  ));
+
+  Kirki::add_field( 'boomnews_theme_options[colors_post_share]', array(
+    'type'        => 'color',
+    'settings'    => 'boomnews_theme_options[colors_post_share]',
+    'label'       => esc_html__( 'Post Share & View Count', 'boomnews' ),
+    'section'     => 'colors_other',
+    'option_type' => 'option',
+    'priority'    => 1,
+  ));
+
+  Kirki::add_field( 'boomnews_theme_options[colors_post_share_icons]', array(
+    'type'        => 'color',
+    'settings'    => 'boomnews_theme_options[colors_post_share_icons]',
+    'label'       => esc_html__( 'Post Share & View Count Icons', 'boomnews' ),
+    'section'     => 'colors_other',
+    'option_type' => 'option',
+    'priority'    => 1,
+  ));
 
 
 
