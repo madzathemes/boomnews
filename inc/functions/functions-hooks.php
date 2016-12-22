@@ -79,9 +79,9 @@ function boomnews_css() {
 		 $custom_styles .='.header-wrap .head-nav a, .mt_l_latest:before, .header-wrap .mt_l_trending:before, .header-wrap .mt_l_hot:before, .header-wrap .mt_l_popular:before, .header-wrap .mt_l_latest:before { color:'. esc_attr($options_in['link']) .'!important; }';
 		 $custom_styles .='.header-wrap .head-nav a::after { background-color:'. esc_attr($options_in['link']) .'!important; }';
 	 }
-	 if(!empty($options_in['hover'])){
-		 $custom_styles .='.header-wrap .head-nav a:hover, .mt_l_latest:before:hover, .header-wrap .mt_l_trending:before:hover, .header-wrap .mt_l_hot:before:hover, .header-wrap .mt_l_popular:before:hover, .header-wrap .mt_l_latest:before:hover { color:'. esc_attr($options_in['hover']) .'!important; }';
-		 $custom_styles .='.header-wrap .head-nav a::after:hover { background-color:'. esc_attr($options_in['hover']) .'!important; }';
+	 if(!empty($options_in['hoverr'])){
+		 $custom_styles .='.header-wrap .head-nav a.active, .header-wrap .head-nav a:hover, .mt_l_latest:before:hover, .header-wrap .mt_l_trending:before:hover, .header-wrap .mt_l_hot:before:hover, .header-wrap .mt_l_popular:before:hover, .header-wrap .mt_l_latest:before:hover { color:'. esc_attr($options_in['hoverr']) .'!important; }';
+		 $custom_styles .='.header-wrap .head-nav a::after:hover { background-color:'. esc_attr($options_in['hoverr']) .'!important; }';
 	 }
 
 
