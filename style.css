@@ -5032,7 +5032,9 @@ li.mtc-buy {
 .remove-pl-author .mt-pl-a,
 .remove-pl-author .mt-ml,
 .remove-pl-date .mt-pl-d,
-.remove-pl-date .mt-ml { display:none!important; }
+.remove-pl-date .mt-ml,
+.remove-ps-author,
+.remove-ps-author-img .author-img { display:none!important; }
 
 .remove-pl-author.remove-pl-date .poster p {
   padding-top: 0px;
