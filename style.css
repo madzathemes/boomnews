@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*-----------------------------------------------------------------------------------
-  	Version: 1.4
+  	Version: 2.0
     Theme Name: BoomNews
     Theme URI: https://boomnews.magazine-themes.net/
     Description: Magazine / Blog
@@ -5026,4 +5026,14 @@ li.mtc-buy {
 }
 .mt-load-more.nomore .off {
   display: block;
+}
+
+/* Remove Class */
+.remove-pl-author .mt-pl-a,
+.remove-pl-author .mt-ml,
+.remove-pl-date .mt-pl-d,
+.remove-pl-date .mt-ml { display:none!important; }
+
+.remove-pl-author.remove-pl-date .poster p {
+  padding-top: 0px;
 }
