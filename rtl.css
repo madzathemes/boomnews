@@ -5023,7 +5023,7 @@ li.mtc-buy {
 }
 
 .remove-ps-author-img .author-info,
-.remove-ps-author .author-info { padding-left: 40px; padding-right: 0px; }
+.remove-ps-author .author-info { margin-left: 40px; margin-right: 0px; padding-right: 0px; }
 
 .remove-pl-author.remove-pl-date .poster p {
   padding-top: 0px;
