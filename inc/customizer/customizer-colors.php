@@ -84,40 +84,128 @@ function boomnews_customize_colors($wp_customize){
     'choices'     => array(
         'background'    => esc_attr__( 'Background', 'boomnews' ),
         'link'   => esc_attr__( 'Link', 'boomnews' ),
-        'hoverr'  => esc_attr__( 'Hover', 'boomnews' ),
+        'hover'  => esc_attr__( 'Hover', 'boomnews' ),
     ),
     'default'     => array(
         'background'    => '',
         'link'    => '',
-        'hoverr'    => ''
+        'hover'    => ''
     ),
-) );
-
-  Kirki::add_field( 'boomnews_theme_options[colors_header_bg]', array(
-    'type'        => 'color',
-    'settings'    => 'boomnews_theme_options[colors_header_bg]',
-    'label'       => esc_html__( 'Header Background', 'boomnews' ),
-    'section'     => 'colors_menu',
-    'option_type' => 'option',
-    'priority'    => 1,
   ));
 
-  Kirki::add_field( 'boomnews_theme_options[colors_header_links]', array(
-    'type'        => 'color',
-    'settings'    => 'boomnews_theme_options[colors_header_links]',
-    'label'       => esc_html__( 'Header Links', 'boomnews' ),
+  Kirki::add_field( 'mt_colors_header_icons', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_header_icons',
+    'label'       => esc_attr__( 'Header Icons', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 1,
+    'choices'     => array(
+        'latest'    => esc_attr__( 'Latest', 'boomnews' ),
+        'popular'   => esc_attr__( 'Popular', 'boomnews' ),
+        'hot'  => esc_attr__( 'Hot', 'boomnews' ),
+        'trending'  => esc_attr__( 'Trending', 'boomnews' ),
+    ),
+    'default'     => array(
+        'latest'    => '',
+        'popular'    => '',
+        'hot'    => '',
+        'trending'    => '',
+    ),
   ));
 
-  Kirki::add_field( 'boomnews_theme_options[colors_menu_bg]', array(
-    'type'        => 'color',
-    'settings'    => 'boomnews_theme_options[colors_menu_bg]',
-    'label'       => esc_html__( 'Menu Background', 'boomnews' ),
+  Kirki::add_field( 'mt_colors_header_button', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_header_button',
+    'label'       => esc_attr__( 'Header Button', 'boomnews' ),
     'section'     => 'colors_menu',
     'option_type' => 'option',
     'priority'    => 1,
+    'choices'     => array(
+        'text'    => esc_attr__( 'Text', 'boomnews' ),
+        'text_hover'   => esc_attr__( 'Hover', 'boomnews' ),
+        'background'  => esc_attr__( 'Background', 'boomnews' ),
+        'background_hover'  => esc_attr__( 'Hover', 'boomnews' ),
+    ),
+    'default'     => array(
+        'text'    => '',
+        'text_hover'    => '',
+        'background'    => '',
+        'background_hover'    => '',
+    ),
+  ));
+
+  Kirki::add_field( 'mt_colors_menu_bg', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_menu_bg',
+    'label'       => esc_attr__( 'Menu Background', 'boomnews' ),
+    'section'     => 'colors_menu',
+    'option_type' => 'option',
+    'priority'    => 1,
+    'choices'     => array(
+        'in'    => esc_attr__( 'In', 'boomnews' ),
+        'out'   => esc_attr__( 'Out', 'boomnews' ),
+    ),
+    'default'     => array(
+        'in'    => '',
+        'out'    => '',
+    ),
+  ));
+  Kirki::add_field( 'mt_colors_menu_button', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_menu_button',
+    'label'       => esc_attr__( 'Menu Smart Button', 'boomnews' ),
+    'section'     => 'colors_menu',
+    'option_type' => 'option',
+    'priority'    => 1,
+    'choices'     => array(
+        'text'    => esc_attr__( 'Lines', 'boomnews' ),
+        'text_hover'   => esc_attr__( 'Hover', 'boomnews' ),
+        'background'  => esc_attr__( 'Background', 'boomnews' ),
+        'background_hover'  => esc_attr__( 'Hover', 'boomnews' ),
+    ),
+    'default'     => array(
+        'text'    => '',
+        'text_hover'    => '',
+        'background'    => '',
+        'background_hover'    => '',
+    ),
+  ));
+  Kirki::add_field( 'mt_colors_menu_search', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_menu_search',
+    'label'       => esc_attr__( 'Menu Search', 'boomnews' ),
+    'section'     => 'colors_menu',
+    'option_type' => 'option',
+    'priority'    => 1,
+    'choices'     => array(
+        'text'    => esc_attr__( 'Text', 'boomnews' ),
+        'text_hover'   => esc_attr__( 'Hover', 'boomnews' ),
+        'background'  => esc_attr__( 'Background', 'boomnews' ),
+        'background_hover'  => esc_attr__( 'Hover', 'boomnews' ),
+    ),
+    'default'     => array(
+        'text'    => '',
+        'text_hover'    => '',
+        'background'    => '',
+        'background_hover'    => '',
+    ),
+  ));
+  Kirki::add_field( 'mt_colors_menu_icon', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_menu_icon',
+    'label'       => esc_attr__( 'Menu Social Icons', 'boomnews' ),
+    'section'     => 'colors_menu',
+    'option_type' => 'option',
+    'priority'    => 1,
+    'choices'     => array(
+        'text'    => esc_attr__( 'Icon', 'boomnews' ),
+        'hover'   => esc_attr__( 'Hover', 'boomnews' ),
+    ),
+    'default'     => array(
+        'text'    => '',
+        'hover'    => '',
+    ),
   ));
 
   Kirki::add_field( 'boomnews_theme_options[colors_menu]', array(

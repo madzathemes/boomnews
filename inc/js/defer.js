@@ -88,6 +88,10 @@ jQuery(document).ready(function() {
     jQuery('.header-menu, .mt-header-mobile').removeClass("active");
   });
 
+  jQuery('.nav-search-wrap, .search-close').hover(
+    function(){jQuery(this).toggleClass('hover');}
+  );
+
   jQuery(".mt-tabc").on("click", function() {
     var tab = jQuery(this).data( "tab" );
     jQuery(".mt-tab,.mt-tabc").removeClass("active");
