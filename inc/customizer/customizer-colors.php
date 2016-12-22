@@ -84,12 +84,12 @@ function boomnews_customize_colors($wp_customize){
     'choices'     => array(
         'background'    => esc_attr__( 'Background', 'boomnews' ),
         'link'   => esc_attr__( 'Link', 'boomnews' ),
-        'hover'  => esc_attr__( 'Hover', 'boomnews' ),
+        'hoverr'  => esc_attr__( 'Hover', 'boomnews' ),
     ),
     'default'     => array(
         'background'    => '',
         'link'    => '',
-        'hover'    => ''
+        'hoverr'    => ''
     ),
 ) );
 
