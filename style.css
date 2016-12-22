@@ -5033,8 +5033,30 @@ li.mtc-buy {
 .remove-pl-author .mt-ml,
 .remove-pl-date .mt-pl-d,
 .remove-pl-date .mt-ml,
-.remove-ps-author,
-.remove-ps-author-img .author-img { display:none!important; }
+.remove-ps-author .author-info strong,
+.remove-ps-author .author-img,
+.remove-ps-author-img .author-img,
+.remove-ps-date .author-info small,
+.remove-pl-cat .poster-info,
+.remove-pl-cat .poster-cat,
+.remove-pl-cat .poster-large-cat,
+.remove-ps-view .stat-views,
+.remove-ps-share .stat-shares { display:none!important; }
+
+.remove-ps-date .author-info strong{
+  padding-top: 10px;
+}
+.remove-ps-author .author-info small{
+  display: inline-block;
+  padding-top: 14px;
+}
+.remove-ps-date .author-info,
+.remove-ps-author .author-info {
+  padding-right: 30px;
+}
+
+.remove-ps-author-img .author-info,
+.remove-ps-author .author-info { margin-left: 0px; }
 
 .remove-pl-author.remove-pl-date .poster p {
   padding-top: 0px;
