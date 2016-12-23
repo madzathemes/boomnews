@@ -100,12 +100,12 @@ function boomnews_css() {
 	 // Menu Links
 	 $options_in = get_option("mt_colors_menu_link");
 	 if(!empty($options_in['text'])){
-		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['text']) .'!important; }';
+		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options_in['text']) .'!important; }';
 	 } else if(!empty($options['colors_menu'])){
 		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['colors_menu']) .'!important; }';
 	 }
 
-	 if(!empty($options_in['hover'])){
+	 if(!empty($options_in['text_hover'])){
 		 $custom_styles .='.sf-menu li a:hover,
 		 .sf-menu > li:hover > a,
 		 .sf-menu li.sfHover,
@@ -113,7 +113,7 @@ function boomnews_css() {
 		 ul.sf-menu li.current_page_item > a, div.sf-menu ul ul li.current_page_item > a,
 		 ul.sf-menu li.current-menu-item > a, div.sf-menu ul ul li.current-menu-item > a,
 		 ul.sf-menu li.current-menu-ancestor > a, div.sf-menu ul ul li.current-menu-ancestor > a,
-		 .sf-menu li.current_page_item::before, .sf-menu li:hover::before { color: '. esc_attr($options['text']) .'!important}';
+		 .sf-menu li.current_page_item::before, .sf-menu li:hover::before { color: '. esc_attr($options_in['text_hover']) .'!important}';
 	 } else if(!empty($options['colors_menu_hover_text'])){
 		 	$custom_styles .='.sf-menu li a:hover,
 		 	.sf-menu > li:hover > a,
@@ -125,7 +125,7 @@ function boomnews_css() {
 		 	.sf-menu li.current_page_item::before, .sf-menu li:hover::before { color: '. esc_attr($options['colors_menu_hover_text']) .'!important}';
 		}
 		 if(!empty($options_in['text'])){
-			 $custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['border']) .'!important}';
+			 $custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options_in['border']) .'!important}';
 		 } else if(!empty($options['colors_menu_hover'])){
  		 	$custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['colors_menu_hover']) .'!important}';
 		}
@@ -134,10 +134,10 @@ function boomnews_css() {
 		$options_in = get_option("mt_colors_menu_link_sub");
 		if(!empty($options_in)){
 			 if(!empty($options_in['text'])){
-				 $custom_styles .='.sf-menu ul li a { color:'. esc_attr($options['text']) .'!important; }';
-				 $custom_styles .='.megamenu-span h4 { color:'. esc_attr($options['text']) .'!important; }';
+				 $custom_styles .='.sf-menu ul li a { color:'. esc_attr($options_in['text']) .'!important; }';
+				 $custom_styles .='.megamenu-span h4 { color:'. esc_attr($options_in['text']) .'!important; }';
 			 }
-			 if(!empty($options_in['background'])){ $custom_styles .='.sf-menu ul li a { background-color:'. esc_attr($options['background']) .'!important; }'; }
+			 if(!empty($options_in['background'])){ $custom_styles .='.sf-menu ul li a { background-color:'. esc_attr($options_in['background']) .'!important; }'; }
 		 } else if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){
 			$custom_styles .='.sf-menu ul li a {';
 					if(!empty($options['colors_menu_sub'])){ $custom_styles .=' color: '. esc_attr($options['colors_menu_sub']).'!important;'; }

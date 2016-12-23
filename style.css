@@ -1872,6 +1872,10 @@ h2.heading span {
 .poster.size-350.normal .poster-image {
   width: 430px;
 }
+.poster.size-350.normal .poster-image .mt-post-image {
+  width: 430px;
+  height: 240px;
+}
 .poster-small .poster-image {
   width: 100px;
   height: 66px;
