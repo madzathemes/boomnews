@@ -72,6 +72,11 @@ function boomnews_css() {
 		 $custom_styles .='.header-wrap .head-nav a.active::after, .header-wrap .head-nav a:hover::after { background-color:'. esc_attr($options_in['hover']) .'!important; }';
 	 }
 
+	 $options_in = get_option("mt_colors_header_fixed");
+	 if(!empty($options_in['background'])){ $custom_styles .='.fixed-top-menu { background-color:'. esc_attr($options_in['background']) .'!important; }'; }
+	 if(!empty($options_in['link'])){ $custom_styles .='.fixed-top-menu ul li a { color:'. esc_attr($options_in['link']) .'!important; }'; }
+	 if(!empty($options_in['hover'])){ $custom_styles .='.fixed-top-menu ul li a:hover { color:'. esc_attr($options_in['hover']) .'!important; }'; }
+
 	 $options_in = get_option("mt_colors_header_icons");
 	 if(!empty($options_in['latest'])){ $custom_styles .='.mt_l_latest:before { color:'. esc_attr($options_in['latest']) .'!important; }'; }
 	 if(!empty($options_in['popular'])){ $custom_styles .='.mt_l_popular:before { color:'. esc_attr($options_in['popular']) .'!important; }'; }
@@ -92,11 +97,24 @@ function boomnews_css() {
 	 if(!empty($options_in['in'])){ $custom_styles .='.menu-background, .menu-background-left, .menu-background-right, .menu-background-mobile,.mt-header-mobile .nav-search-input input,.mt-header-mobile.search-on .nav-search-wrap:hover { background-color:'. esc_attr($options_in['in']) .'!important; }'; }
 	 if(!empty($options_in['out'])){ $custom_styles .='.header-menu { background-color:'. esc_attr($options_in['out']) .'!important; }'; }
 
-	 if(!empty($options['colors_menu'])){
+	 // Menu Links
+	 $options_in = get_option("mt_colors_menu_link");
+	 if(!empty($options_in['text'])){
+		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['text']) .'!important; }';
+	 } else if(!empty($options['colors_menu'])){
 		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['colors_menu']) .'!important; }';
 	 }
 
-	 if(!empty($options['colors_menu_hover_text'])){
+	 if(!empty($options_in['hover'])){
+		 $custom_styles .='.sf-menu li a:hover,
+		 .sf-menu > li:hover > a,
+		 .sf-menu li.sfHover,
+		 ul.sf-menu li.current-cat > a, div.sf-menu ul ul li.current-cat > a,
+		 ul.sf-menu li.current_page_item > a, div.sf-menu ul ul li.current_page_item > a,
+		 ul.sf-menu li.current-menu-item > a, div.sf-menu ul ul li.current-menu-item > a,
+		 ul.sf-menu li.current-menu-ancestor > a, div.sf-menu ul ul li.current-menu-ancestor > a,
+		 .sf-menu li.current_page_item::before, .sf-menu li:hover::before { color: '. esc_attr($options['text']) .'!important}';
+	 } else if(!empty($options['colors_menu_hover_text'])){
 		 	$custom_styles .='.sf-menu li a:hover,
 		 	.sf-menu > li:hover > a,
 		 	.sf-menu li.sfHover,
@@ -106,12 +124,21 @@ function boomnews_css() {
 		 	ul.sf-menu li.current-menu-ancestor > a, div.sf-menu ul ul li.current-menu-ancestor > a,
 		 	.sf-menu li.current_page_item::before, .sf-menu li:hover::before { color: '. esc_attr($options['colors_menu_hover_text']) .'!important}';
 		}
-
-		if(!empty($options['colors_menu_hover'])){
+		 if(!empty($options_in['text'])){
+			 $custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['border']) .'!important}';
+		 } else if(!empty($options['colors_menu_hover'])){
  		 	$custom_styles .='.sf-menu > li.current_page_item > a::before, .sf-menu > li > a::before { background: '. esc_attr($options['colors_menu_hover']) .'!important}';
 		}
 
-		if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){
+		// Menu Links Sub
+		$options_in = get_option("mt_colors_menu_link_sub");
+		if(!empty($options_in)){
+			 if(!empty($options_in['text'])){
+				 $custom_styles .='.sf-menu ul li a { color:'. esc_attr($options['text']) .'!important; }';
+				 $custom_styles .='.megamenu-span h4 { color:'. esc_attr($options['text']) .'!important; }';
+			 }
+			 if(!empty($options_in['background'])){ $custom_styles .='.sf-menu ul li a { background-color:'. esc_attr($options['background']) .'!important; }'; }
+		 } else if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){
 			$custom_styles .='.sf-menu ul li a {';
 					if(!empty($options['colors_menu_sub'])){ $custom_styles .=' color: '. esc_attr($options['colors_menu_sub']).'!important;'; }
 					if(!empty($options['colors_menu_sub_background'])){ $custom_styles .=' background: '. esc_attr($options['colors_menu_sub_background']).'!important;'; }
@@ -119,7 +146,17 @@ function boomnews_css() {
 				if(!empty($options['colors_menu_sub_background'])){ $custom_styles .=' .sf-menu ul li, .df-is-megamenu ul { background:'. esc_attr($options['colors_menu_sub_background']).'!important}'; }
 		}
 
-		if(!empty($options['colors_menu_sub_hover']) or !empty($options['colors_menu_sub_hover_background'])){
+		if(!empty($options_in)){
+			 if(!empty($options_in['text_hover']) and !empty($options_in['background_hover'])){
+				 $custom_styles .='ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
+	 			ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
+	 			ul.sf-menu ul li.current_page_item > a, div.sf-menu ul ul ul li.current_page_item > a,
+	 			ul.sf-menu ul li.current-menu-ancestor > a, div.sf-menu ul ul ul li.current-menu-ancestor > a,
+	 			ul.sf-menu ul li a:hover, div.sf-menu ul ul li a:hover { ';
+					 if(!empty($options_in['background_hover'])){ $custom_styles .='background:'. esc_attr($options_in['background_hover']) .'!important;'; }
+					 if(!empty($options_in['text_hover'])){ $custom_styles .='color:'. esc_attr($options_in['text_hover']) .'!important;'; }
+				$custom_styles .='}';
+	 	} else if(!empty($options['colors_menu_sub_hover']) or !empty($options['colors_menu_sub_hover_background'])){
 			$custom_styles .='ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
 			ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
 			ul.sf-menu ul li.current_page_item > a, div.sf-menu ul ul ul li.current_page_item > a,
@@ -191,6 +228,43 @@ function boomnews_css() {
 		 if(!empty($options_in['hover'])){
  	 		 $custom_styles .='.top-nav .social a:hover { color:'. esc_attr($options_in['hover']) .'!important; }';
  	 	 }
+
+		 $options_in = get_option("mt_colors_header_mobile");
+	 	 if(!empty($options_in['background'])){
+	 		 $custom_styles .='.mt-header-mobile, .nav-search-wrap, .nav-search-wrap:hover, .nav-mobile, .nav-mobile:hover, .mt-header-mobile .nav-search-input input { background-color:'. esc_attr($options_in['background']) .'!important; }';
+	 	 }
+	 	 if(!empty($options_in['link'])){
+	 		 $custom_styles .='.nav-search::after, .mt-header-mobile .nav-search-input:before, .search-close:before, .nav-search-input input,.nav-search-wrap:hover .nav-search::after, .nav-search-wrap:hover .mt-header-mobile .nav-search-input:before, .search-close.hover:before, .nav-search-wrap:hover .nav-search-input input{ color:'. esc_attr($options_in['link']) .'!important; }';
+			 $custom_styles .='.mt-header-mobile .mt-m-cool-button-line:after, .mt-header-mobile .mt-m-cool-button-line:before, .mt-header-mobile .mt-m-cool-button-line{ background-color:'. esc_attr($options_in['link']) .'!important; }';
+
+			 $custom_styles .='
+			 .nav-search-input input,.nav-search-input:before { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input input::-webkit-input-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input input:-moz-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input input::-moz-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input input:-ms-input-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input:hover input,.nav-search-input:before { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input:hover input::-webkit-input-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input:hover input:-moz-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input:hover input::-moz-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
+			 .nav-search-input:hover input:-ms-input-placeholder { color:'. esc_attr($options_in['link']) .'!important; }';
+
+	 	 }
+
+		 $options_in = get_option("mt_colors_menu_smart");
+		 if(!empty($options_in['background'])){
+ 	 		 $custom_styles .='.mt-smart-menu { background-color:'. esc_attr($options_in['background']) .'!important; }';
+ 	 	 }
+ 	 	 if(!empty($options_in['link'])){
+ 	 		 $custom_styles .='.mt-smart-menu a, .mt-smart-menu .close:before, .mt-smart-menu .menu-item-has-children:after { color:'. esc_attr($options_in['link']) .'!important; }';
+ 	 	 }
+		 if(!empty($options_in['hover'])){
+ 	 		 $custom_styles .='.mt-smart-menu a:hover, .mt-smart-menu .close:hover:before { color:'. esc_attr($options_in['hover']) .'!important; }';
+ 	 	 }
+		 if(!empty($options_in['out'])){
+ 	 		 $custom_styles .='.mobile-menu-active  .mt-smart-menu-out { background-color:'. esc_attr($options_in['out']) .'!important; }';
+ 	 	 }
+
 
 		// Other
 		if(!empty($options['colors_post_share'])){
