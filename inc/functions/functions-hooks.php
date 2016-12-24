@@ -148,7 +148,7 @@ function boomnews_css() {
 		}
 
 		if(!empty($options_in)){
-			 if(!empty($options_in['text_hover']) and !empty($options_in['background_hover'])){
+			 if(!empty($options_in['text_hover']) and !empty($options_in['background_hover'])){if($options_in['text_hover']!='#000001'){
 				 $custom_styles .='ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
 	 			ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,
 	 			ul.sf-menu ul li.current_page_item > a, div.sf-menu ul ul ul li.current_page_item > a,
@@ -157,7 +157,7 @@ function boomnews_css() {
 					 if(!empty($options_in['background_hover'])){ $custom_styles .='background:'. esc_attr($options_in['background_hover']) .'!important;'; }
 					 if(!empty($options_in['text_hover'])){ $custom_styles .='color:'. esc_attr($options_in['text_hover']) .'!important;'; }
 				$custom_styles .='}';
-			}
+			}}
 	 	} else if(!empty($options['colors_menu_sub_hover']) or !empty($options['colors_menu_sub_hover_background'])){
 			$custom_styles .='ul.sf-menu ul li.current-cat > a, div.sf-menu ul ul ul li.current-cat > a,
 			ul.sf-menu ul li.current-menu-item > a, div.sf-menu ul ul ul li.current-menu-item > a,

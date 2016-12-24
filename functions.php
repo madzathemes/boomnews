@@ -81,12 +81,29 @@ if ( ! isset( $content_width ) ) {
 function boomnews_import_files() {
     return array(
         array(
-            'import_file_name'             => esc_html__( 'Demo 1', 'boomnews' ),
+            'import_file_name'             => esc_html__( 'BoomNews', 'boomnews' ),
             'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/import/demo1/demo.xml',
             'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/import/demo1/widgets.json',
             'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo1/customizer.dat',
             'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'boomnews' ),
-        )
+        ),
+				array(
+            'import_file_name'             => esc_html__( 'BoomNews - Only Style', 'boomnews' ),
+            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo1/customizer.dat',
+            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'boomnews' ),
+        ),
+				array(
+            'import_file_name'             => esc_html__( 'BoomCraft Demo', 'boomnews' ),
+            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/import/demo2/demo.xml',
+            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/import/demo2/widgets.json',
+            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo2/customizer.dat',
+            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'boomnews' ),
+        ),
+				array(
+            'import_file_name'             => esc_html__( 'BoomCraft Demo - Only Style', 'boomnews' ),
+            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/import/demo2/customizer.dat',
+            'import_notice'                => esc_html__( 'Customize this theme from Appearance/Customize', 'boomnews' ),
+        ),
     );
 }
 add_filter( 'pt-ocdi/import_files', 'boomnews_import_files' );
