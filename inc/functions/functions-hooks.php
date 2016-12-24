@@ -174,23 +174,23 @@ function boomnews_css() {
 		}
 
 		$options_in = get_option("mt_colors_menu_button");
-	 	 if(!empty($options_in['background'])){
+	 	 if(!empty($options_in['background'])){if($options_in['background']!='#fffff1'){
 	 		 $custom_styles .='.nav-button{ background-color:'. esc_attr($options_in['background']) .'!important; }';
-	 	 }
-	 	 if(!empty($options_in['text'])){
+	 	 }}
+	 	 if(!empty($options_in['text'])){if($options_in['text']!='#fffff1'){
 	 		 $custom_styles .='.mt-m-cool-button-line:after, .mt-m-cool-button-line:before, .mt-m-cool-button-line{ background-color:'. esc_attr($options_in['text']) .'!important; }';
-	 	 }
-	 	 if(!empty($options_in['background_hover'])){
+	 	 }}
+	 	 if(!empty($options_in['background_hover'])){if($options_in['background_hover']!='#fffff1'){
 	 		 $custom_styles .='.nav-button:hover{ background-color:'. esc_attr($options_in['background_hover']) .'!important; }';
-	 	 }
-	 	 if(!empty($options_in['text_hover'])){
+	 	 }}
+	 	 if(!empty($options_in['text_hover'])){if($options_in['text_hover']!='#fffff1'){
 	 		 $custom_styles .='.nav-button:hover .mt-m-cool-button-line:after, .nav-button:hover .mt-m-cool-button-line:before, .nav-button:hover .mt-m-cool-button-line{ background-color:'. esc_attr($options_in['text_hover']) .'!important; }';
-	 	 }
+	 	 }}
 
 	 	 $options_in = get_option("mt_colors_menu_search");
-	 	 if(!empty($options_in['background'])){
+	 	 if(!empty($options_in['background'])){if($options_in['background']!='#fffff1'){
 	 		 $custom_styles .='.nav-search-wrap{ background-color:'. esc_attr($options_in['background']) .'!important; }';
-	 	 }
+	 	 }}
 	 	 if(!empty($options_in['text'])){if($options_in['text']!='#fffff1'){
 	 		 $custom_styles .='.nav-search::after, .mt-header-mobile .nav-search-input:before, .search-close:before, .nav-search-input input{ color:'. esc_attr($options_in['text']) .'!important; }';
 			 $custom_styles .='
@@ -200,9 +200,9 @@ function boomnews_css() {
 			 .nav-search-input input::-moz-placeholder { color:'. esc_attr($options_in['text']) .'!important; }
 			 .nav-search-input input:-ms-input-placeholder { color:'. esc_attr($options_in['text']) .'!important; }';
 	 	 }}
-	 	 if(!empty($options_in['background_hover'])){
+	 	 if(!empty($options_in['background_hover'])){if($options_in['background_hover']!='#fffff1'){
 	 		 $custom_styles .='.nav-search-wrap:hover { background-color:'. esc_attr($options_in['background_hover']) .'!important; }';
-	 	 }
+	 	 }}
 	 	 if(!empty($options_in['text_hover'])){if($options_in['text_hover']!='#fffff1'){
 	 		 $custom_styles .='.nav-search-wrap:hover .nav-search::after, .nav-search-wrap:hover .mt-header-mobile .nav-search-input:before, .search-close.hover:before, .nav-search-wrap:hover .nav-search-input input{ color:'. esc_attr($options_in['text_hover']) .'!important; }';
 			 $custom_styles .='
