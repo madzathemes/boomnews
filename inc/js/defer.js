@@ -91,9 +91,11 @@ jQuery(document).ready(function() {
   jQuery('.nav-search-wrap, .search-close').hover(
     function(){jQuery(this).toggleClass('hover');}
   );
-  jQuery('.mtc,.mtc-d').hover(
-    function(){jQuery('.mtc-d').toggleClass('active');}
+  jQuery('.mtc,.mtc-d').addClass("loaded");
+  jQuery('.mtc.loaded,.mtc-d.loaded').mouseover(
+    function(){jQuery('.mtc-d.loaded').toggleClass('active');}
   );
+
 
   jQuery(".mt-tabc").on("click", function() {
     var tab = jQuery(this).data( "tab" );
