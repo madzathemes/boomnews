@@ -232,7 +232,8 @@ input,
 .mt-header-container,
  .menu-item-has-children:after,
 .container,
-.sf-menu ul{
+.sf-menu ul,
+.mtc-d{
   -webkit-transition: all 400ms ease-out!important;
   -moz-transition: all 400ms ease-out!important;
   -ms-transition: all 400ms ease-out!important;
@@ -4843,6 +4844,7 @@ li.mtc-buy {
 }
 .mtc-buy a:hover {
   background: #6f9a37;
+  color: white;
 }
 .mtc-close {
   padding-left: 40px !important;
@@ -4899,6 +4901,33 @@ li.mtc-buy {
 }
 .mct-box:hover {
   text-transform: scale
+}
+.mtc-d {
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.80);
+  position: fixed;
+  z-index: 999999;
+  top: -100%;
+  text-align: center;
+}
+.mtc-d.active {
+  top: 54px;
+}
+.mtc-d a {
+  width: 308px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.mtc-demo-0{
+  background: white;
+}
+.mtc-demo-0 span{
+  display: inline-block;
+  position: relative;
+  top: 45%;
 }
 
 /* Post Tabs */
