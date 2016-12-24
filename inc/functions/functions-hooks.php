@@ -105,7 +105,7 @@ function boomnews_css() {
 		 $custom_styles .='.top-nav a, .top-nav { color:'. esc_attr($options['colors_menu']) .'!important; }';
 	 }
 
-	 if(!empty($options_in['text_hover'])){
+	 if(!empty($options_in['text_hover'])){ if($options_in['text_hover']!='#000001'){
 		 $custom_styles .='.sf-menu li a:hover,
 		 .sf-menu > li:hover > a,
 		 .sf-menu li.sfHover,
@@ -114,7 +114,7 @@ function boomnews_css() {
 		 ul.sf-menu li.current-menu-item > a, div.sf-menu ul ul li.current-menu-item > a,
 		 ul.sf-menu li.current-menu-ancestor > a, div.sf-menu ul ul li.current-menu-ancestor > a,
 		 .sf-menu li.current_page_item::before, .sf-menu li:hover::before { color: '. esc_attr($options_in['text_hover']) .'!important}';
-	 } else if(!empty($options['colors_menu_hover_text'])){
+	 }} else if(!empty($options['colors_menu_hover_text'])){
 		 	$custom_styles .='.sf-menu li a:hover,
 		 	.sf-menu > li:hover > a,
 		 	.sf-menu li.sfHover,
@@ -137,7 +137,8 @@ function boomnews_css() {
 				 $custom_styles .='.sf-menu ul li a { color:'. esc_attr($options_in['text']) .'!important; }';
 				 $custom_styles .='.megamenu-span h4 { color:'. esc_attr($options_in['text']) .'!important; }';
 			 }
-			 if(!empty($options_in['background'])){ $custom_styles .='.sf-menu ul li a { background-color:'. esc_attr($options_in['background']) .'!important; }'; }
+			 if(!empty($options_in['background'])){ $custom_styles .='.sf-menu ul li a, .sf-menu ul li, .df-is-megamenu ul, .df-is-megamenu ul li .mega-post-in a:hover { background-color:'. esc_attr($options_in['background']) .'!important; }'; }
+
 		 } else if(!empty($options['colors_menu_sub']) or !empty($options['colors_menu_sub_background'])){
 			$custom_styles .='.sf-menu ul li a {';
 					if(!empty($options['colors_menu_sub'])){ $custom_styles .=' color: '. esc_attr($options['colors_menu_sub']).'!important;'; }
@@ -190,7 +191,7 @@ function boomnews_css() {
 	 	 if(!empty($options_in['background'])){
 	 		 $custom_styles .='.nav-search-wrap{ background-color:'. esc_attr($options_in['background']) .'!important; }';
 	 	 }
-	 	 if(!empty($options_in['text'])){
+	 	 if(!empty($options_in['text'])){if($options_in['text']!='#000001'){
 	 		 $custom_styles .='.nav-search::after, .mt-header-mobile .nav-search-input:before, .search-close:before, .nav-search-input input{ color:'. esc_attr($options_in['text']) .'!important; }';
 			 $custom_styles .='
 			 .nav-search-input input,.nav-search-input:before { color:'. esc_attr($options_in['text']) .'!important; }
@@ -198,11 +199,11 @@ function boomnews_css() {
 			 .nav-search-input input:-moz-placeholder { color:'. esc_attr($options_in['text']) .'!important; }
 			 .nav-search-input input::-moz-placeholder { color:'. esc_attr($options_in['text']) .'!important; }
 			 .nav-search-input input:-ms-input-placeholder { color:'. esc_attr($options_in['text']) .'!important; }';
-	 	 }
+	 	 }}
 	 	 if(!empty($options_in['background_hover'])){
 	 		 $custom_styles .='.nav-search-wrap:hover { background-color:'. esc_attr($options_in['background_hover']) .'!important; }';
 	 	 }
-	 	 if(!empty($options_in['text_hover'])){
+	 	 if(!empty($options_in['text_hover'])){if($options_in['text_hover']!='#000001'){
 	 		 $custom_styles .='.nav-search-wrap:hover .nav-search::after, .nav-search-wrap:hover .mt-header-mobile .nav-search-input:before, .search-close.hover:before, .nav-search-wrap:hover .nav-search-input input{ color:'. esc_attr($options_in['text_hover']) .'!important; }';
 			 $custom_styles .='
 			 .nav-search-input:hover input,.nav-search-input:before { color:'. esc_attr($options_in['text_hover']) .'!important; }
@@ -210,7 +211,7 @@ function boomnews_css() {
 			 .nav-search-input:hover input:-moz-placeholder { color:'. esc_attr($options_in['text_hover']) .'!important; }
 			 .nav-search-input:hover input::-moz-placeholder { color:'. esc_attr($options_in['text_hover']) .'!important; }
 			 .nav-search-input:hover input:-ms-input-placeholder { color:'. esc_attr($options_in['text_hover']) .'!important; }';
-		 }
+		 }}
 		 if(empty($options_in)){
 			 if(!empty($options['colors_menu'])){
 				 $custom_styles .='
@@ -234,7 +235,7 @@ function boomnews_css() {
 	 	 if(!empty($options_in['background'])){
 	 		 $custom_styles .='.mt-header-mobile, .nav-search-wrap, .nav-search-wrap:hover, .nav-mobile, .nav-mobile:hover, .mt-header-mobile .nav-search-input input { background-color:'. esc_attr($options_in['background']) .'!important; }';
 	 	 }
-	 	 if(!empty($options_in['link'])){
+	 	 if(!empty($options_in['link'])){if($options_in['link']!='#000001'){
 	 		 $custom_styles .='.nav-search::after, .mt-header-mobile .nav-search-input:before, .search-close:before, .nav-search-input input,.nav-search-wrap:hover .nav-search::after, .nav-search-wrap:hover .mt-header-mobile .nav-search-input:before, .search-close.hover:before, .nav-search-wrap:hover .nav-search-input input{ color:'. esc_attr($options_in['link']) .'!important; }';
 			 $custom_styles .='.mt-header-mobile .mt-m-cool-button-line:after, .mt-header-mobile .mt-m-cool-button-line:before, .mt-header-mobile .mt-m-cool-button-line{ background-color:'. esc_attr($options_in['link']) .'!important; }';
 
@@ -250,7 +251,7 @@ function boomnews_css() {
 			 .nav-search-input:hover input::-moz-placeholder { color:'. esc_attr($options_in['link']) .'!important; }
 			 .nav-search-input:hover input:-ms-input-placeholder { color:'. esc_attr($options_in['link']) .'!important; }';
 
-	 	 }
+	 	 }}
 
 		 $options_in = get_option("mt_colors_menu_smart");
 		 if(!empty($options_in['background'])){
@@ -268,15 +269,43 @@ function boomnews_css() {
 
 
 		// Other
-		if(!empty($options['colors_post_share'])){
-			$custom_styles .='.post-statistic .stat-views, .post-statistic .stat-shares { color:'. esc_attr($options['colors_post_share']) .'!important; }';
+		$options_in = get_option("colors_post_view");
+		if(!empty($options_in['text'])){
+			$custom_styles .='.post-statistic .stat-views { color:'. esc_attr($options_in['text']) .'!important; }';
 		}
-		if(!empty($options['colors_post_share_icons'])){
-			$custom_styles .='.post-statistic .stat-views:before, .post-statistic .stat-shares:before { color:'. esc_attr($options['colors_post_share_icons']) .'!important; }';
+		if(!empty($options_in['text_dark'])){
+			$custom_styles .='.post-bgphoto .post-statistic .stat-views { color:'. esc_attr($options_in['text_dark']) .'!important; }';
 		}
-		if(!empty($options['colors_post_cat_bg'])){
-			$custom_styles .='.poster-large-cat span, .size-350 .poster-info, .trending-carousel .size-350 { background:'. esc_attr($options['colors_post_cat_bg']) .'!important; }';
+		if(!empty($options_in['icon'])){
+			$custom_styles .='.post-statistic .stat-views:before { color:'. esc_attr($options_in['icon']) .'!important; }';
 		}
+		if(!empty($options_in['icon_dark'])){
+			$custom_styles .='.post-bgphoto .post-statistic .stat-views:before { color:'. esc_attr($options_in['icon_dark']) .'!important; }';
+		}
+		$options_in = get_option("colors_post_share");
+		if(!empty($options_in['text'])){
+			$custom_styles .='.post-statistic .stat-shares { color:'. esc_attr($options_in['text']) .'!important; }';
+		}
+		if(!empty($options_in['text_dark'])){
+			$custom_styles .='.post-bgphoto .post-statistic .stat-shares { color:'. esc_attr($options_in['text_dark']) .'!important; }';
+		}
+		if(!empty($options_in['icon'])){
+			$custom_styles .='.post-statistic .stat-shares:before { color:'. esc_attr($options_in['icon']) .'!important; }';
+		}
+		if(!empty($options_in['icon_dark'])){
+			$custom_styles .='.post-bgphoto .post-statistic .stat-shares:before { color:'. esc_attr($options_in['icon_dark']) .'!important; }';
+		}
+
+		$options_in = get_option("mt_colors_cat");
+		if(!empty($options_in['background'])){if($options_in['background']!='#000001'){
+			$custom_styles .='.df-is-megamenu ul .poster-cat, .grid-post .poster-cat span, .poster-large-cat span, .poster-info { background-color:'. esc_attr($options_in['background']) .'!important; }';
+		}}
+		if(!empty($options_in['text'])){if($options_in['text']!='#000001'){
+			$custom_styles .='.df-is-megamenu ul .poster-cat span, .grid-post .poster-cat span, .poster-large-cat span, .poster-info, .poster-info, .poster.size-normal .poster-cat span, .poster.trending-normal .poster-cat span, .poster.trending-carousel .poster-cat span { color:'. esc_attr($options_in['text']) .'!important; }';
+		}}
+		if(!empty($options_in['only_text'])){if($options_in['only_text']!='#000001'){
+			$custom_styles .='.poster .poster-cat span { color:'. esc_attr($options_in['only_text']) .'!important; }';
+		}}
 
 
 	 if ( $custom_styles != '' ) {
@@ -372,12 +401,27 @@ function boomnews_class($classes) {
 		$body_class .= ' post-style-'.$style;
 		if($style=="8" and is_single()) {
 			$body_class .= ' boxed-layout-on';
+			$body_class .= ' post-bgphoto';
+		}
+		if($style=="7" and is_single()) {
+			$body_class .= ' post-bgphoto';
+		}
+		if($style=="6" and is_single()) {
+			$body_class .= ' post-bgphoto';
 		}
 	} else if (!empty($options['post_style'])) {
 		$body_class .= ' post-style-'.$options['post_style'];
 		if($options['post_style']=="8" and is_single()) {
 			$body_class .= ' boxed-layout-on';
+			$body_class .= ' post-bgphoto';
 		}
+		if($options['post_style']=="7" and is_single()) {
+			$body_class .= ' post-bgphoto';
+		}
+		if($options['post_style']=="6" and is_single()) {
+			$body_class .= ' post-bgphoto';
+		}
+
 	}
 
 	$layout = get_post_meta(get_the_ID(), "magazin_layout", true);

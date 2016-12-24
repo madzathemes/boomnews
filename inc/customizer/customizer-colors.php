@@ -456,31 +456,65 @@ function boomnews_customize_colors($wp_customize){
     'panel'  => 'colors_settings'
   ));
 
-  Kirki::add_field( 'boomnews_theme_options[colors_post_share]', array(
-    'type'        => 'color',
-    'settings'    => 'boomnews_theme_options[colors_post_share]',
-    'label'       => esc_html__( 'Post Share & View Count', 'boomnews' ),
+
+  Kirki::add_field( 'colors_post_share', array(
+    'type'        => 'multicolor',
+    'settings'    => 'colors_post_share',
+    'label'       => esc_attr__( 'Post Share Count', 'boomnews' ),
     'section'     => 'colors_other',
     'option_type' => 'option',
-    'priority'    => 1,
+    'priority'    => 100,
+    'choices'     => array(
+        'text'    => esc_attr__( 'Text', 'boomnews' ),
+        'text_dark'   => esc_attr__( 'Photo bg', 'boomnews' ),
+        'icon'   => esc_attr__( 'Icon', 'boomnews' ),
+        'icon_dark'   => esc_attr__( 'Photo bg', 'boomnews' ),
+    ),
+    'default'     => array(
+        'text'    => '',
+        'text_dark'    => '',
+        'icon'    => '',
+        'icon_dark'    => '',
+    ),
+  ));
+  Kirki::add_field( 'colors_post_view', array(
+    'type'        => 'multicolor',
+    'settings'    => 'colors_post_view',
+    'label'       => esc_attr__( 'Post View Count', 'boomnews' ),
+    'section'     => 'colors_other',
+    'option_type' => 'option',
+    'priority'    => 100,
+    'choices'     => array(
+        'text'    => esc_attr__( 'Text', 'boomnews' ),
+        'text_dark'   => esc_attr__( 'Photo bg', 'boomnews' ),
+        'icon'   => esc_attr__( 'Icon', 'boomnews' ),
+        'icon_dark'   => esc_attr__( 'Photo bg', 'boomnews' ),
+    ),
+    'default'     => array(
+        'text'    => '',
+        'text_dark'    => '',
+        'icon'    => '',
+        'icon_dark'    => '',
+    ),
   ));
 
-  Kirki::add_field( 'boomnews_theme_options[colors_post_share_icons]', array(
-    'type'        => 'color',
-    'settings'    => 'boomnews_theme_options[colors_post_share_icons]',
-    'label'       => esc_html__( 'Post Share & View Count Icons', 'boomnews' ),
+  Kirki::add_field( 'mt_colors_cat', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_cat',
+    'label'       => esc_attr__( 'Post List Category', 'boomnews' ),
     'section'     => 'colors_other',
     'option_type' => 'option',
-    'priority'    => 1,
-  ));
-
-  Kirki::add_field( 'boomnews_theme_options[colors_post_cat_bg]', array(
-    'type'        => 'color',
-    'settings'    => 'boomnews_theme_options[colors_post_cat_bg]',
-    'label'       => esc_html__( 'Post Category Background', 'boomnews' ),
-    'section'     => 'colors_other',
-    'option_type' => 'option',
-    'priority'    => 1,
+    'priority'    => 100,
+    'choices'     => array(
+        'text'    => esc_attr__( 'Text', 'boomnews' ),
+        'background'   => esc_attr__( 'Background', 'boomnews' ),
+        'only_text'   => esc_attr__( 'Only Text', 'boomnews' ),
+    ),
+    'default'     => array(
+        'text'    => '',
+        'background'    => '',
+        'only_text'    => '',
+    ),
   ));
 
 
