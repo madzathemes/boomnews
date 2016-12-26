@@ -4903,16 +4903,23 @@ li.mtc-buy {
   text-transform: scale
 }
 .mtc-d {
+  transform: translate(0,-60px);
+  -webkit-transform: translate(0,-60px); /** Safari & Chrome **/
+  -o-transform: translate(0,-60px); /** Opera **/
+  -moz-transform: translate(0,-60px); /** Firefox **/
+}
+.mtc-wrap:hover .mtc-d  {
+  transform: translate(0,54px);
+  -webkit-transform: translate(0,54px); /** Safari & Chrome **/
+  -o-transform: translate(0,54px); /** Opera **/
+  -moz-transform: translate(0,54px); /** Firefox **/
+}
+.mtc-d {
   width: 100%;
   height: 200px;
   background: rgba(0, 0, 0, 0.80);
   position: fixed;
-  z-index: 999999;
-  top: -100%;
   text-align: center;
-}
-.mtc-d.active {
-  top: 54px;
 }
 .mtc-d a {
   width: 308px;
@@ -4929,6 +4936,7 @@ li.mtc-buy {
   position: relative;
   top: 45%;
 }
+
 
 /* Post Tabs */
 .mt-tab {
@@ -5092,4 +5100,10 @@ li.mtc-buy {
 
 .remove-pl-author.remove-pl-date .poster p {
   padding-top: 0px;
+}
+
+/* Issue Fix */
+.page-template-default .theiaPostSlider_slides,
+.page-template-default .theiaPostSlider_slides > div {
+  overflow: visible !important;
 }

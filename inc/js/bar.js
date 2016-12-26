@@ -39,8 +39,4 @@ jQuery(document).ready(function() {
     jQuery('.mtc, .mtc-fix').addClass("active");
   });
 
-  jQuery('.mtc,.mtc-d').hover(
-    function(){jQuery('.mtc-d').toggleClass('active');}
-  );
-
 });

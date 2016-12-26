@@ -48,14 +48,11 @@ jQuery(document).ready(function() {
   jQuery(".nav-search-wrap, .nav-search").on("click",function() {
     jQuery('.header-menu, .mt-header-mobile').addClass("active");
   });
+
   jQuery(".search-close").on("click",function() {
     jQuery('.header-menu, .mt-header-mobile').removeClass("active");
   });
 
-  jQuery('.nav-search-wrap, .search-close').hover(
-    function(){jQuery(this).toggleClass('hover');}
-  );
-  
   jQuery(".mt-tabc").on("click", function() {
     var tab = jQuery(this).data( "tab" );
     jQuery(".mt-tab,.mt-tabc").removeClass("active");
