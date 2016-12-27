@@ -1,6 +1,6 @@
 <?php function post_style_1(){ ?>
 <?php $ls = get_post_meta(get_the_ID(), "magazin_post_sidebar", true); $fl = "pull-left"; $fs = "pull-right"; $o = get_option("boomnews_theme_options"); if(!empty($ls)){ $l = $ls; } else { if(!empty($o['post_sidebar'])){ $l = $o['post_sidebar']; } else { 	$l = "left"; } } if ($l == "left") { $fl = "pull-left"; $fs = "pull-right"; } ?>
-<div class="post-content-wrap mt-content-container"  itemprop="mainEntityOfPage">
+<div class="post-content-wrap mt-content-container">
   <div class="container">
     <div class="row">
       <div class="col-col-1 col-md-1 sidebar theiaStickySidebar">
