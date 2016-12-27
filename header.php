@@ -11,7 +11,7 @@
 <?php
 $option = get_option("boomnews_theme_options");
 ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
 <?php
 $bg_post = get_post_meta(get_the_ID(), "magazin_background_image", true);
