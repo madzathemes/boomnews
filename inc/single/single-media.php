@@ -41,7 +41,7 @@
 			<div class="post-img">
   				<div class="single-share">
             <a class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
-              <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius', "itemprop"=>"image")); ?>
+              <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius'); ?>
             </a>
             <div class="single-share-socials mt-radius-b">
               <a href="http://www.facebook.com/sharer.php?u=<?php get_the_permalink(); ?>" target="_blank"><div class="facebook mt-radius-b"></div></a>
