@@ -1,4 +1,4 @@
-<div class="footer-wrap">
+<div class="footer-wrap" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 		<div class="container">
 			<?php if ( shortcode_exists( 'posts_trending' ) ) { echo do_shortcode('[posts_trending type=trending-carousel title="'. esc_html__( 'Hot Posts','boomnews' ) .'" title_type=left item_nr=5]'); } ?>
 		</div>

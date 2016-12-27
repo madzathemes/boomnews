@@ -29,7 +29,7 @@ if ($carousel == "yes"){ ?>
 }
 ?>
 
-<article>
+<article itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 <?php while ( have_posts() ) : the_post();
 

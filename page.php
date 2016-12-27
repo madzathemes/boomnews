@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-<div class="mt-container-wrap">
+<div class="mt-container-wrap"  itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
 	<?php boomnews_title(); ?>
 	<div class="container mt-content-container">
@@ -59,7 +59,7 @@ get_header(); ?>
 
 		<?php if ($layout == "full" or $layout == "") {} else { ?>
 
-			<div class="col-md-4 sidebar <?php echo sanitize_html_class($mt_float_sidebar); ?> "><?php get_sidebar(); ?></div>
+			<div class="col-md-4 sidebar <?php echo sanitize_html_class($mt_float_sidebar); ?> " temscope="itemscope" itemtype="http://schema.org/WPSideBar"><?php get_sidebar(); ?></div>
 
 		<?php } ?>
 

@@ -53,7 +53,7 @@ else if(!empty($option['menu_background_width'])) {
 		</div>
 	</div>
 <?php } ?>
-<div class="header-wrap">
+<div class="header-wrap" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 	<div class="header-mt-container-wrap">
 		<div class="container mt-header-container">
 			<div class="row">
@@ -89,7 +89,7 @@ else if(!empty($option['menu_background_width'])) {
 							</div>
 						</div>
 
-						<div class="nav pull-left menu-background mt-radius">
+						<div class="nav pull-left menu-background mt-radius" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" >
 							<?php boomnews_nav(); ?>
 							<?php boomnews_socials(); ?>
 						</div>

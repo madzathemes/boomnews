@@ -9,8 +9,8 @@
 
 } ?>
 <?php function boomnews_single_title() { $subtitle = get_post_meta(get_the_ID(), "magazin_subtitle", true); ?>
-  <h1 class="single-title"><?php echo get_the_title(); ?></h1>
-  <?php if(!empty($subtitle)){ ?><h2 class="single-subtitle"><?php echo get_post_meta(get_the_ID(), "magazin_subtitle", true); ?></h2><?php } ?>
+  <h1 class="single-title"  itemprop="headline"><?php echo get_the_title(); ?></h1>
+  <?php if(!empty($subtitle)){ ?><h2 class="single-subtitle" itemprop="description"><?php echo get_post_meta(get_the_ID(), "magazin_subtitle", true); ?></h2><?php } ?>
 <?php } ?>
 <?php function boomnews_single_social() {
 $share_top = "";
@@ -41,8 +41,8 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
         <?php global $post; echo get_avatar( $post->post_author, 30 ); ?>
       </div>
       <div class="author-info">
-        <strong><?php the_author_posts_link(); ?></strong>
-        <small class="color-silver-light"><?php the_date('M d, Y'); ?></small>
+        <strong itemprop="name"><?php the_author_posts_link(); ?></strong>
+        <small class="color-silver-light" itemprop="datePublished"><?php the_date('M d, Y'); ?></small>
       </div>
     </div>
     <?php if(class_exists('md_walker')) { ?>

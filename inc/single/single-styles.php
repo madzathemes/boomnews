@@ -13,10 +13,10 @@
         <?php boomnews_single_social(); ?>
         <?php boomnews_single_media(); ?>
         <?php boomnews_single_top(); ?>
-        <div class="entry-content"><?php the_content(); ?></div>
+        <div class="entry-content itemprop="mainContentOfPage""><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
-      <div class="col-col-3 col-md-4 <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+      <div class="col-col-3 col-md-4 <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
         <?php boomnews_single_sidebar(); ?>
       </div>
     </div>
@@ -38,10 +38,10 @@
         <?php boomnews_single_title(); ?>
         <?php boomnews_single_social(); ?>
         <?php boomnews_single_top(); ?>
-        <div class="entry-content"><?php the_content(); ?></div>
+        <div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
-      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
         <?php boomnews_single_sidebar(); ?>
       </div>
     </div>
@@ -62,10 +62,10 @@
         <?php boomnews_single_title(); ?>
         <?php boomnews_single_social(); ?>
         <?php boomnews_single_top(); ?>
-        <div class="entry-content"><?php the_content(); ?></div>
+        <div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
-      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
         <?php boomnews_single_sidebar(); ?>
       </div>
     </div>
@@ -91,10 +91,10 @@
         <?php boomnews_single_title(); ?>
         <?php boomnews_single_social(); ?>
         <?php boomnews_single_top(); ?>
-        <div class="entry-content"><?php the_content(); ?></div>
+        <div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
-      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
         <?php boomnews_single_sidebar(); ?>
       </div>
     </div>
@@ -124,10 +124,10 @@
 
         <?php boomnews_single_social(); ?>
         <?php boomnews_single_top(); ?>
-        <div class="entry-content"><?php the_content(); ?></div>
+        <div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
-      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
         <?php boomnews_single_sidebar(); ?>
       </div>
     </div>
@@ -163,10 +163,10 @@
       </div>
       <div class="single-content col-col-2 col-md-7 <?php echo sanitize_html_class($fl); ?>">
         <?php boomnews_single_top(); ?>
-        <div class="entry-content"><?php the_content(); ?></div>
+        <div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
-      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
         <?php boomnews_single_sidebar(); ?>
       </div>
     </div>
@@ -207,10 +207,10 @@
         </div>
         <div class="single-content col-col-2 col-md-7 <?php echo sanitize_html_class($fl); ?>">
           <?php boomnews_single_top(); ?>
-          <div class="entry-content"><?php the_content(); ?></div>
+          <div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
           <?php boomnews_single_bottom(); ?>
         </div>
-        <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+        <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
           <?php boomnews_single_sidebar(); ?>
         </div>
       </div>
@@ -243,10 +243,10 @@
       </div>
       <div class="single-content col-col-2 col-md-7 <?php echo sanitize_html_class($fl); ?>">
         <?php boomnews_single_top(); ?>
-        <div class="entry-content"><?php the_content(); ?></div>
+        <div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
         <?php boomnews_single_bottom(); ?>
       </div>
-      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+      <div class="col-col-3 col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
         <?php boomnews_single_sidebar(); ?>
       </div>
     </div>
@@ -270,10 +270,10 @@
 	<?php } ?>
   <div class="row">
     <div class="single-content col-md-8 <?php echo sanitize_html_class($fl); ?> ">
-			<div class="entry-content"><?php the_content(); ?></div>
+			<div class="entry-content" itemprop="mainContentOfPage"><?php the_content(); ?></div>
       <?php boomnews_single_bottom(); ?>
     </div>
-    <div class="col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar">
+    <div class="col-md-4 pull-left <?php echo sanitize_html_class($fs); ?> sidebar theiaStickySidebar" temscope="itemscope" itemtype="http://schema.org/WPSideBar">
       <?php boomnews_single_sidebar(); ?>
     </div>
   </div>
