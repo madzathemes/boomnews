@@ -17,7 +17,7 @@
             <div class="item" data-hash="img-<?php echo esc_attr($attachment_id); ?>">
             <?php echo wp_get_attachment_image( $attachment_id, 'large','', array( "class" => "mt-radius") ); ?>
           </div>
-        <?php } ?>fix
+        <?php } ?>
       </div>
 
       <div class="post-gallery-nav">
@@ -40,7 +40,7 @@
     <?php  if ( has_post_thumbnail() ) {  $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) ); ?>
 			<div class="post-img">
   				<div class="single-share">
-            <a class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
+            <a itemprop="image" class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
               <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius')); ?>
             </a>
             <div class="single-share-socials mt-radius-b">
