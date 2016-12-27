@@ -41,7 +41,7 @@
 			<div class="post-img">
   				<div class="single-share">
             <a itemprop="image" class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
-              <div itemscope itemtype="http://schema.org/ImageObject">>
+              <div itemscope itemtype="http://schema.org/ImageObject">
                 <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius', 'itemprop' => 'image')); ?>
               </div>
             </a>
