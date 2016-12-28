@@ -101,10 +101,10 @@ endwhile;
 		<div class="hidde" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
 		<?php $option = get_option("boomnews_theme_options"); ?>
 		<?php if(!empty($option['header_logo'])) { ?><meta itemprop="url" content="<?php echo esc_url($option['header_logo']); ?>"><?php } ?>
-		<?php if(!empty($option['logo_width'])) { ?><meta itemprop="width" content="<?php echo esc_url($option['logo_width']); ?>"><?php } ?>
-		<?php if(!empty($option['logo_height'])) { ?><meta itemprop="height" content="<?php echo esc_url($option['logo_height']); ?>"><?php } ?>
+		<?php if(!empty($option['logo_width'])) { ?><meta itemprop="width" content="<?php echo esc_attr($option['logo_width']); ?>"><?php } ?>
+		<?php if(!empty($option['logo_height'])) { ?><meta itemprop="height" content="<?php echo esc_attr($option['logo_height']); ?>"><?php } ?>
 		</div>
-		<?php if(!empty(get_option("mt_shema_publisher"))) { ?><meta itemprop="name" content="<?php echo esc_url(get_option("mt_shema_publisher")); ?>"><?php } ?>
+		<?php if(!empty(get_option("mt_shema_publisher"))) { ?><meta itemprop="name" content="<?php echo esc_attr(get_option("mt_shema_publisher")); ?>"><?php } ?>
 	</div>
 </article>
 
