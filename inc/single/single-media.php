@@ -40,12 +40,9 @@
     <?php  if ( has_post_thumbnail() ) {  $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()) ); ?>
 			<div class="post-img">
   				<div class="single-share">
-
-            <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-              <a class="lightbox" itemprop="url" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
-                  <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius', 'itemprop' => 'image  height width')); ?>
-              </a>
-            </div>
+            <a class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
+                <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius')); ?>
+            </a>
             <div class="single-share-socials mt-radius-b">
               <a href="http://www.facebook.com/sharer.php?u=<?php get_the_permalink(); ?>" target="_blank"><div class="facebook mt-radius-b"></div></a>
               <a href="http://twitter.com/home/?status=<?php get_the_title(); ?> - <?php get_the_permalink(); ?>" target="_blank"><div class="twiiter mt-radius-b"></div></a>
