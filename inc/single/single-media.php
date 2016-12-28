@@ -43,7 +43,7 @@
 
             <div >
               <a class="lightbox" href="<?php echo get_the_post_thumbnail_url(get_the_ID(),"large"); ?>">
-                  <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius', 'itemprop' => 'image')); ?>
+                  <?php echo get_the_post_thumbnail(get_the_ID(),"large", array( 'class' => 'mt-radius', 'itemprop' => 'Photo')); ?>
               </a>
             </div>
             <div class="single-share-socials mt-radius-b">
