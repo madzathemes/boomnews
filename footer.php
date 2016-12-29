@@ -24,6 +24,17 @@
 	<?php } ?>
 	</div>
 </div>
+
+<?php
+$facebook_name = get_option("facebook_username");
+$facebook_token = get_option("facebook_token");
+$twitter_name = get_option("twitter_username");
+$youtube_name = get_option("youtube_username");
+?>
+<div class="mt-f-data" data-facebook="<?php echo get_option("facebook_username"); ?>"
+	data-token="<?php echo get_option("facebook_token"); ?>"
+	data-twitter="<?php echo get_option("twitter_username"); ?>"
+	data-youtube="<?php echo get_option("youtube_username"); ?>"></div>
 <a href="#" class="footer-scroll-to-top mt-theme-background"></a>
 <?php  wp_footer(); ?>
 </body>
