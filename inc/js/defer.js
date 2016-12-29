@@ -127,7 +127,7 @@ jQuery(document).ready(function() {
       success: function(data) {
         var followers = parseInt(data.likes);
         var k = kFormatter(followers);
-        jQuery('.social-facebook .social-count, .mt-top-followers strong').append(followers).digits();
+        jQuery('.social-facebook .social-count').append(followers).digits();
 
       }
     });
