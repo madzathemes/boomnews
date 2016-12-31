@@ -131,3 +131,17 @@ function boomnews_after_import_setup() {
 
 }
 add_action( 'pt-ocdi/after_import', 'boomnews_after_import_setup' );
+
+/**
+ * Disblae WPES on media library search
+ * @param type $enabled
+ * @return boolean
+ */
+function disbale_wpes_on_media_search($enabled) {
+    if ((defined('DOING_AJAX') && DOING_AJAX) && isset($_REQUEST['action']) && $_REQUEST['action'] == 'query-attachments') {
+        return false;
+    }
+
+    return $enabled;
+}
+add_filter('wpes_enabled', 'disbale_wpes_on_media_search');
