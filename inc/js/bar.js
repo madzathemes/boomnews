@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
   });
 
   jQuery(".mtc-close").on("click",function() {
-    jQuery('.mtc, .mtc-fix').addClass("active");
+    jQuery('.mtc-wrap, .mtc-fix').addClass("active");
   });
 
 });
