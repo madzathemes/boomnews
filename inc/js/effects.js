@@ -10,8 +10,6 @@ jQuery(document).ready(function() {
 
   jQuery(".video-container").fitVids();
 
-
-
   jQuery(".mt-smart-menu .menu-item-has-children").append("<span></span>");
   jQuery('body').addClass("shadow-wrap");
 
