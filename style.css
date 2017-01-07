@@ -4917,6 +4917,10 @@ li.mtc-buy {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  transform: translate(0px,0px);
+  -webkit-transform: translate(0px,0px);
+  -o-transform: translate(0px,0px);
+  -moz-transform: translate(0px,0px);
 }
 .mtc-d a {
   width: 270px;
@@ -4956,6 +4960,10 @@ li.mtc-buy {
   border-radius: 5px;
   box-shadow: 0 2px 0 #6f9a37;
 }
+.mtc-d-text a:hover {
+  color: white!important;
+  background: #6f9a37;
+}
 .mtc-d-close,
 .mtc-d-open,
 .mtc-d-o {
@@ -4982,7 +4990,10 @@ li.mtc-buy {
   height: 100%;
 }
 .mtc-d.mt-d-off {
-  right: -270px;
+  transform: translate(270px,0px);
+  -webkit-transform: translate(270px,0px);
+  -o-transform: translate(270px,0px);
+  -moz-transform: translate(270px,0px);
 }
 .mt-d-off .mtc-d-close,
 .mt-d-on .mtc-d-open,

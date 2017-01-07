@@ -104,7 +104,7 @@ endwhile;
 		<?php if(!empty($option['logo_width'])) { ?><meta itemprop="width" content="<?php echo esc_attr($option['logo_width']); ?>"><?php } ?>
 		<?php if(!empty($option['logo_height'])) { ?><meta itemprop="height" content="<?php echo esc_attr($option['logo_height']); ?>"><?php } ?>
 		</div>
-		<?php if(!empty(get_option("mt_shema_publisher"))) { ?><meta itemprop="name" content="<?php echo esc_attr(get_option("mt_shema_publisher")); ?>"><?php } ?>
+		<?php if(!empty(get_option("mt_shema_publisher"))) { $publisher = get_option("mt_shema_publisher"); ?><meta itemprop="name" content="<?php echo esc_attr($publisher); ?>"><?php } ?>
 	</div>
 </article>
 
