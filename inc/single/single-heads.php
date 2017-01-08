@@ -26,11 +26,11 @@ if (!empty($share)){
 	$shares = $share+$shares;
 }
 /* View Meta from Magazin framework */
+/* View Meta from Magazin framework */
 $view = get_post_meta(get_the_ID(), "magazin_view_count", true);
-$viewes = 1;
-if (!empty($view)){
-	$viewes = $view;
-}
+$views = get_post_meta(get_the_ID(), "magazin_post_views_count", true);
+$viewes = $views + "0";
+if (!empty($view)){ $viewes = $view + $views; $viewes = number_format($viewes); }
 
 $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
 
@@ -49,7 +49,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
     <?php if(class_exists('md_walker')) { ?>
     <div class="post-statistic pull-left">
       <?php if(!empty($shares)){ ?><span class="stat-shares color-silver-light"><strong><?php echo esc_attr($shares); ?></strong> <?php echo esc_html__('Shares', 'boomnews'); ?></span><?php } ?>
-      <?php if(!empty($viewes)){ ?><span class="stat-views"><strong><?php if(function_exists('magazin_PostViews')){   echo esc_attr($viewes) + magazin_PostViews(get_the_ID()); } ?></strong> <?php echo esc_html__('Views', 'boomnews'); ?></span><?php } ?>
+      <?php if(!empty($viewes)){ ?><span class="stat-views"><strong><?php echo esc_attr($viewes) ?></strong> <?php echo esc_html__('Views', 'boomnews'); ?></span><?php } ?>
     </div>
     <?php } ?>
 

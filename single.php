@@ -5,7 +5,7 @@
  */
 
 get_header();
-
+if(function_exists('magazin_PostViews')){  magazin_PostViews(get_the_ID()); }
 $style = get_post_meta(get_the_ID(), "magazin_post_style", true);
 $option = get_option("boomnews_theme_options");
 $default = "";
