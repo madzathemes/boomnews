@@ -94,26 +94,7 @@ function boomnews_customize_colors($wp_customize){
   ));
 
 
-  Kirki::add_field( 'mt_colors_header_icons', array(
-    'type'        => 'multicolor',
-    'settings'    => 'mt_colors_header_icons',
-    'label'       => esc_attr__( 'Header Icons', 'boomnews' ),
-    'section'     => 'colors_menu',
-    'option_type' => 'option',
-    'priority'    => 1,
-    'choices'     => array(
-        'latest'    => esc_attr__( 'Latest', 'boomnews' ),
-        'popular'   => esc_attr__( 'Popular', 'boomnews' ),
-        'hot'  => esc_attr__( 'Hot', 'boomnews' ),
-        'trending'  => esc_attr__( 'Trending', 'boomnews' ),
-    ),
-    'default'     => array(
-        'latest'    => '',
-        'popular'    => '',
-        'hot'    => '',
-        'trending'    => '',
-    ),
-  ));
+
 
   Kirki::add_field( 'mt_colors_header_button', array(
     'type'        => 'multicolor',
@@ -316,139 +297,91 @@ function boomnews_customize_colors($wp_customize){
     'panel'  => 'colors_settings'
   ));
 
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_top_background]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
+
+  Kirki::add_field( 'mt_colors_footer_top', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_footer_top',
+    'label'       => esc_attr__( 'Footer Top Colors', 'boomnews' ),
+    'section'     => 'colors_footer',
+    'option_type' => 'option',
+    'choices'     => array(
+        'background'    => esc_attr__( 'Background', 'boomnews' ),
+        'title'   => esc_attr__( 'Title', 'boomnews' ),
+        'text'   => esc_attr__( 'Text', 'boomnews' ),
+        'link'  => esc_attr__( 'Link', 'boomnews' ),
+        'hover'  => esc_attr__( 'Hover', 'boomnews' ),
+    ),
+    'default'     => array(
+        'background'    => '',
+        'text'    => '',
+        'title'    => '',
+        'link'    => '',
+        'hover'    => '',
+    ),
   ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_top_background]', array(
-      'label'    => esc_html__('Top Footer Background', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_top_background]',
-  )));
 
-
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_top_link]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
+  Kirki::add_field( 'mt_colors_footer_social', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_footer_social',
+    'label'       => esc_attr__( 'Footer Social Icons', 'boomnews' ),
+    'section'     => 'colors_footer',
+    'option_type' => 'option',
+    'choices'     => array(
+        'icon'    => esc_attr__( 'Icon', 'boomnews' ),
+        'hover'   => esc_attr__( 'Hover', 'boomnews' ),
+        'background'   => esc_attr__( 'Background', 'boomnews' ),
+        'background_hover'  => esc_attr__( 'Hover', 'boomnews' ),
+    ),
+    'default'     => array(
+        'icon'    => '',
+        'hover'    => '',
+        'background'    => '',
+        'background_hover'    => '',
+    ),
   ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_top_link]', array(
-      'label'    => esc_html__('Top Footer Link', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_top_link]',
-  )));
 
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_top_link_hover]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
+  Kirki::add_field( 'mt_colors_footer_bottom', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_footer_bottom',
+    'label'       => esc_attr__( 'Footer Bottom Colors', 'boomnews' ),
+    'section'     => 'colors_footer',
+    'option_type' => 'option',
+    'choices'     => array(
+        'background'    => esc_attr__( 'Background', 'boomnews' ),
+        'border'   => esc_attr__( 'Border', 'boomnews' ),
+        'text'   => esc_attr__( 'Text', 'boomnews' ),
+        'link'  => esc_attr__( 'Link', 'boomnews' ),
+        'hover'  => esc_attr__( 'Hover', 'boomnews' ),
+    ),
+    'default'     => array(
+        'background'    => '',
+        'border'    => '',
+        'text'    => '',
+        'link'    => '',
+        'hover'    => '',
+    ),
   ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_top_link_hover]', array(
-      'label'    => esc_html__('Top Footer Link Hover', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_top_link_hover]',
-  )));
 
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_border]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
+  Kirki::add_field( 'mt_colors_footer_icons', array(
+    'type'        => 'multicolor',
+    'settings'    => 'mt_colors_footer_icons',
+    'label'       => esc_attr__( 'Footer Bottom Icons', 'boomnews' ),
+    'section'     => 'colors_footer',
+    'option_type' => 'option',
+    'choices'     => array(
+        'latest'    => esc_attr__( 'Latest', 'boomnews' ),
+        'popular'   => esc_attr__( 'Popular', 'boomnews' ),
+        'hot'  => esc_attr__( 'Hot', 'boomnews' ),
+        'trending'  => esc_attr__( 'Trending', 'boomnews' ),
+    ),
+    'default'     => array(
+        'latest'    => '',
+        'popular'    => '',
+        'hot'    => '',
+        'trending'    => '',
+    ),
   ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_border]', array(
-      'label'    => esc_html__('Footer Border', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_border]',
-  )));
 
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_bottom_background]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_bottom_background]', array(
-      'label'    => esc_html__('Bottom Footer Background', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_bottom_background]',
-  )));
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_bottom_text]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_bottom_text]', array(
-      'label'    => esc_html__('Bottom Footer Text', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_bottom_text]',
-  )));
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_bottom_link]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_bottom_link]', array(
-      'label'    => esc_html__('Bottom Footer Link', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_bottom_link]',
-  )));
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_bottom_link_hover]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_bottom_link_hover]', array(
-      'label'    => esc_html__('Bottom Footer Link Hover', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_bottom_link_hover]',
-  )));
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_social_icon]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_social_icon]', array(
-      'label'    => esc_html__('Social Icon', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_social_icon]',
-  )));
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_social_background]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_social_background]', array(
-      'label'    => esc_html__('Social Icon Background', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_social_background]',
-  )));
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_social_icon_hover]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_social_icon_hover]', array(
-      'label'    => esc_html__('Social Icon Hover', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_social_icon_hover]',
-  )));
-
-  $wp_customize->add_setting('boomnews_theme_options[colors_footer_social_background_hover]', array(
-      'capability'        => 'edit_theme_options',
-      'type'           => 'option',
-      'sanitize_callback' => 'sanitize_hex_color',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'boomnews_theme_options[colors_footer_social_background_hover]', array(
-      'label'    => esc_html__('Social Icon Hover Background', 'boomnews'),
-      'section'  => 'colors_footer',
-      'settings' => 'boomnews_theme_options[colors_footer_social_background_hover]',
-  )));
 
   // MENU COLORS //
   $wp_customize->add_section('colors_other', array(

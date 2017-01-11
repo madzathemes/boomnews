@@ -307,6 +307,58 @@ function boomnews_css() {
 			$custom_styles .='.poster .poster-cat span { color:'. esc_attr($options_in['only_text']) .'!important; }';
 		}}
 
+		// Footer Colors
+
+
+		$options_in = get_option("mt_colors_footer_top");
+		if(!empty($options_in)){
+			if(!empty($options_in['background'])){ if($options_in['background']!='#fffff1'){ $custom_styles .='.footer-top { background:'. esc_attr($options_in['background']) .'!important; }'; } }
+			if(!empty($options_in['title'])){ if($options_in['title']!='#fffff1'){ $custom_styles .='.footer-top h2, .footer-top h3, .footer-top h4 { color:'. esc_attr($options_in['title']) .'!important; }'; } }
+			if(!empty($options_in['text'])){ if($options_in['text']!='#fffff1'){ $custom_styles .='.footer-top p { color:'. esc_attr($options_in['text']) .'!important; }'; } }
+			if(!empty($options_in['link'])){ if($options_in['link']!='#fffff1'){ $custom_styles .='.footer-nav a, .footer .mail { color:'. esc_attr($options_in['link']) .'!important; }'; } }
+			if(!empty($options_in['hover'])){ if($options_in['hover']!='#fffff1'){ $custom_styles .='.footer-top a:hover, .footer .mail:hover { color:'. esc_attr($options_in['hover']) .'!important; }'; } }
+		} else {
+			if(!empty($options['colors_footer_top_background'])){ $custom_styles .=' .footer-top { background: '. esc_attr($options['colors_footer_top_background']) .'; }'; }
+			if(!empty($options['colors_footer_top_title'])){ $custom_styles .=' .footer-top h2 { color: '. esc_attr($options['colors_footer_top_title']) .'; }'; }
+			if(!empty($options['colors_footer_top_text'])){ $custom_styles .=' .footer-top p { color: '. esc_attr($options['colors_footer_top_text']) .'; }'; }
+			if(!empty($options['colors_footer_top_link'])){ $custom_styles .=' .footer-nav a, .footer .mail { color: '. esc_attr($options['colors_footer_top_link']) .'; } '; }
+			if(!empty($options['colors_footer_top_link_hover'])){ $custom_styles .=' .footer-top a:hover, .footer .mail:hover { color: '. esc_attr($options['colors_footer_top_link_hover']) .'; } '; }
+		}
+
+		$options_in = get_option("mt_colors_footer_bottom");
+		if(!empty($options_in)){
+			if(!empty($options_in['background'])){ if($options_in['background']!='#fffff1'){ $custom_styles .='.footer-bottom { background:'. esc_attr($options_in['background']) .'!important; }'; } }
+			if(!empty($options_in['text'])){ if($options_in['text']!='#fffff1'){ $custom_styles .='.footer-bottom p { color:'. esc_attr($options_in['text']) .'!important; }'; } }
+			if(!empty($options_in['link'])){ if($options_in['link']!='#fffff1'){ $custom_styles .='.footer-bottom a { color:'. esc_attr($options_in['link']) .'!important; }'; } }
+			if(!empty($options_in['hover'])){ if($options_in['hover']!='#fffff1'){ $custom_styles .='.footer-bottom a:hover { color:'. esc_attr($options_in['hover']) .'!important; }'; } }
+			if(!empty($options_in['border'])){ if($options_in['border']!='#fffff1'){ $custom_styles .='.footer-bottom { border-top: 1px solid '. esc_attr($options_in['border']) .'!important; }'; } }
+		} else {
+			if(!empty($options['colors_footer_border'])){ $custom_styles .='.footer-bottom { border-top: 1px solid '. esc_attr($options['colors_footer_border']) .'; }'; }
+			if(!empty($options['colors_footer_bottom_background'])){ $custom_styles .=' .footer-bottom { background: '. esc_attr($options['colors_footer_bottom_background']) .'; } '; }
+			if(!empty($options['colors_footer_bottom_text'])){ $custom_styles .=' .footer-bottom p { color: '. esc_attr($options['colors_footer_bottom_text']) .'; } '; }
+			if(!empty($options['colors_footer_bottom_link'])){ $custom_styles .=' .footer-bottom a { color: '. esc_attr($options['colors_footer_bottom_link']) .'; } '; }
+			if(!empty($options['colors_footer_bottom_link_hover'])){ $custom_styles .=' .footer-bottom a:hover { color: '. esc_attr($options['colors_footer_bottom_link_hover']) .'; } '; }
+		}
+
+		$options_in = get_option("mt_colors_footer_social");
+		if(!empty($options_in)){
+			if(!empty($options_in['icon'])){ if($options_in['icon']!='#fffff1'){ $custom_styles .='.footer .social li a { color:'. esc_attr($options_in['icon']) .'!important; }'; } }
+			if(!empty($options_in['hover'])){ if($options_in['hover']!='#fffff1'){ $custom_styles .='.footer .social li a:hover { color:'. esc_attr($options_in['hover']) .'!important; }'; } }
+			if(!empty($options_in['background'])){ if($options_in['background']!='#fffff1'){ $custom_styles .='.footer .social li a { background:  { color:'. esc_attr($options_in['background']) .'!important; }'; } }
+			if(!empty($options_in['background_hover'])){ if($options_in['background_hover']!='#fffff1'){ $custom_styles .='.footer .social li a:hover { background:'. esc_attr($options_in['background_hover']) .'!important; }'; } }
+		} else {
+			if(!empty($options['colors_footer_social_icon'])){ $custom_styles .=' .footer .social li a { color: '. esc_attr($options['colors_footer_social_icon']) .'; } '; }
+			if(!empty($options['colors_footer_social_background'])){ $custom_styles .=' .footer .social li a { background: '. esc_attr($options['colors_footer_social_background']) .'; } '; }
+			if(!empty($options['colors_footer_social_icon_hover'])){ $custom_styles .=' .footer .social li a:hover { color: '. esc_attr($options['colors_footer_social_icon_hover']) .'; } '; }
+			if(!empty($options['colors_footer_social_background_hover'])){ $custom_styles .=' .footer .social li a:hover { background: '. esc_attr($options['colors_footer_social_background_hover']) .'; } '; }
+		}
+
+		$options_in = get_option("mt_colors_footer_icons");
+		if(!empty($options_in['latest'])){ if($options_in['latest']!='#fffff1'){$custom_styles .='.footer .mt_l_latest:before { color:'. esc_attr($options_in['latest']) .'!important; }'; }}
+		if(!empty($options_in['popular'])){ if($options_in['popular']!='#fffff1'){$custom_styles .='.footer .mt_l_popular:before { color:'. esc_attr($options_in['popular']) .'!important; }'; }}
+		if(!empty($options_in['hot'])){ if($options_in['hot']!='#fffff1'){$custom_styles .='.footer .mt_l_hot:before { color:'. esc_attr($options_in['hot']) .'!important; }'; }}
+		if(!empty($options_in['trending'])){ if($options_in['trending']!='#fffff1'){$custom_styles .='.footer .mt_l_trending:before { color:'. esc_attr($options_in['trending']) .'!important; }'; }}
+
 
 	 if ( $custom_styles != '' ) {
 	  $css = preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "\n", $custom_styles);
@@ -356,15 +408,6 @@ function boomnews_admin_script() {
 	wp_enqueue_style('boomnews-admin', get_template_directory_uri().'/inc/css/admin.css');
 }
 add_action('admin_enqueue_scripts', 'boomnews_admin_script');
-
-
-function boomnews_header_hooks() {
-
-	get_template_part('style');
-
-}
-
-add_action('wp_head', 'boomnews_header_hooks');
 
 
 add_filter('body_class','boomnews_class');

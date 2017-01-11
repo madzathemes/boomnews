@@ -3,92 +3,6 @@ $options = get_option("boomnews_theme_options");
 $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
 ?>
 
-<?php if(!empty($options['colors_menu_bg_right']) and !empty($options['colors_menu_bg_left'])){ ?>
-	.menu-background {
-	  background: <?php echo esc_attr($options['colors_menu_bg_left']); ?>;
-	  background: -moz-linear-gradient(-45deg,  <?php echo esc_attr($options['colors_menu_bg_left']); ?> 52%, <?php echo esc_attr($options['colors_menu_bg_right']); ?> 100%);
-	  background: -webkit-linear-gradient(-45deg,  <?php echo esc_attr($options['colors_menu_bg_left']); ?> 52%,<?php echo esc_attr($options['colors_menu_bg_right']); ?> 100%);
-	  background: linear-gradient(135deg,  <?php echo esc_attr($options['colors_menu_bg_left']); ?> 52%,<?php echo esc_attr($options['colors_menu_bg_right']); ?> 100%);
-	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='<?php echo esc_attr($options['colors_menu_bg_left']); ?>', endColorstr='<?php echo esc_attr($options['colors_menu_bg_right']); ?>',GradientType=1 );
-	}
-	.nav-search::before {
-		background: <?php echo esc_attr($options['colors_menu_bg_right']); ?>;
-	}
-	.nav-random a:after {
-		background: <?php echo esc_attr($options['colors_menu_bg_left']); ?>;
-	}
-<?php } ?>
-<?php if(!empty($options['colors_menu_random_background'])){ ?>
-.nav-random a:after {
-	background: <?php echo esc_attr($options['colors_menu_random_background']); ?>;
-}
-<?php } ?>
-<?php if(!empty($options['colors_menu_border'])){ ?>
-.nav-button::before, .sf-menu > li::before {
-	background: <?php echo esc_attr($options['colors_menu_border']); ?>;
-}
-<?php } ?>
-<?php if(!empty($options['colors_menu'])){ ?>
-.top-nav a,
-.top-nav {
-	color: <?php echo esc_attr($options['colors_menu']); ?>;
-}
-.mt-m-cool-button-line,
-.mt-m-cool-button-line:after,
-.mt-m-cool-button-line:before {
-	background: <?php echo esc_attr($options['colors_menu']); ?>;
-}
-<?php } ?>
-<?php if(!empty($options['colors_menu_small_button'])){ ?>
-.nav-button.active .mt-m-cool-button-line,
-.nav-button.active .mt-m-cool-button-line:after,
-.nav-button.active .mt-m-cool-button-line:before,
-.nav-button:hover .mt-m-cool-button-line,
-.nav-button:hover .mt-m-cool-button-line:after,
-.nav-button:hover .mt-m-cool-button-line:before  {
-	background: <?php echo esc_attr($options['colors_menu_small_button']); ?>;
-}
-<?php } ?>
-
-
-
-<?php if(!empty($options['colors_menu_sub_cat']) or !empty($options['colors_menu_sub_cat_bg'])){ ?>
-	<?php if(!empty($options['colors_menu_sub_cat'])){ ?>.megamenu-span h4 { color: <?php echo esc_attr($options['colors_menu_sub_cat']); ?> }<?php } ?>
-	<?php if(!empty($options['colors_menu_sub_cat_bg'])){ ?>.megamenu-span h4 { background: <?php echo esc_attr($options['colors_menu_sub_cat_bg']); ?> }<?php } ?>
-<?php } ?>
-<?php if(!empty($options['colors_menu_sub_cat_hover']) or !empty($options['colors_menu_sub_cat_hover_bg'])){ ?>
-	<?php if(!empty($options['colors_menu_sub_cat_hover'])){ ?>.megamenu-span:hover h4 { color: <?php echo esc_attr($options['colors_menu_sub_cat_hover']); ?> }<?php } ?>
-	<?php if(!empty($options['colors_menu_sub_cat_hover_bg'])){ ?>.megamenu-span:hover h4 { background: <?php echo esc_attr($options['colors_menu_sub_cat_hover_bg']); ?> }<?php } ?>
-<?php } ?>
-<?php if(!empty($options['colors_menu_small_button_background'])){ ?>
-.nav-button:hover,
-.nav-button:hover::before,
-.nav-button.active,
-.nav-button.active::before {
-	background: <?php echo esc_attr($options['colors_menu_small_button_background']); ?>;
-}
-<?php } ?>
-<?php if(!empty($options['colors_menu_small_background'])){ ?>
-.hover-menu {
-	background: <?php echo esc_attr($options['colors_menu_small_background']); ?>;
-}
-<?php } ?>
-<?php if(!empty($options['colors_menu_small_link'])){ ?>
-.hover-menu a{
-	color: <?php echo esc_attr($options['colors_menu_small_link']); ?>;
-}
-<?php } ?>
-<?php if(!empty($options['colors_menu_small_link_hover'])){ ?>
-.hover-menu a:hover{
-	color: <?php echo esc_attr($options['colors_menu_small_link_hover']); ?>;
-}
-<?php } ?>
-<?php if(!empty($options['colors_menu_small_text'])){ ?>
-.hover-menu-head {
-	color: <?php echo esc_attr($options['colors_menu_small_text']); ?>;
-}
-<?php } ?>
-
 <?php if(!empty($options['colors_footer_top_background'])){ ?> .footer-top { background: <?php echo esc_attr($options['colors_footer_top_background']); ?>; } <?php } ?>
 <?php if(!empty($options['colors_footer_top_title'])){ ?> .footer-top h2 { color: <?php echo esc_attr($options['colors_footer_top_title']); ?>; } <?php } ?>
 <?php if(!empty($options['colors_footer_top_text'])){ ?> .footer-top p { color: <?php echo esc_attr($options['colors_footer_top_text']); ?>; } <?php } ?>
@@ -107,6 +21,7 @@ $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
 <?php if(!empty($options['colors_footer_social_background'])){ ?> .footer .social li a { background: <?php echo esc_attr($options['colors_footer_social_background']); ?>; } <?php } ?>
 <?php if(!empty($options['colors_footer_social_icon_hover'])){ ?> .footer .social li a:hover { color: <?php echo esc_attr($options['colors_footer_social_icon_hover']); ?>; } <?php } ?>
 <?php if(!empty($options['colors_footer_social_background_hover'])){ ?> .footer .social li a:hover { background: <?php echo esc_attr($options['colors_footer_social_background_hover']); ?>; } <?php } ?>
+
 <?php
 
 		if(isset($options['image_upload_test']))  {
