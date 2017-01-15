@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*-----------------------------------------------------------------------------------
-  	Version: 2.3
+  	Version: 2.4
     Theme Name: BoomNews
     Theme URI: https://boomnews.magazine-themes.net/
     Description: Magazine / Blog
@@ -786,6 +786,7 @@ table {
 /* Layouts */
 .mt-outer-wrap {
   overflow: hidden;
+  position: relative;
 }
 .mt-container-wrap {
   position: relative;

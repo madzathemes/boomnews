@@ -16,7 +16,7 @@ function boomnews_single_bottom() {
  $share_bottom = get_post_meta(get_the_ID(), "magazin_post_share_bottom", true);
  ?><div class="mt-pagepagination">
   <?php $defaults = array(
-		'before'           => '<p>' . esc_html__( 'Read More:', 'infowazz'),
+		'before'           => '<p>' . esc_html__( 'Read More:', 'boomnews'),
 		'after'            => '</p>',
 		'link_before'      => '<span>',
 		'link_after'       => '</span>',

@@ -308,8 +308,6 @@ function boomnews_css() {
 		}}
 
 		// Footer Colors
-
-
 		$options_in = get_option("mt_colors_footer_top");
 		if(!empty($options_in)){
 			if(!empty($options_in['background'])){ if($options_in['background']!='#fffff1'){ $custom_styles .='.footer-top { background:'. esc_attr($options_in['background']) .'!important; }'; } }
@@ -373,7 +371,6 @@ function boomnews_header_script() {
 
 		$option = get_option("boomnews_theme_options");
 
-		wp_enqueue_script( 'boomnews_defer', get_template_directory_uri(). '/inc/js/defer.js', array( 'jquery'), '', true );
 		wp_enqueue_script( 'boomnews_script', get_template_directory_uri(). '/inc/js/scripts.js', array( 'jquery'), '', true );
 		wp_localize_script( 'boomnews_script', 'ajax_posts', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'noposts' => esc_html__('No older posts found', 'boomnews'), ));
 
