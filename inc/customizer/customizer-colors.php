@@ -93,7 +93,26 @@ function boomnews_customize_colors($wp_customize){
     ),
   ));
 
-
+  Kirki::add_field( 'mt_colors_header_icons', array(
+       'type'        => 'multicolor',
+       'settings'    => 'mt_colors_header_icons',
+       'label'       => esc_attr__( 'Header Icons', 'boomnews' ),
+       'section'     => 'colors_menu',
+       'option_type' => 'option',
+       'priority'    => 1,
+       'choices'     => array(
+           'latest'    => esc_attr__( 'Latest', 'boomnews' ),
+           'popular'   => esc_attr__( 'Popular', 'boomnews' ),
+           'hot'  => esc_attr__( 'Hot', 'boomnews' ),
+           'trending'  => esc_attr__( 'Trending', 'boomnews' ),
+       ),
+       'default'     => array(
+           'latest'    => '',
+           'popular'    => '',
+           'hot'    => '',
+           'trending'    => '',
+      ),
+   ));
 
 
   Kirki::add_field( 'mt_colors_header_button', array(

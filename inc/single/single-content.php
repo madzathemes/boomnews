@@ -43,21 +43,43 @@ function boomnews_single_bottom() {
    <div class="entry-meta">
 
      <?php if ( get_the_author_meta( 'description' )) { ?>
-       <div class="author-info">
-         <div class="author-avatar">
-           <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boomnews_author_bio_avatar_size', 30 ) ); ?>
-         </div>
-         <div class="author-description">
-           <h2><?php printf( esc_html__( 'About %s', 'boomnews' ), get_the_author() ); ?></h2>
-           <p><?php the_author_meta( 'description' ); ?></p>
-           <div class="author-link">
-             <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-               <?php printf( esc_html__( 'View all posts by %s', 'boomnews' ), get_the_author() ); ?>
-             </a>
-           </div>
-         </div>
-       </div>
-     <?php } ?>
+      <div class="author-info">
+        <div class="author-avatar">
+          <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'mellany_author_bio_avatar_size', 55 ) ); ?>
+          </div>
+          <div class="author-description">
+            <h5><?php echo esc_html__( 'Author', 'mellany' ); ?></h5>
+            <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><h3><?php printf( esc_html__( '%s', 'mellany' ), get_the_author() ); ?></h3></a>
+            <div class="mt-bio-social">
+
+              <?php $twitterHandle = get_the_author_meta('twitter');
+              $facebookHandle = get_the_author_meta('facebook');
+              $googleHandle = get_the_author_meta('gplus');
+              $instagramHandle = get_the_author_meta('instagram');
+              $linkedinHandle = get_the_author_meta('linkedin');
+              $pinterestHandle = get_the_author_meta('pinterest');
+              $youtubeHandle = get_the_author_meta('youtube');
+              $dribbbleHandle = get_the_author_meta('dribbble'); ?>
+
+              <?php if(!empty($twitterHandle)) { ?><a class="mt-bio-twitter" href="<?php echo $twitterHandle; ?>" alt="twitter"></a> <?php } ?>
+              <?php if(!empty($facebookHandle)) { ?><a class="mt-bio-facebook" href="<?php echo $facebookHandle; ?>" alt="facebook"></a> <?php } ?>
+              <?php if(!empty($googleHandle)) { ?><a class="mt-bio-google" href="<?php echo $googleHandle; ?>" alt="google plus"></a> <?php } ?>
+              <?php if(!empty($instagramHandle)) { ?><a class="mt-bio-instagram" href="<?php echo $instagramHandle; ?>" alt="instagram"></a> <?php } ?>
+              <?php if(!empty($linkedinHandle)) { ?><a class="mt-bio-linkedin" href="<?php echo $linkedinHandle; ?>" alt="linkedin"></a> <?php } ?>
+              <?php if(!empty($pinterestHandle)) { ?><a class="mt-bio-pinterest" href="<?php echo $pinterestHandle; ?>" alt="pinterest"></a> <?php } ?>
+              <?php if(!empty($youtubeHandle)) { ?><a class="mt-bio-youtube" href="<?php echo $youtubeHandle; ?>" alt="youtube"></a> <?php } ?>
+              <?php if(!empty($dribbbleHandle)) { ?><a class="mt-bio-dribbble" href="<?php echo $dribbbleHandle; ?>" alt="dribbble"></a> <?php } ?>
+
+            </div>
+          <p><?php the_author_meta( 'description' ); ?></p>
+          <div class="author-link">
+            <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+              <?php printf( esc_html__( 'View all posts by %s', 'mellany' ), get_the_author() ); ?>
+            </a>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
 
    </div>
    <?php if  (!empty($optionz['article_ad_bottom'])) {  ?>
