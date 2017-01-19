@@ -144,7 +144,7 @@ function boomnews_logo() {
 	<?php if(!empty($option['header_logo'])) { ?>
 		<a class="logo"  href="<?php echo esc_url(home_url('/'));?>">
 			<img data-test="2" <?php if(!empty($option['logo_width'])) { ?>  width="<?php echo esc_attr($option['logo_width']); ?>" <?php } if(!empty($option['logo_height'])) { ?>  height="<?php echo esc_attr($option['logo_height']); ?>" <?php } ?>
-			src="<?php echo esc_url($header_logo); ?>"
+			src="<?php echo esc_url($header_logo, array('http','https')); ?>"
 			srcset="<?php echo esc_url($header_logo); ?>, <?php if(!empty($option['header_logox2'])) { echo $option['header_logox2']; } ?> 2x"  alt="<?php echo the_title(); ?>"  />
 		</a>
 	<?php } else { ?>
