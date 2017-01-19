@@ -147,11 +147,27 @@ function disbale_wpes_on_media_search($enabled) {
 add_filter('wpes_enabled', 'disbale_wpes_on_media_search');
 
 
-function ssl_srcset( $sources ) {
-foreach ( $sources as &$source ) {
-$source['url'] = set_url_scheme( $source['url'], 'https' );
-}
+//wordpress 4.4 srcset ssl fix
+function cloudflare_ssl_srcset( $sources ) {
 
-return $sources;
+	$cloudflare_protocol_rewrite = load_protocol_rewrite();
+
+	if ($cloudflare_protocol_rewrite == 1) {
+
+	foreach ( $sources as &$source ) {
+		$source['url'] = set_url_scheme( $source['url'] );
+	}
+
+	return $sources;
+
+	} else {
+
+		foreach ( $sources as &$source ) {
+			$sources;
+		}
+
+		return $sources;
+
+	}
 }
-add_filter( 'wp_calculate_image_srcset', 'ssl_srcset' );
+add_filter( 'wp_calculate_image_srcset', 'cloudflare_ssl_srcset' );
