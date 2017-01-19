@@ -132,6 +132,7 @@ add_filter('boomnews_top_content','boomnews_top_content');
 
 function boomnews_logo() {
 
+	$option = get_option("boomnews_theme_options");
 	if(!empty($option['header_logo'])) {
 		$header_logo = esc_url($option['header_logo']);
 		if( 'http' == parse_url($header_logo, PHP_URL_SCHEME) ){
@@ -139,9 +140,7 @@ function boomnews_logo() {
 		}
 	}
 
-	$option = get_option("boomnews_theme_options"); ?>
-
-	<?php if(!empty($option['header_logo'])) { ?>
+ if(!empty($option['header_logo'])) { ?>
 		<a class="logo"  href="<?php echo esc_url(home_url('/'));?>">
 			<img data-test="2" <?php if(!empty($option['logo_width'])) { ?>  width="<?php echo esc_attr($option['logo_width']); ?>" <?php } if(!empty($option['logo_height'])) { ?>  height="<?php echo esc_attr($option['logo_height']); ?>" <?php } ?>
 			src="<?php echo esc_url($header_logo, array('http','https')); ?>"
