@@ -137,13 +137,13 @@ function boomnews_logo() {
 	// Fix for SSL
 	if(!empty($option['header_logo'])) {
 		$header_logo = esc_url($option['header_logo']);
-		if( 'http' == parse_url($header_logo, PHP_URL_SCHEME) ){
+		if(is_ssl() and 'http' == parse_url($header_logo, PHP_URL_SCHEME) ){
 		    $header_logo = str_replace('http://', 'https://', $header_logo);
 		}
 	}
 	if(!empty($option['header_logox2'])) {
 		$header_logo2 = esc_url($option['header_logox2']);
-		if( 'http' == parse_url($header_logo2, PHP_URL_SCHEME) ){
+		if(is_ssl() and 'http' == parse_url($header_logo2, PHP_URL_SCHEME) ){
 		    $header_logo2 = str_replace('http://', 'https://', $header_logo2);
 		}
 	}
