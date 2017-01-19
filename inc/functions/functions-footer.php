@@ -54,8 +54,29 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 footer-logo">
+
+              <?php
+
+              // Fix for SSL
+              if(!empty($option['footer_logo'])) {
+            		$footer_logo = esc_url($option['footer_logo']);
+            		if( 'http' == parse_url($footer_logo, PHP_URL_SCHEME) ){
+            		    $footer_logo = str_replace('http://', 'https://', $footer_logo);
+            		}
+            	}
+              
+              $footer_logo2 = "";
+              if(!empty($option['footer_logox2'])) {
+            		$footer_logo2 = esc_url($option['footer_logox2']);
+            		if( 'http' == parse_url($footer_logo2, PHP_URL_SCHEME) ){
+            		    $footer_logo2 = str_replace('http://', 'https://', $footer_logo2);
+            		}
+            	}
+
+              ?>
+
               <?php if(!empty($option['footer_logo'])) { ?>
-                <img src="<?php echo esc_url($option['footer_logo']); ?>" srcset="<?php echo esc_url($option['footer_logo']); ?> 1x, <?php echo esc_url($option['footer_logox2']); ?> 2x"  alt="<?php echo the_title(); ?>"  />
+                <img src="<?php echo esc_url($footer_logo); ?>" srcset="<?php echo esc_url($footer_logo); ?> 1x, <?php echo esc_url($footer_logo2); ?> 2x"  alt="<?php echo the_title(); ?>"  />
               <?php } else { ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/logo.png" alt="<?php echo the_title(); ?>" />
               <?php } ?>
