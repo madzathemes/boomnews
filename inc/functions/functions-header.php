@@ -132,13 +132,20 @@ add_filter('boomnews_top_content','boomnews_top_content');
 
 function boomnews_logo() {
 
+	if(!empty($option['header_logo'])) {
+		$header_logo = esc_url($option['header_logo']);
+		if( 'http' == parse_url($header_logo, PHP_URL_SCHEME) ){
+		    $header_logo = str_replace('http://', 'https://', $header_logo);
+		}
+	}
+
 	$option = get_option("boomnews_theme_options"); ?>
 
 	<?php if(!empty($option['header_logo'])) { ?>
 		<a class="logo"  href="<?php echo esc_url(home_url('/'));?>">
 			<img data-test="2" <?php if(!empty($option['logo_width'])) { ?>  width="<?php echo esc_attr($option['logo_width']); ?>" <?php } if(!empty($option['logo_height'])) { ?>  height="<?php echo esc_attr($option['logo_height']); ?>" <?php } ?>
-			src="<?php echo esc_url($option['header_logo'], array('http', 'https')); ?>"
-			srcset="<?php echo esc_url($option['header_logo'], array('http', 'https')); ?>, <?php if(!empty($option['header_logox2'])) { echo $option['header_logox2']; } ?> 2x"  alt="<?php echo the_title(); ?>"  />
+			src="<?php echo esc_url($header_logo); ?>"
+			srcset="<?php echo esc_url($header_logo); ?>, <?php if(!empty($option['header_logox2'])) { echo $option['header_logox2']; } ?> 2x"  alt="<?php echo the_title(); ?>"  />
 		</a>
 	<?php } else { ?>
 		<a class="logo"  href="<?php echo esc_url(home_url('/'));?>">
