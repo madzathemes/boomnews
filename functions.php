@@ -145,3 +145,13 @@ function disbale_wpes_on_media_search($enabled) {
     return $enabled;
 }
 add_filter('wpes_enabled', 'disbale_wpes_on_media_search');
+
+add_filter('wp_calculate_image_srcset',function($sources, $size_array, $image_src, $image_meta, $attachment_id ) {
+  if ( is_ssl() )
+    {
+      foreach($sources as $size => &$source){
+        $source['url'] = set_url_scheme( $source['url'] ,'https');
+      }
+    }
+  return $sources;
+}, 14, 5 );
