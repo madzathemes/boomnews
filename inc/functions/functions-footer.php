@@ -60,15 +60,15 @@
               // Fix for SSL
               if(!empty($option['footer_logo'])) {
             		$footer_logo = esc_url($option['footer_logo']);
-            		if( 'http' == parse_url($footer_logo, PHP_URL_SCHEME) ){
+            		if(is_ssl() and 'http' == parse_url($footer_logo, PHP_URL_SCHEME) ){
             		    $footer_logo = str_replace('http://', 'https://', $footer_logo);
             		}
             	}
-              
+
               $footer_logo2 = "";
               if(!empty($option['footer_logox2'])) {
             		$footer_logo2 = esc_url($option['footer_logox2']);
-            		if( 'http' == parse_url($footer_logo2, PHP_URL_SCHEME) ){
+            		if(is_ssl() and 'http' == parse_url($footer_logo2, PHP_URL_SCHEME) ){
             		    $footer_logo2 = str_replace('http://', 'https://', $footer_logo2);
             		}
             	}
@@ -82,15 +82,17 @@
               <?php } ?>
             </div>
             <div class="col-md-4 footer-about">
-              <div class="mt-subscribe-footer">
-                  <div class="form-overlay"></div>
-                  <form method="post" target="popupwindow" action="https://www.specificfeeds.com/subscribe?pub=bWFkemF0aGVtZXMtdXNlcmRhdGEtNzAyOTMy">
-                  	<input class="mt-s-i" type="text" name="email" placeholder="<?php echo esc_html("Your email adress", 'boomnews'); ?>" required>
-                  	<input class="mt-s-b"  type="submit" value="<?php echo esc_html("Subscribe Now", 'boomnews'); ?>" name="subscribe">
+              <?php if ( true == get_theme_mod( 'mt_footer_subscribe', true ) ) {  ?>
+                <div class="mt-subscribe-footer">
+                    <div class="form-overlay"></div>
+                    <form method="post" target="popupwindow" action="https://www.specificfeeds.com/subscribe?pub=bWFkemF0aGVtZXMtdXNlcmRhdGEtNzAyOTMy">
+                    	<input class="mt-s-i" type="text" name="email" placeholder="<?php echo esc_html("Your email adress", 'boomnews'); ?>" required>
+                    	<input class="mt-s-b"  type="submit" value="<?php echo esc_html("Subscribe Now", 'boomnews'); ?>" name="subscribe">
+                      <div class="clear"></div>
+                    </form>
                     <div class="clear"></div>
-                  </form>
-                  <div class="clear"></div>
-              </div>
+                </div>
+              <?php } ?>
             </div>
             <div class="col-md-4 footer-social">
               <?php boomnews_socials(); ?>

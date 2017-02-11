@@ -90,7 +90,19 @@ $mt_columns = get_option("boomnews_theme_options");
 	'after_widget' => '<div class="clear"></div></div>',
 			'before_title' => '<h2 class="heading"><span>',
 			'after_title' => '</span></h4>',
-) );
+	) );
+
+	/* --------------------------------------------------------------------------------------- Footer Hot Post widgets */
+
+	register_sidebar( array(
+	'name' => esc_html__( 'Footer Hot Post Widget', 'boomnews'),
+	'id' => 'sidebar-footer-hotposts-widget-area',
+	'description' => esc_html__( 'The footer host post widget area' , 'boomnews'),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '<div class="clear"></div></div>',
+			'before_title' => '<h2 class="heading"><span>',
+			'after_title' => '</span></h4>',
+	) );
 
 
 }

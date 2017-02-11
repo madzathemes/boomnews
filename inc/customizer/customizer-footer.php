@@ -33,6 +33,8 @@ function boomnews_customize_footer($wp_customize){
         'panel'  => 'panel_footer',
     ));
 
+
+
 		$wp_customize->add_section('boomnews_icons', array(
 				'title'    => esc_html__('Social Icons', 'boomnews'),
 				'priority' => 128,
@@ -43,9 +45,52 @@ function boomnews_customize_footer($wp_customize){
 		// ===
 		// FOOTER BOTTOM SETTINGS
 		$wp_customize->add_section('boomnews_footer_bottom', array(
-				'title'    	=> esc_html__('Footer Settings', 'boomnews'),'priority' => 1,
-				'panel'  => 'panel_footer',
+				'title'    	=> esc_html__('Footer', 'boomnews'),
+				'priority' => 301,
 		));
+
+		Kirki::add_field( 'mt_footer_hot_post', array(
+      	'type'        => 'switch',
+      	'settings'    => 'mt_footer_hot_post',
+      	'label'       => esc_attr__( 'Footer Hot Post Widget', 'boomnews' ),
+				'description'       => esc_attr__( 'To customize footer Hot Post area you need go to Appearance/Widgets/Footer Hot Post Widget. And insert inside this widget area "mt Trending Posts" widget', 'boomnews' ),
+      	'section'     => 'boomnews_footer_bottom',
+      	'default'     => 'on',
+      	'priority'    => 10,
+      	'choices'     => array(
+          'on'  => esc_attr__( 'ON', 'boomnews' ),
+       		'off' => esc_attr__( 'OFF', 'boomnews' ),
+      	),
+    ) );
+
+		Kirki::add_field( 'mt_footer_ad', array(
+      	'type'        => 'switch',
+      	'settings'    => 'mt_footer_ad',
+      	'label'       => esc_attr__( 'Footer Ad', 'boomnews' ),
+      	'section'     => 'boomnews_footer_bottom',
+      	'default'     => 'on',
+      	'priority'    => 10,
+      	'choices'     => array(
+          'on'  => esc_attr__( 'ON', 'boomnews' ),
+       		'off' => esc_attr__( 'OFF', 'boomnews' ),
+      	),
+    ) );
+
+		Kirki::add_field( 'mt_footer_subscribe', array(
+      	'type'        => 'switch',
+      	'settings'    => 'mt_footer_subscribe',
+      	'label'       => esc_attr__( 'Footer Subscribe', 'boomnews' ),
+				'description'       => esc_attr__( 'To activate this subscription form, You only need register your domain on www.specificfeeds.com', 'boomnews' ),
+      	'section'     => 'boomnews_footer_bottom',
+      	'default'     => 'on',
+      	'priority'    => 10,
+      	'choices'     => array(
+          'on'  => esc_attr__( 'ON', 'boomnews' ),
+       		'off' => esc_attr__( 'OFF', 'boomnews' ),
+      	),
+    ) );
+
+
 
 		// FOOTER PAGE SORCE
 		$wp_customize->add_setting('boomnews_theme_options[footer_page]', array(

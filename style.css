@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*-----------------------------------------------------------------------------------
-  	Version: 2.6
+  	Version: 2.8
     Theme Name: BoomNews
     Theme URI: https://boomnews.magazine-themes.net/
     Description: Magazine / Blog
@@ -4073,10 +4073,6 @@ opacity: 0.7
   .post-style-6 .post-statistic .stat-shares {
     padding-left: 20px;
   }
-  .post-style-6 .author-info,
-  .post-style-6 .author-img {
-    display: none
-  }
   .fixed-top .share li.share-twitter a, .fixed-top .share li.share-facebook a {
     height: 42px;
   }
@@ -4153,10 +4149,6 @@ opacity: 0.7
 
   .post-statistic .stat-shares {
     padding-left: 20px;
-  }
-  .author-info,
-  .author-img {
-    display: none
   }
   .fixed-top ul.share li span {
     display: none;

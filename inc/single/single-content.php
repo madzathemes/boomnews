@@ -45,11 +45,11 @@ function boomnews_single_bottom() {
      <?php if ( get_the_author_meta( 'description' )) { ?>
       <div class="author-info">
         <div class="author-avatar">
-          <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'mellany_author_bio_avatar_size', 55 ) ); ?>
+          <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boomnews_author_bio_avatar_size', 55 ) ); ?>
           </div>
           <div class="author-description">
-            <h5><?php echo esc_html__( 'Author', 'mellany' ); ?></h5>
-            <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><h3><?php printf( esc_html__( '%s', 'mellany' ), get_the_author() ); ?></h3></a>
+            <h5><?php echo esc_html__( 'Author', 'boomnews' ); ?></h5>
+            <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><h3><?php printf( esc_html__( '%s', 'boomnews' ), get_the_author() ); ?></h3></a>
             <div class="mt-bio-social">
 
               <?php $twitterHandle = get_the_author_meta('twitter');
@@ -74,7 +74,7 @@ function boomnews_single_bottom() {
           <p><?php the_author_meta( 'description' ); ?></p>
           <div class="author-link">
             <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-              <?php printf( esc_html__( 'View all posts by %s', 'mellany' ), get_the_author() ); ?>
+              <?php printf( esc_html__( 'View all posts by %s', 'boomnews' ), get_the_author() ); ?>
             </a>
           </div>
         </div>

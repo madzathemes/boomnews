@@ -50,7 +50,7 @@ function boomnews_css() {
 
 	 // Background Color
 	 $style = get_post_meta(get_the_ID(), "magazin_background_color", true);
-	 if(!empty($style)){ $custom_styles .='.boxed-layout-on { background-color: '. esc_attr($default_color) .' }'; }
+	 if(!empty($style)){ $custom_styles .='.boxed-layout-on { background-color: '. esc_attr($style) .' }'; }
 	 else if (!empty($options['background_color'])) { $custom_styles .='.boxed-layout-on { background-color: '. esc_attr($options['background_color']) .'; }'; }
 
 	 // Logo Margin
