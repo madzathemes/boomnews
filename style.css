@@ -1850,6 +1850,7 @@ h2.heading span {
   height: 150px;
   float:left;
   margin-right: 25px;
+  z-index: 1;
 }
 .poster.trending-carousel .number {
   left: 108px;
