@@ -77,11 +77,11 @@ function boomnews_comment( $comment, $args, $depth ) {
 						/* translators: 1: comment author, 2: date and time */
 						printf( esc_html__( '%1$s %2$s', 'boomnews' ),
 							sprintf( '<span class="fn">%s</span>', get_comment_author_link() ),
-							sprintf( '<a href="%1$s" class="mt_comment_date"> <time pubdate datetime="%2$s">%3$s</time></a>',
+							sprintf( '<a href="%1$s" class="mt_comment_date"> <time datetime="%2$s">%3$s</time></a>',
 								esc_url( get_comment_link( $comment->comment_ID ) ),
-								get_comment_time( 'n-j-Y' ),
+								get_comment_time( 'Y-m-d' ),
 								/* translators: 1: date, 2: time */
-								sprintf( esc_html__( '%1$s at %2$s', 'boomnews' ), get_comment_date('n-j-Y' ), get_comment_time() )
+								sprintf( esc_html__( '%1$s at %2$s', 'boomnews' ), get_comment_date('Y-m-d' ), get_comment_time() )
 							)
 						);
 					?>
