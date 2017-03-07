@@ -3,6 +3,9 @@
 .wp-full-overlay-main {
     background-color: #fff;
 }
+.ocdi .notice.notice-info {
+  display: none!important;
+}
 .customize-control-kirki-switch .switch {
     margin-bottom: 0px!important;
 }
