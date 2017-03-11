@@ -141,7 +141,9 @@
       <div class="container">
       	<div class="single-media-top mt-radius single-image-gradient">
       		<div class="mt-post-image"><div class="mt-post-image-background" style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'magazin_5'); ?>');"></div><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'large'); ?>" width="550" height="550" /></div>
-      		<div class="single-media-title">
+          <?php $copyright = get_post_meta(get_the_ID(), "magazin_img_copyright", true); if(!empty($copyright)){ ?><span class="mt-img-copyright"><?php echo esc_attr($copyright); ?></span><?php } ?>
+
+          <div class="single-media-title">
       			<div class="col-md-9">
       				<?php boomnews_single_cat(); ?>
       	      <?php boomnews_single_title(); ?>
@@ -180,6 +182,7 @@
       <div class="single-media">
         <div class="single-media-wrap">
           <div class="mt-post-image"><div class="mt-post-image-background" style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'magazin_5'); ?>');"></div><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" width="550" height="550" /></div>
+          <?php $copyright = get_post_meta(get_the_ID(), "magazin_img_copyright", true); if(!empty($copyright)){ ?><span class="mt-img-copyright"><?php echo esc_attr($copyright); ?></span><?php } ?>
         <div class="single-image-gradient">
     			<div class="single-media-title">
             <div class="container">
@@ -223,6 +226,7 @@
     <div class="post-media-wrap">
     </div>
     	<div class="single-media-top single-image-gradient">
+        <?php $copyright = get_post_meta(get_the_ID(), "magazin_img_copyright", true); if(!empty($copyright)){ ?><span class="mt-img-copyright"><?php echo esc_attr($copyright); ?></span><?php } ?>
   			<div class="single-media-title">
   				<div class="col-md-9">
   					<?php boomnews_single_cat(); ?>

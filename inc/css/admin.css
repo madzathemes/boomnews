@@ -1,4 +1,5 @@
-.siteorigin-panels-builder .so-builder-toolbar > .so-tool-button.so-live-editor { display: none!important; }
+.siteorigin-panels-builder .so-builder-toolbar > .so-tool-button.so-live-editor,
+.so-siteorigin-premium { display: none!important; }
 
 .wp-full-overlay-main {
     background-color: #fff;

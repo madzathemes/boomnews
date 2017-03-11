@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*-----------------------------------------------------------------------------------
-  	Version: 2.8
+  	Version: 2.9
     Theme Name: BoomNews
     Theme URI: https://boomnews.magazine-themes.net/
     Description: Magazine / Blog
@@ -5256,4 +5256,35 @@ li.mtc-buy {
 .footer-wrap .yarpp-related,
 .footer-wrap #toc_container{
   display:none !important;
+}
+
+/* Updates */
+.mt-img-copyright {
+  position: absolute;
+  color: white;
+  bottom: 30px;
+  right: 10px;
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.post-media-wrap .mt-img-copyright {
+  bottom: 13px;
+  opacity: 0.66
+}
+.post-style-8 .mt-img-copyright {
+  bottom: 13px;
+  opacity: 0.66
+}
+.mt-fl-on .mt-first-letter {
+  font-size: 68px;
+  border: 0px solid black;
+  line-height: 1;
+  padding: 0px 0px;
+  margin: 0px 20px 0px 0px;
+  display: inline;
+  float: left;
+  font-weight: 900;
 }

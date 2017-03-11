@@ -4,7 +4,15 @@
 	<div class="container mt-content-container">
 		<div class="row">
 			<div class="col-md-8  floatleft">
-				<?php echo do_shortcode('[posts pagination=on type=normal-right ]');?>
+				<?php if ( shortcode_exists( 'posts' ) ) {
+
+					echo do_shortcode('[posts pagination=on type=normal-right ]');
+
+				} else {
+
+					get_template_part( 'content', get_post_format() );
+
+				}?>
 			</div>
 			<div class="col-md-4  floatright">
 				<?php get_sidebar(); ?>
