@@ -113,45 +113,6 @@ jQuery(document).ready(function() {
   });
 
 
-    var facebook = jQuery( ".mt-f-data>div" ).data( "facebook" );
-    var twitter = jQuery( ".mt-f-data>div" ).data( "twitter" );
-    var youtube = jQuery( ".mt-f-data>div" ).data( "youtube" );
-    var token = jQuery( ".mt-f-data>div" ).data( "token" );
-
-
-   jQuery.ajax({
-      url: 'https://graph.facebook.com/'+facebook,
-      dataType: 'json',
-      type: 'GET',
-      data: {access_token:token,fields:'likes'},
-      success: function(data) {
-        var followers = parseInt(data.likes);
-        var k = kFormatter(followers);
-        jQuery('.social-facebook .social-count').append(followers).digits();
-
-      }
-    });
-    jQuery.ajax({
-      url: 'https://cdn.syndication.twimg.com/widgets/followbutton/info.json?screen_names='+twitter,
-      dataType: 'jsonp',
-      type: 'GET',
-      crossDomain : true,
-      success: function(data) {
-        var twitterfollowcount = data[0]['followers_count'];
-        jQuery('.social-twitter .social-count').append(twitterfollowcount).digits();
-      }
-    });
-    jQuery.ajax({
-      url: 'https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername='+youtube,
-      dataType: 'jsonp',
-      type: 'GET',
-      data:{key:'AIzaSyDXpwzqSs41Kp9IZj49efV3CSrVxUDAwS0'},
-      success: function(data) {
-        var subscribers = parseInt(data.items[0].statistics.subscriberCount);
-        var k = kFormatter(subscribers);
-        jQuery('.social-subscribe .social-count').append(subscribers).digits();
-      }
-    });
 
       //Function to add commas to the thousandths
       jQuery.fn.digits = function(){

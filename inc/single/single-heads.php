@@ -41,7 +41,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
       </div>
       <div class="author-info">
         <strong itemprop="author"><?php the_author_posts_link(); ?></strong>
-        <small class="color-silver-light" itemprop="datePublished"><?php the_date('M d, Y'); ?></small>
+        <small class="color-silver-light" itemprop="datePublished"><?php echo get_the_date(); ?></small>
         <span class="hide" itemprop="dateModified"><?php the_modified_date(); ?></span>
       </div>
     </div>

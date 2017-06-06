@@ -9,7 +9,7 @@ var cssSources = ['**/*.css'],
     jsSources = ['**/*.js'];
 
 gulp.task('zip', function () {
-  return gulp.src(['./**', '!package.json', '!gulpfile.js', '!.git/', '!.git/**', '!.gitignore', '!.DS_Store', '!node_modules/', '!node_modules/**'])
+  return gulp.src(['./**', '!package.json', '!gulpfile.js', '!.git/', '!.git/**', '!.gitignore', '!.DS_Store', '!node_modules/', '!inc/functions/gulp/**', '!inc/functions/gulp/'])
       .pipe(zip(themename+'.zip'))
       .pipe(gulp.dest('../../../../darbs/themeforest/2016/all_'+themename+'/'+themename+'/'))
 });
