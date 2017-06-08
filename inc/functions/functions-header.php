@@ -49,7 +49,7 @@ else if(!empty($option['menu_background_width'])) {
 <?php if  (!empty($optioz['header_ad_top'])) {  ?>
 	<div class="mt-t-ad">
 		<div class="mt-t-ad-in">
-			<?php echo html_entity_decode($optioz['header_ad_top']); ?>
+			<?php echo do_shortcode(html_entity_decode($optioz['header_ad_top'])); ?>
 		</div>
 	</div>
 <?php } ?>
@@ -65,7 +65,7 @@ else if(!empty($option['menu_background_width'])) {
 								<div class="top-ad">
 									<?php if  (!empty($optioz['header_ad_top'])) {  ?>
 								    <div class="text-right">
-								      <?php echo html_entity_decode($optioz['header_ad_top']); ?>
+								      <?php echo do_shortcode(html_entity_decode($optioz['header_ad_top'])); ?>
 								    </div>
 								  <?php } ?>
 								</div>

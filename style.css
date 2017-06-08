@@ -5229,6 +5229,8 @@ li.mtc-buy {
 }
 
 /* Remove Class */
+.remove-pl-share .poster-shares,
+.remove-pl-view .poster-views,
 .remove-pl-author .mt-pl-a,
 .remove-pl-author .mt-ml,
 .remove-pl-date .mt-pl-d,

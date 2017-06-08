@@ -15,7 +15,7 @@
 			<?php $optionz = get_option("magazin_theme_options");
 			if (!empty($optionz['article_ad_bottom'])) {  ?>
 				<div class="advertise text-center">
-					<?php echo html_entity_decode($optionz['article_ad_bottom']); ?>
+					<?php echo do_shortcode(html_entity_decode($optionz['article_ad_bottom'])); ?>
 				</div>
 			<?php } ?>
 		<?php } ?>
