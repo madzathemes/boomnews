@@ -4371,11 +4371,7 @@ ul.page-numbers li {
   width: 100%;
   position: fixed;
   z-index: 99999;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
-  -ms-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
+  margin: 0 0 0 -400px;
   -webkit-transition: transform .7s ease;
   -moz-transition: transform .7s ease;
   -o-transition: transform .7s ease;
@@ -4439,11 +4435,11 @@ ul.page-numbers li {
   padding: 7px;
 }
 .mobile-menu-active .mt-smart-menu {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(400px, 0, 0);
+  -moz-transform: translate3d(400px, 0, 0);
+  -ms-transform: translate3d(400px, 0, 0);
+  -o-transform: translate3d(400px, 0, 0);
+  transform: translate3d(400px, 0, 0);
 }
 .mt-smart-menu {
     display: block!important;
