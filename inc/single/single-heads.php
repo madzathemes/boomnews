@@ -45,7 +45,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()));
         <span class="hide" itemprop="dateModified"><?php the_modified_date(); ?></span>
       </div>
     </div>
-    <?php if(class_exists('md_walker')) { ?>
+    <?php if(function_exists('magazin_text_domain')) { ?>
     <div class="post-statistic pull-left">
       <?php if(!empty($shares)){ ?><span class="stat-shares color-silver-light"><strong><?php echo esc_attr($shares); ?></strong> <?php echo esc_html__('Shares', 'boomnews'); ?></span><?php } ?>
       <?php if(!empty($viewes)){ ?><span class="stat-views"><strong><?php echo esc_attr($viewes) ?></strong> <?php echo esc_html__('Views', 'boomnews'); ?></span><?php } ?>
