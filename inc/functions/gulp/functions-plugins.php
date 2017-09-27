@@ -27,9 +27,9 @@ function boomnews_register_required_plugins() {
 
 
         array(
-            'name'			=> esc_html__( "Envato WordPress Toolkit","boomnews" ), // The plugin name
-            'slug'			=> 'envato-wordpress-toolkit-master', // The plugin slug (typically the folder name)
-            'source'			=> get_template_directory() . '/all_plugins/envato-wordpress-toolkit-master.zip', // The plugin source
+            'name'			=> esc_html__( "Envato Market (One Click Updates)","boomnews" ), // The plugin name
+            'slug'			=> 'envato-market', // The plugin slug (typically the folder name)
+            'source'			=> get_template_directory() . '/all_plugins/envato-market.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
             'version'			=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch

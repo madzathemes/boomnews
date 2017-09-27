@@ -123,10 +123,10 @@ function boomnews_top_content() { $option = get_option("boomnews_theme_options")
 			if ( false == get_theme_mod( 't_pl_posts', false ) ) { $t_posts = esc_html__("Posts", "boomnews");  } else { $t_posts = get_theme_mod( 't_pl_posts' ); }
 			if ( false == get_theme_mod( 't_pl_latest', false ) ) { $t_latest = esc_html__("Latest", "boomnews");  } else { $t_latest = get_theme_mod( 't_pl_latest' ); }
 			?>
-			<?php if(!empty($option['url_latest'])) { ?><a <?php if($option['url_latest']==get_the_ID()) { ?>class="active"<?php } ?> href="<?php echo get_permalink(esc_html($option['url_latest'])); ?>"><?php echo esc_html($t_latest); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
-			<?php if(!empty($option['url_popular'])) { ?><a <?php if($option['url_popular']==get_the_ID()) { ?>class="active"<?php } ?> href="<?php echo get_permalink(esc_html($option['url_popular'])); ?>"><?php echo esc_html($t_popular); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
-			<?php if(!empty($option['url_hot'])) { ?><a <?php if($option['url_hot']==get_the_ID()) { ?>class="active"<?php } ?> href="<?php echo get_permalink(esc_html($option['url_hot'])); ?>"><?php echo esc_html($t_hot); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
-			<?php if(!empty($option['url_trending'])) { ?>	<a <?php if($option['url_trending']==get_the_ID()) { ?>class="active"<?php } ?> href="<?php echo get_permalink(esc_html($option['url_trending'])); ?>"><?php echo esc_html($t_trending); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
+			<?php if(!empty($option['url_latest'])) { ?><a class="mt_l_latest <?php if($option['url_latest']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_latest'])); ?>"><?php echo esc_html($t_latest); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
+			<?php if(!empty($option['url_popular'])) { ?><a class="mt_l_popular <?php if($option['url_popular']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_popular'])); ?>"><?php echo esc_html($t_popular); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
+			<?php if(!empty($option['url_hot'])) { ?><a class="mt_l_hot <?php if($option['url_hot']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_hot'])); ?>"><?php echo esc_html($t_hot); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
+			<?php if(!empty($option['url_trending'])) { ?>	<a class="mt_l_trending <?php if($option['url_trending']==get_the_ID()) { ?>active<?php } ?>" href="<?php echo get_permalink(esc_html($option['url_trending'])); ?>"><?php echo esc_html($t_trending); ?> <span><?php echo esc_html($t_posts); ?></span></a><?php } ?>
 
 		</div>
 
