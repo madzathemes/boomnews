@@ -3903,6 +3903,9 @@ opacity: 0.7
   .panel-grid-cell {
     width: 100% !important;
   }
+  .panel-grid.panel-no-style, .panel-grid.panel-has-style > .panel-row-style {
+    display: block
+  }
   .post-gallery-nav .slick-arrow {
     display: none!important;
   }
