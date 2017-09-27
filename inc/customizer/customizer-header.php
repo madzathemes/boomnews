@@ -11,19 +11,7 @@ function boomnews_customize_header($wp_customize){
 
 
 
-	Kirki::add_field( 'boomnews_theme_options[boxed]', array(
-		'type'        => 'radio-image',
-		'settings'    => 'boomnews_theme_options[boxed]',
-		'label'       => esc_html__( 'Page Layouts', 'boomnews' ),
-		'section'     => 'general_style_settings',
-		'default'     => '2',
-		'option_type' => 'option',
-		'priority'    => 10,
-		'choices'     => array(
-				'1'   => get_template_directory_uri() . '/inc/img/boxed.png',
-				'2' => get_template_directory_uri() . '/inc/img/full.png',
-			 ),
-	));
+
 
 	$wp_customize->add_section('boomnews_header', array(
         'title'    	=> esc_html__('Header', 'boomnews'),
@@ -90,87 +78,7 @@ function boomnews_customize_header($wp_customize){
         'settings' => 'boomnews_theme_options[header_logox2]',
     )));
 
-    Kirki::add_field( 'boomnews_theme_options[mobile_logo]', array(
-      'type'        => 'image',
-      'settings'    => 'boomnews_theme_options[mobile_logo]',
-      'label'       => esc_html__( 'Mobile Logo', 'boomnews' ),
-      'section'     => 'boomnews_logo',
-      'default'     => '',
-      'option_type' => 'option',
-      'priority'    => 10,
-    ) );
 
-    //  =============================
-    //  = Logo Widht
-    //  =============================
-
-    Kirki::add_field( 'boomnews_theme_options[logo_width]', array(
-    'type'        => 'number',
-    'settings'    => 'boomnews_theme_options[logo_width]',
-    'label'       => esc_attr__( 'Width', 'boomnews' ),
-    'section'     => 'boomnews_logo_settings',
-    'default'     => 176,
-    'option_type' => 'option',
-    'choices'     => array(
-      'min'  => 20,
-      'max'  => 500,
-      'step' => 1,
-    ),
-  ) );
-
-    //  =============================
-    //  = Logo Height
-    //  =============================
-
-    Kirki::add_field( 'boomnews_theme_options[logo_height]', array(
-    'type'        => 'number',
-    'settings'    => 'boomnews_theme_options[logo_height]',
-    'label'       => esc_attr__( 'Height', 'boomnews' ),
-    'section'     => 'boomnews_logo_settings',
-    'default'     => 40,
-    'option_type' => 'option',
-    'choices'     => array(
-      'min'  => 20,
-      'max'  => 200,
-      'step' => 1,
-    ),
-  ) );
-
-	//  =============================
-    //  = Logo margin Top
-    //  =============================
-
-
-    Kirki::add_field( 'boomnews_theme_options[logo_top]', array(
-  	'type'        => 'number',
-  	'settings'    => 'boomnews_theme_options[logo_top]',
-  	'label'       => esc_attr__( 'Top Space', 'boomnews' ),
-  	'section'     => 'boomnews_logo_settings',
-  	'default'     => 18,
-    'option_type' => 'option',
-  	'choices'     => array(
-  		'min'  => 0,
-  		'max'  => 120,
-  		'step' => 1,
-  	),
-  ) );
-
-    //  =============================
-    //  = Logo margin Bottom
-    //  =============================
-    Kirki::add_field( 'boomnews_theme_options[logo_bottom]', array(
-  	'type'        => 'number',
-  	'settings'    => 'boomnews_theme_options[logo_bottom]',
-  	'label'       => esc_attr__( 'Top Space', 'boomnews' ),
-  	'section'     => 'boomnews_logo_settings',
-  	'default'     => 18,
-    'option_type' => 'option',
-  	'choices'     => array(
-  		'min'  => 0,
-  		'max'  => 120,
-  		'step' => 1,
-  	),
-  ) );
 
     //  =============================
     //  = Logo Height fixed
@@ -485,79 +393,7 @@ function boomnews_customize_header($wp_customize){
     ));
 
 
-   Kirki::add_field( 'boomnews_theme_options[header_link_blank]', array(
-      'type'        => 'switch',
-      'settings'    => 'boomnews_theme_options[header_link_blank]',
-      'label'       => esc_html__( 'Header Button Open In New Tap', 'boomnews' ),
-      'section'     => 'boomnews_header_top',
-      'default'     => '2',
-       'option_type' => 'option',
-      'priority'    => 10,
-      'choices'     => array(
-        '1'  => esc_attr__( 'Enable', 'boomnews' ),
-        '2' => esc_attr__( 'Disable', 'boomnews' ),
-      ),
-   ) );
 
-   Kirki::add_field( 'boomnews_theme_options[menu_small_on]', array(
-     	'type'        => 'switch',
-     	'settings'    => 'boomnews_theme_options[menu_small_on]',
-     	'label'       => esc_attr__( 'Small Menu For Desktop', 'boomnews' ),
-     	'section'     => 'boomnews_header_top',
-     	'default'     => '0',
-      'option_type' => 'option',
-     	'priority'    => 10,
-     	'choices'     => array(
-     		'1'  => esc_attr__( 'Enable', 'boomnews' ),
-     		'2' => esc_attr__( 'Disable', 'boomnews' ),
-     	),
-   ) );
-
-
-
-   Kirki::add_field( 'boomnews_theme_options[menu_search]', array(
-       'type'        => 'switch',
-       'settings'    => 'boomnews_theme_options[menu_search]',
-       'label'       => esc_attr__( 'Search Button', 'boomnews' ),
-       'section'     => 'boomnews_header_top',
-       'default'     => '0',
-       'option_type' => 'option',
-       'priority'    => 10,
-       'choices'     => array(
-         '1'  => esc_attr__( 'Enable', 'boomnews' ),
-         '2' => esc_attr__( 'Disable', 'boomnews' ),
-       ),
-   ) );
-
-   Kirki::add_field( 'boomnews_theme_options[menu_share]', array(
-       'type'        => 'switch',
-       'settings'    => 'boomnews_theme_options[menu_share]',
-       'label'       => esc_attr__( 'Fixed Share Buttons', 'boomnews' ),
-       'section'     => 'boomnews_header_top',
-       'default'     => '2',
-       'option_type' => 'option',
-       'priority'    => 10,
-       'choices'     => array(
-         '1'  => esc_attr__( 'Enable', 'boomnews' ),
-         '2' => esc_attr__( 'Disable', 'boomnews' ),
-       ),
-   ) );
-
-   Kirki::add_field( 'boomnews_theme_options[menu_fixed]', array(
-  	'type'        => 'select',
-  	'settings'    => 'boomnews_theme_options[menu_fixed]',
-  	'label'       => esc_attr__( 'Fixed Header', 'boomnews' ),
-  	'section'     => 'boomnews_header_top',
-  	'default'     => 'mt-fixed-up',
-    'option_type' => 'option',
-  	'priority'    => 10,
-  	'multiple'    => 1,
-  	'choices'     => array(
-  		'mt-fixed-up' => esc_attr__( 'Show When Scroll Up', 'boomnews' ),
-  		'mt-fixed-always' => esc_attr__( 'Show Always', 'boomnews' ),
-  		'mt-fixed-disabled' => esc_attr__( 'Disable', 'boomnews' ),
-  	),
-    ));
 
 
 		// Latest Posts
@@ -651,4 +487,173 @@ function boomnews_customize_header($wp_customize){
 
 add_action('customize_register', 'boomnews_customize_header');
 
+Kirki::add_field( 'boomnews_theme_options[boxed]', array(
+  'type'        => 'radio-image',
+  'settings'    => 'boomnews_theme_options[boxed]',
+  'label'       => esc_html__( 'Page Layouts', 'boomnews' ),
+  'section'     => 'general_style_settings',
+  'default'     => '2',
+  'option_type' => 'option',
+  'priority'    => 10,
+  'choices'     => array(
+      '1'   => get_template_directory_uri() . '/inc/img/boxed.png',
+      '2' => get_template_directory_uri() . '/inc/img/full.png',
+     ),
+));
+
+Kirki::add_field( 'boomnews_theme_options[mobile_logo]', array(
+  'type'        => 'image',
+  'settings'    => 'boomnews_theme_options[mobile_logo]',
+  'label'       => esc_html__( 'Mobile Logo', 'boomnews' ),
+  'section'     => 'boomnews_logo',
+  'default'     => '',
+  'option_type' => 'option',
+  'priority'    => 10,
+) );
+
+//  =============================
+//  = Logo Widht
+//  =============================
+
+Kirki::add_field( 'boomnews_theme_options[logo_width]', array(
+'type'        => 'number',
+'settings'    => 'boomnews_theme_options[logo_width]',
+'label'       => esc_attr__( 'Width', 'boomnews' ),
+'section'     => 'boomnews_logo_settings',
+'default'     => 176,
+'option_type' => 'option',
+'choices'     => array(
+  'min'  => 20,
+  'max'  => 500,
+  'step' => 1,
+),
+) );
+
+//  =============================
+//  = Logo Height
+//  =============================
+
+Kirki::add_field( 'boomnews_theme_options[logo_height]', array(
+'type'        => 'number',
+'settings'    => 'boomnews_theme_options[logo_height]',
+'label'       => esc_attr__( 'Height', 'boomnews' ),
+'section'     => 'boomnews_logo_settings',
+'default'     => 40,
+'option_type' => 'option',
+'choices'     => array(
+  'min'  => 20,
+  'max'  => 200,
+  'step' => 1,
+),
+) );
+
+//  =============================
+//  = Logo margin Top
+//  =============================
+
+
+Kirki::add_field( 'boomnews_theme_options[logo_top]', array(
+'type'        => 'number',
+'settings'    => 'boomnews_theme_options[logo_top]',
+'label'       => esc_attr__( 'Top Space', 'boomnews' ),
+'section'     => 'boomnews_logo_settings',
+'default'     => 18,
+'option_type' => 'option',
+'choices'     => array(
+  'min'  => 0,
+  'max'  => 120,
+  'step' => 1,
+),
+) );
+
+//  =============================
+//  = Logo margin Bottom
+//  =============================
+Kirki::add_field( 'boomnews_theme_options[logo_bottom]', array(
+'type'        => 'number',
+'settings'    => 'boomnews_theme_options[logo_bottom]',
+'label'       => esc_attr__( 'Top Space', 'boomnews' ),
+'section'     => 'boomnews_logo_settings',
+'default'     => 18,
+'option_type' => 'option',
+'choices'     => array(
+  'min'  => 0,
+  'max'  => 120,
+  'step' => 1,
+),
+) );
+
+Kirki::add_field( 'boomnews_theme_options[header_link_blank]', array(
+   'type'        => 'switch',
+   'settings'    => 'boomnews_theme_options[header_link_blank]',
+   'label'       => esc_html__( 'Header Button Open In New Tap', 'boomnews' ),
+   'section'     => 'boomnews_header_top',
+   'default'     => '2',
+    'option_type' => 'option',
+   'priority'    => 10,
+   'choices'     => array(
+     '1'  => esc_attr__( 'Enable', 'boomnews' ),
+     '2' => esc_attr__( 'Disable', 'boomnews' ),
+   ),
+) );
+
+Kirki::add_field( 'boomnews_theme_options[menu_small_on]', array(
+   'type'        => 'switch',
+   'settings'    => 'boomnews_theme_options[menu_small_on]',
+   'label'       => esc_attr__( 'Small Menu For Desktop', 'boomnews' ),
+   'section'     => 'boomnews_header_top',
+   'default'     => '0',
+   'option_type' => 'option',
+   'priority'    => 10,
+   'choices'     => array(
+     '1'  => esc_attr__( 'Enable', 'boomnews' ),
+     '2' => esc_attr__( 'Disable', 'boomnews' ),
+   ),
+) );
+
+
+
+Kirki::add_field( 'boomnews_theme_options[menu_search]', array(
+    'type'        => 'switch',
+    'settings'    => 'boomnews_theme_options[menu_search]',
+    'label'       => esc_attr__( 'Search Button', 'boomnews' ),
+    'section'     => 'boomnews_header_top',
+    'default'     => '0',
+    'option_type' => 'option',
+    'priority'    => 10,
+    'choices'     => array(
+      '1'  => esc_attr__( 'Enable', 'boomnews' ),
+      '2' => esc_attr__( 'Disable', 'boomnews' ),
+    ),
+) );
+
+Kirki::add_field( 'boomnews_theme_options[menu_share]', array(
+    'type'        => 'switch',
+    'settings'    => 'boomnews_theme_options[menu_share]',
+    'label'       => esc_attr__( 'Fixed Share Buttons', 'boomnews' ),
+    'section'     => 'boomnews_header_top',
+    'default'     => '2',
+    'option_type' => 'option',
+    'priority'    => 10,
+    'choices'     => array(
+      '1'  => esc_attr__( 'Enable', 'boomnews' ),
+      '2' => esc_attr__( 'Disable', 'boomnews' ),
+    ),
+) );
+
+Kirki::add_field( 'boomnews_theme_options[menu_fixed]', array(
+ 'type'        => 'select',
+ 'settings'    => 'boomnews_theme_options[menu_fixed]',
+ 'label'       => esc_attr__( 'Fixed Header', 'boomnews' ),
+ 'section'     => 'boomnews_header_top',
+ 'default'     => 'mt-fixed-up',
+ 'option_type' => 'option',
+ 'priority'    => 10,
+ 'multiple'    => 1,
+ 'choices'     => array(
+   'mt-fixed-up' => esc_attr__( 'Show When Scroll Up', 'boomnews' ),
+   'mt-fixed-always' => esc_attr__( 'Show Always', 'boomnews' ),
+   'mt-fixed-disabled' => esc_attr__( 'Disable', 'boomnews' ),
+ ),
+ ));
 ?>

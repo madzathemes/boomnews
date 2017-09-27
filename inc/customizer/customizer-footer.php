@@ -49,46 +49,7 @@ function boomnews_customize_footer($wp_customize){
 				'priority' => 301,
 		));
 
-		Kirki::add_field( 'mt_footer_hot_post', array(
-      	'type'        => 'switch',
-      	'settings'    => 'mt_footer_hot_post',
-      	'label'       => esc_attr__( 'Footer Hot Post Widget', 'boomnews' ),
-				'description'       => esc_attr__( 'To customize footer Hot Post area you need go to Appearance/Widgets/Footer Hot Post Widget. And insert inside this widget area "mt Trending Posts" widget', 'boomnews' ),
-      	'section'     => 'boomnews_footer_bottom',
-      	'default'     => 'on',
-      	'priority'    => 10,
-      	'choices'     => array(
-          'on'  => esc_attr__( 'ON', 'boomnews' ),
-       		'off' => esc_attr__( 'OFF', 'boomnews' ),
-      	),
-    ) );
 
-		Kirki::add_field( 'mt_footer_ad', array(
-      	'type'        => 'switch',
-      	'settings'    => 'mt_footer_ad',
-      	'label'       => esc_attr__( 'Footer Ad', 'boomnews' ),
-      	'section'     => 'boomnews_footer_bottom',
-      	'default'     => 'on',
-      	'priority'    => 10,
-      	'choices'     => array(
-          'on'  => esc_attr__( 'ON', 'boomnews' ),
-       		'off' => esc_attr__( 'OFF', 'boomnews' ),
-      	),
-    ) );
-
-		Kirki::add_field( 'mt_footer_subscribe', array(
-      	'type'        => 'switch',
-      	'settings'    => 'mt_footer_subscribe',
-      	'label'       => esc_attr__( 'Footer Subscribe', 'boomnews' ),
-				'description'       => esc_attr__( 'To activate this subscription form, You only need register your domain on www.specificfeeds.com', 'boomnews' ),
-      	'section'     => 'boomnews_footer_bottom',
-      	'default'     => 'on',
-      	'priority'    => 10,
-      	'choices'     => array(
-          'on'  => esc_attr__( 'ON', 'boomnews' ),
-       		'off' => esc_attr__( 'OFF', 'boomnews' ),
-      	),
-    ) );
 
 
 
@@ -339,5 +300,46 @@ function boomnews_customize_footer($wp_customize){
 }
 
 add_action('customize_register', 'boomnews_customize_footer');
+
+Kirki::add_field( 'mt_footer_hot_post', array(
+		'type'        => 'switch',
+		'settings'    => 'mt_footer_hot_post',
+		'label'       => esc_attr__( 'Footer Hot Post Widget', 'boomnews' ),
+		'description'       => esc_attr__( 'To customize footer Hot Post area you need go to Appearance/Widgets/Footer Hot Post Widget. And insert inside this widget area "mt Trending Posts" widget', 'boomnews' ),
+		'section'     => 'boomnews_footer_bottom',
+		'default'     => 'on',
+		'priority'    => 10,
+		'choices'     => array(
+			'on'  => esc_attr__( 'ON', 'boomnews' ),
+			'off' => esc_attr__( 'OFF', 'boomnews' ),
+		),
+) );
+
+Kirki::add_field( 'mt_footer_ad', array(
+		'type'        => 'switch',
+		'settings'    => 'mt_footer_ad',
+		'label'       => esc_attr__( 'Footer Ad', 'boomnews' ),
+		'section'     => 'boomnews_footer_bottom',
+		'default'     => 'on',
+		'priority'    => 10,
+		'choices'     => array(
+			'on'  => esc_attr__( 'ON', 'boomnews' ),
+			'off' => esc_attr__( 'OFF', 'boomnews' ),
+		),
+) );
+
+Kirki::add_field( 'mt_footer_subscribe', array(
+		'type'        => 'switch',
+		'settings'    => 'mt_footer_subscribe',
+		'label'       => esc_attr__( 'Footer Subscribe', 'boomnews' ),
+		'description'       => esc_attr__( 'To activate this subscription form, You only need register your domain on www.specificfeeds.com', 'boomnews' ),
+		'section'     => 'boomnews_footer_bottom',
+		'default'     => 'on',
+		'priority'    => 10,
+		'choices'     => array(
+			'on'  => esc_attr__( 'ON', 'boomnews' ),
+			'off' => esc_attr__( 'OFF', 'boomnews' ),
+		),
+) );
 
 ?>
